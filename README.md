@@ -21,7 +21,7 @@ install completed on LXC Ubuntu 16.04
 Pool = tcp server:5514
 
 #Check that Data is arriving in the Index
-jarrodl@elk:~$ curl 'localhost:9200/_cat/indices?v'
+curl 'localhost:9200/_cat/indices?v'
 health status index          uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 yellow open   pem-2017.01.18 -drykpvETBK0wVN3dKTDxw   5   1        526            0      1.5mb          1.5mb
 yellow open   .kibana        da8KKtaLS12mpj9bm7Izig   1   1          1            0      3.1kb          3.1kb
