@@ -1,10 +1,13 @@
-#Install Package information for Elasticsearch
-wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
-echo "deb http://packages.elastic.co/elasticsearch/2.x/debian stable main" | sudo tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
+#Download and install the public signing key:
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+
+#Save the repository definition to /etc/apt/sources.list.d/elastic-5.x.list:
+echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
+
 sudo apt-get update
 
-#Install Elasticsearch
-sudo apt-get -y install elasticsearch
+#Install
+sudo apt-get install elasticsearch
 
 #Edit config file to change bind address
 sudo vi /etc/elasticsearch/elasticsearch.yml
@@ -19,6 +22,11 @@ network.host: localhost
 #Restart Elastic Search
 systemctl restart elasticsearch
 
-#Add to boot
-systemctl daemon-reload
-systemctl enable elasticsearch
+#Start at boot
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
+
+#Checking Start / Stop / Status
+sudo systemctl start elasticsearch.service
+sudo systemctl stop elasticsearch.service
+sudo systemctl status elasticsearch.service
