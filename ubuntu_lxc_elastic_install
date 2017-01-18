@@ -1,0 +1,24 @@
+#Install Package information for Elasticsearch
+wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+echo "deb http://packages.elastic.co/elasticsearch/2.x/debian stable main" | sudo tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
+sudo apt-get update
+
+#Install Elasticsearch
+sudo apt-get -y install elasticsearch
+
+#Edit config file to change bind address
+sudo vi /etc/elasticsearch/elasticsearch.yml
+
+Set bind to localhost
+# ---------------------------------- Network -----------------------------------
+#
+# Set the bind address to a specific IP (IPv4 or IPv6):
+#
+network.host: localhost
+
+#Restart Elastic Search
+systemctl restart elasticsearch
+
+#Add to boot
+systemctl daemon-reload
+systemctl enable elasticsearch
