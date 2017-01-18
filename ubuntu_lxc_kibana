@@ -1,0 +1,20 @@
+#Install Kibana
+sudo apt-get install Kibana
+
+#Change config file to set Outside IP address
+sudo vi /etc/kibana/kibana.yaml
+
+# To allow connections from remote users, set this parameter to a non-loopback address.
+server.host: "192.168.1.4"
+
+#Kiabana restart
+sudo systemctl restart kibana.service
+
+#To configure Kibana to start automatically when the system boots up, run the following commands:
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable kibana.service
+
+#Kibana Control
+sudo systemctl start kibana.service
+sudo systemctl stop kibana.service
+sudo systemctl status kibana.service
