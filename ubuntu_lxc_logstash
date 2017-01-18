@@ -1,1 +1,17 @@
+#Install Logstash
+sudo apt-get install logstash
 
+#Copy config file to pem-stash.conf
+Directory /etc/logstash/conf.d/ 
+
+#Logstash restart
+sudo systemctl restart logstash.service
+
+#To configure Logstash to start automatically when the system boots up, run the following commands:
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable logstash.service
+
+#Logstash Control
+sudo systemctl start logstash.service
+sudo systemctl stop logstash.service
+sudo systemctl status logstash.service
