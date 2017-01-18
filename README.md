@@ -10,3 +10,6 @@ install completed on LXC Ubuntu 16.04
 
 #Kibana Install and Server setup
 - ubuntu_lxc_kibana
+
+#Logstash Install
+- ubuntu_lxc_logstash
