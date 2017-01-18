@@ -20,7 +20,7 @@ Set bind to localhost
 network.host: localhost
 
 #Restart Elastic Search
-systemctl restart elasticsearch
+sudo systemctl restart elasticsearch
 
 #Start at boot
 sudo /bin/systemctl daemon-reload
