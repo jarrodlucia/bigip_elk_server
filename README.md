@@ -7,3 +7,6 @@ install completed on LXC Ubuntu 16.04
   
 #Elastic Search Setup
 - ubuntu_lxc_elastic_install
+
+#Kibana Install and Server setup
+- ubuntu_lxc_kibana
