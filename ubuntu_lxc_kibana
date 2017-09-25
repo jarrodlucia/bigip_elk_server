@@ -1,5 +1,5 @@
 #Install Kibana
-sudo apt-get install Kibana
+sudo apt-get install kibana
 
 #Change config file to set Outside IP address
 sudo vi /etc/kibana/kibana.yaml
