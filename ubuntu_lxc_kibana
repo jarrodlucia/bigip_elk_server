@@ -2,7 +2,7 @@
 sudo apt-get install kibana
 
 #Change config file to set Outside IP address
-sudo vi /etc/kibana/kibana.yaml
+sudo vi /etc/kibana/kibana.yml
 
 # Kibana is served by a back end server. This setting specifies the port to use.
 server.port: 5601
