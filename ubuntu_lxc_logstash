@@ -31,11 +31,12 @@ filter {
       destination => "application_category_name"
       dictionary_path => '/usr/local/share/signatures.csv'
     }
-    translate {
-      field => "url_category_id"
-      destination => "url_category_name"
-      dictionary_path => '/usr/local/share/categories.csv'
-}
+    #Still working on this script
+    #translate {
+    #  field => "url_category_id"
+    #  destination => "url_category_name"
+    #  dictionary_path => '/usr/local/share/categories.csv'
+    #}
 }
 output {
     stdout {}
