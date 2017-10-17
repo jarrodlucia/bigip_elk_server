@@ -23,9 +23,9 @@ install completed on LXC Ubuntu 16.04
 
 # Prepare F5 for Logging
 #Configure F5 BIG-IP to Send data
-Pool = tcp server:5514 - PEM
-Pool = tcp server:5515 - DNS
-Pool = tcp server:5516 - AFM/CGNAT
+- Pool = tcp server:5514 - PEM
+- Pool = tcp server:5515 - DNS
+- Pool = tcp server:5516 - AFM/CGNAT
 
 # Confirm Data on server and indexes
 #Check that Data is arriving in the Index
