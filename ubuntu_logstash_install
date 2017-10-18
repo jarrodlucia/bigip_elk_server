@@ -8,45 +8,8 @@ sudo apt-get install logstash
 #Copy or Create .csv files for application and category searching
 /user/local/share/
 
-#Copy config file to pem-stash.conf or create new file
+#Copy config file to logstash_main.conf or create new file
 Directory /etc/logstash/conf.d/ 
-
-Contents:
-
-input {
-    tcp {
-        port => 5514
-    }
-}
-filter {
-    kv {
-      source => "message"
-      field_split => ","
-    }
-    geoip {
-      source => "dest_ip"
-    }
-    translate {
-      field => "application_category_id"
-      destination => "application_category_name"
-      dictionary_path => '/usr/local/share/signatures.csv'
-    }
-    #Still working on this script
-    #translate {
-    #  field => "url_category_id"
-    #  destination => "url_category_name"
-    #  dictionary_path => '/usr/local/share/categories.csv'
-    #}
-}
-output {
-    stdout {}
-    elasticsearch {
-      hosts => ["localhost:9200"]
-      index    => "pem-%{+YYYY.MM.dd}"
-      template_name => "pem"
-    }
-}
-
 
 #Logstash restart
 sudo systemctl restart logstash.service
