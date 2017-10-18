@@ -48,6 +48,10 @@ curl 'localhost:9200/_cat/indices?v'
 - index pattern = dns-*
 - select @timestamps
 
+# Install and Configure NGINX
+#Configure nginx for reverse proxy to Kibana
+
+
 # Searches / Visualisation and Dashboards
 #Import object data into Kibana
 - Change Index UUID in json
