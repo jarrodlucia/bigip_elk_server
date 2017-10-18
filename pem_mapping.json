@@ -357,14 +357,7 @@
             }
           },
           "RemoteHostIP" : {
-            "type" : "ip",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "ip"
           },
           "RequestSide" : {
             "type" : "text",
