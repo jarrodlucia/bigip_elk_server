@@ -138,24 +138,10 @@
             }
           },
           "BytesIn" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "BytesOut" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "CalledName" : {
             "type" : "text",
@@ -198,34 +184,13 @@
             }
           },
           "ConnStatsDurSum" : {
-            "type" : "interger",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "ConnStatsNumEndings" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "ConnStatsNumStarts" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "Continent" : {
             "type" : "text",
@@ -258,24 +223,10 @@
             }
           },
           "DestinationIP" : {
-            "type" : "ip",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "ip"
           },
           "DestinationPort" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "DeviceNmae" : {
             "type" : "text",
@@ -298,34 +249,13 @@
             }
           },
           "DistinctApplications" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "DistinctCategories" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "EOCTimestamp" : {
-            "type" : "date",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "epoch_second",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "date"
           },
           "Entity" : {
             "type" : "text",
@@ -338,34 +268,13 @@
             }
           },
           "FlowsClosed" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "FlowsOpened" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "HitCount" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "Hostname" : {
             "type" : "text",
@@ -468,24 +377,10 @@
             }
           },
           "Risk" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "SlotId" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "SourceGeo" : {
             "type" : "text",
@@ -498,14 +393,7 @@
             }
           },
           "SourceIP" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "SubnetName" : {
             "type" : "text",
@@ -518,24 +406,10 @@
             }
           },
           "SubscriberFlowsClosed" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "SubscriberFlowsOpened" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "SubscriberIdType" : {
             "type" : "text",
@@ -664,14 +538,7 @@
             }
           },
           "concurrent_flows" : {
-            "type" : "integer",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
+            "type" : "integer"
           },
           "dest_ip" : {
             "type" : "ip"
