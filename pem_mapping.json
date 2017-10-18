@@ -5,7 +5,7 @@
         "_all" : {
           "enabled" : true,
           "norms" : false
-        },
+        }
       },
       "logs" : {
         "_all" : {
