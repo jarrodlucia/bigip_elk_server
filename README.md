@@ -20,6 +20,9 @@ install completed on LXC Ubuntu 16.04
 # Prepare Elasticsearch templates
 #Install Index Templates into Elastic Search for the required modules
 - CURL - XPUT *.json (requried file upload)
+- curl -XPUT http://localhost:9200/_template/pem?pretty -d @pem_mapping.json
+- curl -XPUT http://localhost:9200/_template/afm?pretty -d @afm_mapping.json
+- curl -XPUT http://localhost:9200/_template/dns?pretty -d @dns_mapping.json
 
 # Prepare F5 for Logging
 #Configure F5 BIG-IP to Send data
