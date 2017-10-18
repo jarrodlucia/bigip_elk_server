@@ -138,7 +138,7 @@
             }
           },
           "BytesIn" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -148,7 +148,7 @@
             }
           },
           "BytesOut" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -198,7 +198,7 @@
             }
           },
           "ConnStatsDurSum" : {
-            "type" : "text",
+            "type" : "interger",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -208,7 +208,7 @@
             }
           },
           "ConnStatsNumEndings" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -218,7 +218,7 @@
             }
           },
           "ConnStatsNumStarts" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -247,106 +247,6 @@
               }
             }
           },
-          "DS3WHS" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "DSAPP" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "DSCLOSING" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "DSCWND" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "DSNAGLE" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "DSRATEPACE" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "DSRETX" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "DSRWND" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "DSSNDBUF" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "DSWAITFORACK" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
           "DestinatioGeo" : {
             "type" : "text",
             "norms" : false,
@@ -358,7 +258,7 @@
             }
           },
           "DestinationIP" : {
-            "type" : "text",
+            "type" : "ip",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -368,7 +268,7 @@
             }
           },
           "DestinationPort" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -398,7 +298,7 @@
             }
           },
           "DistinctApplications" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -408,7 +308,7 @@
             }
           },
           "DistinctCategories" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -418,11 +318,11 @@
             }
           },
           "EOCTimestamp" : {
-            "type" : "text",
+            "type" : "date",
             "norms" : false,
             "fields" : {
               "raw" : {
-                "type" : "keyword",
+                "type" : "epoch_second",
                 "ignore_above" : 256
               }
             }
@@ -438,7 +338,7 @@
             }
           },
           "FlowsClosed" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -448,27 +348,7 @@
             }
           },
           "FlowsOpened" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "GoodPutRcv" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "GoodPutSnd" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -478,7 +358,7 @@
             }
           },
           "HitCount" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -537,36 +417,6 @@
               }
             }
           },
-          "PktsLost" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "PktsRecv" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "PktsSent" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
           "PolicyName" : {
             "type" : "text",
             "norms" : false,
@@ -587,56 +437,6 @@
               }
             }
           },
-          "RTTCount" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "RTTMax" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "RTTMin" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "RTTSum" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
-          "RTTVarSum" : {
-            "type" : "text",
-            "norms" : false,
-            "fields" : {
-              "raw" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          },
           "RadioType" : {
             "type" : "text",
             "norms" : false,
@@ -648,7 +448,7 @@
             }
           },
           "RemoteHostIP" : {
-            "type" : "text",
+            "type" : "ip",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -668,7 +468,7 @@
             }
           },
           "Risk" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -678,7 +478,7 @@
             }
           },
           "SlotId" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -698,7 +498,7 @@
             }
           },
           "SourceIP" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -718,7 +518,7 @@
             }
           },
           "SubscriberFlowsClosed" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -728,7 +528,7 @@
             }
           },
           "SubscriberFlowsOpened" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
@@ -864,7 +664,7 @@
             }
           },
           "concurrent_flows" : {
-            "type" : "text",
+            "type" : "integer",
             "norms" : false,
             "fields" : {
               "raw" : {
