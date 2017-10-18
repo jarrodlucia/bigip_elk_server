@@ -1,4 +1,3 @@
-sudo apt-get install nginx httpd-tools
 sudo apt-get install nginx
 sudo apt-get install apache2-utils
 sudo htpasswd -c /etc/nginx/htpasswd.users admin
@@ -12,7 +11,7 @@ sudo vi /etc/nginx/sites-available/default
 
 server {
         listen 8588;
-        server_name 172.31.4.2;
+        server_name #IP_Address-ifconfig;
         auth_basic "Restricted Access";
         auth_basic_user_file /etc/nginx/htpasswd.users;
         location / {
@@ -24,7 +23,5 @@ server {
         proxy_cache_bypass $http_upgrade;
         }
         }
-
-
 
 sudo /etc/init.d/nginx restart sudo update-rc.d nginx defaults
