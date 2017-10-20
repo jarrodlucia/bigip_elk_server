@@ -222,6 +222,14 @@
               }
             }
           },
+          "DestinationIp_geo" : {
+            "dynamic" : "true",
+            "properties" : {
+              "location" : {
+                "type" : "geo_point"
+              }
+            }
+          },
           "DestinationIpRouteDomain" : {
             "type" : "integer",
             "fields" : {
@@ -516,6 +524,14 @@
               "keyword" : {
                 "type" : "keyword",
                 "ignore_above" : 256
+              }
+            }
+          },
+          "SourceIp_geo" : {
+            "dynamic" : "true",
+            "properties" : {
+              "location" : {
+                "type" : "geo_point"
               }
             }
           },
