@@ -222,14 +222,15 @@
               }
             }
           },
-          "DestinationIp_geo" : {
-            "dynamic" : "true",
+         "DestinationIp_geo"  : {
+            "dynamic": true,
             "properties" : {
-              "location" : {
-                "type" : "geo_point"
-              }
+             "ip": { "type": "ip" },
+             "location" : { "type" : "geo_point" },
+             "latitude" : { "type" : "half_float" },
+             "longitude" : { "type" : "half_float" }
             }
-          },
+         },
           "DestinationIpRouteDomain" : {
             "type" : "integer",
             "fields" : {
@@ -527,14 +528,15 @@
               }
             }
           },
-          "SourceIp_geo" : {
-            "dynamic" : "true",
+         "SourceIp_geo"  : {
+            "dynamic": true,
             "properties" : {
-              "location" : {
-                "type" : "geo_point"
-              }
+             "ip": { "type": "ip" },
+             "location" : { "type" : "geo_point" },
+             "latitude" : { "type" : "half_float" },
+             "longitude" : { "type" : "half_float" }
             }
-          },
+         },
           "SourceIpRouteDomain" : {
             "type" : "integer",
             "fields" : {
