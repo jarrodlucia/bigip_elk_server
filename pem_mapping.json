@@ -386,7 +386,7 @@
             }
           },
           "SourceIP" : {
-            "type" : "integer"
+            "type" : "ip"
           },
           "SubnetName" : {
             "type" : "text",
