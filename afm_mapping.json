@@ -213,6 +213,24 @@
               }
             }
           },
+          "dest_ip" : {
+            "type" : "ip",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+         "dest_ip_geo"  : {
+            "dynamic": true,
+            "properties" : {
+             "ip": { "type": "ip" },
+             "location" : { "type" : "geo_point" },
+             "latitude" : { "type" : "half_float" },
+             "longitude" : { "type" : "half_float" }
+            }
+         },
           "DestinationIp" : {
             "type" : "ip",
             "fields" : {
@@ -519,6 +537,24 @@
               }
             }
           },
+          "source_ip" : {
+            "type" : "ip",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+         "source_ip_geo"  : {
+            "dynamic": true,
+            "properties" : {
+             "ip": { "type": "ip" },
+             "location" : { "type" : "geo_point" },
+             "latitude" : { "type" : "half_float" },
+             "longitude" : { "type" : "half_float" }
+            }
+         },
           "SourceIp" : {
             "type" : "ip",
             "fields" : {
