@@ -1,5 +1,5 @@
 {
-   "template" : "afm*",
+   "template" : "afm-*",
     "mappings" : {
       "afm" : {
         "properties" : {
@@ -385,7 +385,7 @@
             }
           },
           "SelfIp" : {
-            "type" : "ip",
+            "type" : "string",
             "fields" : {
               "keyword" : {
                 "type" : "keyword",
@@ -430,7 +430,7 @@
             }
           },
           "ServerIp" : {
-            "type" : "ip",
+            "type" : "string",
             "fields" : {
               "keyword" : {
                 "type" : "keyword",
@@ -583,7 +583,7 @@
             }
           },
           "VLAN" : {
-            "type" : "integer",
+            "type" : "string",
             "fields" : {
               "keyword" : {
                 "type" : "keyword",
