@@ -17,6 +17,10 @@ install completed on LXC Ubuntu 16.04
 #Logstash Install
 - ubuntu_logstash
 
+#Additional Plug-ins
+- sudo /usr/share/logstash/bin/logstash-plugin install logstash-filter-geoip
+- sudo /usr/share/logstash/bin/logstash-plugin install logstash-filter-dns
+
 # Prepare Elasticsearch templates
 #Install Index Templates into Elastic Search for the required modules
 - CURL - XPUT *.json (requried file upload)
