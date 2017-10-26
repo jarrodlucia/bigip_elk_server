@@ -1,37 +1,16 @@
-Module 2: F5 f5-postman-workflows & f5-newman-wrapper
-==================================================
+Module 2: ELK Stack Build Ubuntu Server
+=======================================
 
-In the previous Class you may have found the tasks associated with checking
-various response values and populating environment variables **very** tedious.
-In addition to being tedious, these tasks are not fundamentally automatable due
-to the requirement for human interaction.
+ELK stack from the previous module is made up of three key components.
+These being logstash, elasticsearch and kibana.
 
-In order to assist users with automating the F5 BIG-IP platform we have
-developed a set of tools that can be used with the Postman REST Client
-(http://getpostman.com).  The purpose of the tools are:
+This module will guide you through the installation of ELK stack onto
+a ubuntu server.
 
-- f5-postman-workflows
+There are many ready made ELK stack services that can be used, however
+it is important to understand how ELK stack is build and the configuration
+files and thier purposes.
 
-  - Provide re-usable JavaScript functions that ease testing of API responses
-    and populating environment variables
-  - Implement a delay-based polling mechanism
-
-- f5-newman-wrapper
-
-  - Allow users to easily assemble Postman collections into workflows
-  - Enabled integration with third-party tools such as Ansible, Chef & Puppet
-
-This framework allows collection developers to create automatable collections that
-include full testing of response values, population of environment variables to
-establish chains of requests and time-based polling to allow long-lived API
-processes time to complete.
-
-Users can then interact with these collections via the Postman GUI client,
-run the collections with the Postman Runner or the Newman CLI client.
-
-This lab module will walk you through using the tools.  If you are interested
-in developing collections using the f5-postman-workflows framework please visit
-the official GitHub repository at https://github.com/0xHiteshPatel/f5-postman-workflows
 
 .. toctree::
    :maxdepth: 1
