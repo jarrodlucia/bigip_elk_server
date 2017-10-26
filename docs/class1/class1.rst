@@ -1,16 +1,19 @@
-Class 1: Introduction to Automation & Orchestration
-===================================================
+Class 1: BIG-IP AVR (Big-IP goodness)
+=====================================
 
-This introductory class covers the following topics:
+This class covers the following topics:
 
-- Imperative Automation using the F5 BIG-IP iControl REST API
-- Declarative Automation using the F5 iWorkflow product
-- F5 Automation Tools:
+  - BIG-IP AVR
+  - Traffic Classification AVR
+  - PEM AVR
+  - AFM AVR
+  - F5 BIG-IP:
 
-  - The f5-super-netops-container
-  - Collections and the f5-postman-workflows extension to Postman
+    - Provisioning AVR
+    - Configure BIG-IP SP modules (REST only)
+    - Navigating AVR
 
-Expected time to complete: **3 hours**
+    Expected time to complete: **30 mins**
 
 .. toctree::
    :maxdepth: 1

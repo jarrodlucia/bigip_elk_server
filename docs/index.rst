@@ -1,5 +1,5 @@
-F5 Programmability Training - Index
-===================================
+F5 SP AVR + Big Data Training - Index
+=====================================
 
 .. toctree::
    :maxdepth: 2

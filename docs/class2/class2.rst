@@ -3,18 +3,20 @@ Class 2: Building Continuous Delivery Pipelines
 
 This class covers the following topics:
 
-- Continuous Integration(CI) and Continuous Delivery(CD) Concepts
+  - ELK Stack Overview
+  - ELK Stack build on Ubuntu
+  - F5 logging
+  - ELK Stack:
 
-- F5 Automation Toolkits:
+    - Indexes
+    - Navigation
+    - Searches
+    - Visualisations
+    - Dashboards
 
-  - F5-Super-NetOps-Container
-  - F5 Postman Collections and f5-postman-workflows extensions
-  - F5 f5-newman-wrapper for Automating Workflows
+  - Competition
 
-- Building CI/CD Pipelines with Jenkins
-- Team Collaboration with Automated Slack Notifications
-
-Expected time to complete: **3 hours**
+    Expected time to complete: **1.5 hours**
 
 .. toctree::
    :maxdepth: 1
