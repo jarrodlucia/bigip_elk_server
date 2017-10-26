@@ -3,15 +3,16 @@ Class 1: BIG-IP AVR (Big-IP goodness)
 
 This class covers the following topics:
 
-  - BIG-IP AVR
-  - Traffic Classification AVR
-  - PEM AVR
-  - AFM AVR
-  - F5 BIG-IP:
+  - Module 1
+      - Introduction to REST API
+        - Initial BIG-IP setup and Provisioning
+        - Configure BIG-IP SP modules (REST only)
 
-    - Initial BIG-IP setup and Provisioning
-    - Configure BIG-IP SP modules (REST only)
-    - Navigating AVR
+  - Module 2
+      - F5 BIG-IP AVR:
+        - Configuring AVR
+        - Navigating AVR
+        - Modify AVR Reports
 
     Expected time to complete: **30 mins**
 

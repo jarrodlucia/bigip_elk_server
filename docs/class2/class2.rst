@@ -1,11 +1,12 @@
-Class 2: Building Continuous Delivery Pipelines
-================================================
+Class 2: Introduction to ELK Stack
+==================================
 
 This class covers the following topics:
 
   - ELK Stack Overview
   - ELK Stack build on Ubuntu
   - F5 logging
+  
   - ELK Stack:
 
     - Indexes
