@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 #
-# F5 Automation & Orchestration - Introduction documentation build configuration file, created by
-# sphinx-quickstart on Fri Oct 28 17:09:38 2016.
-#
 # This file is execfile()d with the current directory set to its
 # containing dir.
 #
@@ -85,14 +82,14 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'F5 Programmability Training'
+project = u'F5 CSP Big Data Training'
 copyright = u'2017, F5 Networks, Inc.'
-author = u'https://github.com/f5devcentral/f5-automation-labs/graphs/contributors'
+author = u'https://github.com/jarrodlucia/bigip_elk_server/'
 
 classname = project
 cleanname = re.sub('\W+','',project)
 year = time.strftime("%Y")
-eventname = "Agility %s Hands-on Lab Guide" % (year)
+eventname = "F5 CSP %s Hands-on Lab Guide" % (year)
 
 rst_prolog = """
 .. |classname| replace:: %s
@@ -212,7 +209,7 @@ if on_rtd:
     templates_path = ['_templates']
 
 extlinks = {
-    'raw_github_url':( ("https://raw.githubusercontent.com/f5devcentral/f5-automation-labs/%s%%s" % git_branch_name), None)
+    'raw_github_url':( ("https://raw.githubusercontent.com/jarrodlucia/bigip_elk_server/%s%%s" % git_branch_name), None)
 }
 
 # def setup(app):
@@ -331,7 +328,7 @@ html_show_copyright = True
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'F5ProgrammabilityTraining'
+htmlhelp_basename = 'F5CSPBigDataTraining'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -414,7 +411,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'f5programmabilitytraining', u'F5 Programmability Training',
+    (master_doc, 'F5CSPBigDataTraining', u'F5 CSP Big Data Training',
      [author], 1)
 ]
 
@@ -429,8 +426,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'F5ProgrammabilityTraining', u'F5 Programmability Training',
-     author, 'F5ProgrammabilityTraining', 'F5 Programmability Training',
+    (master_doc, 'F5CSPBigDataTraining', u'F5 CSP Big Data Training',
+     author, 'F5CSPBigDataTraining', 'F5 CSP Big Data Training',
      'Miscellaneous'),
 ]
 

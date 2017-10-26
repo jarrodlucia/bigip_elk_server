@@ -7,7 +7,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=F5AutomationOrchestration-Introduction
+set SPHINXPROJ=F5CSPBigDataTraining
 
 if "%1" == "" goto help
 
