@@ -7,7 +7,7 @@ This class covers the following topics:
   
 - ELK Stack build on Ubuntu
   
-- F5 logging
+- F5 logging to ELK Stack
   
 - ELK Stack:
 

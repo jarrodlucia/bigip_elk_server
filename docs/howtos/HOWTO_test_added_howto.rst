@@ -1,15 +1,7 @@
-HOWTO - Update Existing iApp templates to Work with iWorkflow v2.1
+HOWTO - how to do stuff
 ------------------------------------------------------------------
 
-This HOWTO document describes the minimal changes required to update an
-existing iApp template and add a version number to the template name.
-
-Adding the version number allows the iApp template to be used by
-iWorkflow v2.1 and later.  Versioning is required to enable iApp templates
-to be installed across many BIG-IP devices in a production-safe manner.
-
-Without version information it is possible that iApp templates could
-be overwritten leading to deployment failures and/or outages.
+Twill put extra stuff into here
 
 Task 1 – Export the existing iApp from BIG-IP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
