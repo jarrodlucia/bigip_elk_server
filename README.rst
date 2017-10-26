@@ -1,68 +1,56 @@
-F5 Automation Labs
-==================
+F5 SP AVR and Big Data Labs
+===========================
 
 |docs|
 
-This repository contains the source for F5 Programmability Training docs.
+This repository contains the source for F5 SP AVR + Big Data Training docs.
 
 To view the documentation please visit:
 
-http://f5-automation-labs.readthedocs.io/en/latest
+http://bigip-elk-server.readthedocs.io/en/develop/
 
-.. |docs| image:: https://readthedocs.org/projects/f5-automation-labs/badge/?version=latest
+.. |docs| image:: https://readthedocs.org/projects/bigip-elk-server/badge/?version=develop
     :alt: Documentation Status
     :scale: 100%
-    :target: http://f5-automation-labs.readthedocs.io/en/latest
+    :target: http://bigip-elk-server.readthedocs.io/en/develop/
 
 
-Class 1: Introduction to Automation & Orchestration
+Class 1: BIG-IP AVR (Big-IP goodness)
 ===================================================
 
-This introductory class covers the following topics:
+This class covers the following topics:
 
-  - Imperative Automation using the F5 BIG-IP iControl REST API
-  - Declarative Automation using the F5 iWorkflow product
-  - F5 Automation Tools:
+  - BIG-IP AVR
+  - Traffic Classification AVR
+  - PEM AVR
+  - AFM AVR
+  - F5 BIG-IP:
 
-    - The f5-super-netops-container
-    - Collections and the f5-postman-workflows extension to Postman
-    - Automation Workflows using f5-newman-wrapper
+    - Provisioning AVR
+    - Configure BIG-IP SP modules (REST only)
+    - Navigating AVR
 
-    Expected time to complete: **3 hours**
+    Expected time to complete: **30 mins**
 
-Class 2: Building Continuous Delivery Pipelines
+Class 2: ELK-Stack (Big-Data sexyness)
 ================================================
 
 This class covers the following topics:
 
-  - Continuous Integration (CI)/Continuous Delivery (CD) Concepts
-  - F5 Automation Tools:
+  - ELK Stack Overview
+  - ELK Stack build on Ubuntu
+  - F5 logging
+  - ELK Stack:
 
-    - The f5-super-netops-container
-    - Collections and the f5-postman-workflows extension to Postman
-    - Automation Workflows using f5-newman-wrapper
+    - Indexes
+    - Navigation
+    - Searches
+    - Visualisations
+    - Dashboards
 
-  - Building CI/CD Pipelines with Jenkins
+  - Competition
 
-    Expected time to complete: **3 hours**
-
-Class 3: Introduction to SecDevOps
-==================================
-
-This class covers the following topics:
-
-  - How to secure applications programmatically using a BIG-IP's iControl based REST API
-  - Leverage programmability to deploy security policies and/or adhere to best practices during Application Lifecycle Management
-  - Reduce the operational (e.g. time and money) cost of a defense in depth strategy
-  - Integrate into the SDLC process
-
-This course will feature the following topics.
-
-  - General interaction with tmm via BIG-IPs REST APIs
-  - Create, modify and assign an AFM policy
-  - Create, modify and assign an ASM policy
-
-    Expected time to complete: **3 hours**
+    Expected time to complete: **1.5 hours**
 
 Support
 -------
