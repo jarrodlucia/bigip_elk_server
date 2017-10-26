@@ -9,7 +9,7 @@ This class covers the following topics:
   - AFM AVR
   - F5 BIG-IP:
 
-    - Provisioning AVR
+    - Initial BIG-IP setup and Provisioning
     - Configure BIG-IP SP modules (REST only)
     - Navigating AVR
 
