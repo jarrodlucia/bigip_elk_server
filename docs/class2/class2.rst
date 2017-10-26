@@ -3,21 +3,27 @@ Class 2: Introduction to ELK Stack
 
 This class covers the following topics:
 
-  - ELK Stack Overview
-  - ELK Stack build on Ubuntu
-  - F5 logging
+- ELK Stack Overview
   
-  - ELK Stack:
+- ELK Stack build on Ubuntu
+  
+- F5 logging
+  
+- ELK Stack:
 
-    - Indexes
-    - Navigation
-    - Searches
-    - Visualisations
-    - Dashboards
+  - Indexes
+    
+  - Navigation
+    
+  - Searches
+    
+  - Visualisations
+    
+  - Dashboards
 
-  - Competition
+- Kibana Competition, best visualisation, best dashboard
 
-    Expected time to complete: **1.5 hours**
+Expected time to complete: **1.5 hours**
 
 .. toctree::
    :maxdepth: 1
