@@ -9,11 +9,11 @@ This class covers the following topics:
 
     - Initial BIG-IP setup and Provisioning
 
-    - Configure BIG-IP SP modules (REST only)
+    - Configure BIG-IP SP modules
 
 - **Module 2**
       
-  - F5 BIG-IP AVR:
+  - F5 BIG-IP AVR
         
     - Configuring AVR
         
@@ -21,10 +21,11 @@ This class covers the following topics:
         
     - Modify AVR Reports
 
-    Expected time to complete: **30 mins**
+Expected time to complete: **30 mins**
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
    module*/module*
+
