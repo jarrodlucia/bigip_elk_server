@@ -1,0 +1,196 @@
+{
+   "template" : "dns-*",
+    "mappings" : {
+      "dns" : {
+        "properties" : {
+          "@timestamp" : {
+            "type" : "date"
+          },
+          "@version" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "answer" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "dns_len" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "dns_server_ip" : {
+            "type" : "ip",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "f5_irule" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "host" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "is_wideip" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "message" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "port" : {
+            "type" : "integer"
+          },
+          "question_class" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "question_name" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "question_type" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "src_ip" : {
+            "type" : "ip",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "type" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          }
+        }
+      },
+      "logs" : {
+        "properties" : {
+          "@timestamp" : {
+            "type" : "date"
+          },
+          "@version" : {
+            "type" : "text"
+          },
+          "DNS_response" : {
+            "type" : "text",
+            "fields" : {
+              "raw" : {
+                "type" : "keyword"
+              }
+            },
+            "analyzer" : "english"
+          },
+          "Query" : {
+            "type" : "text",
+            "fields" : {
+              "raw" : {
+                "type" : "keyword"
+              }
+            },
+            "analyzer" : "english"
+          },
+          "QueryType" : {
+            "type" : "text",
+            "fields" : {
+              "raw" : {
+                "type" : "keyword"
+              }
+            },
+            "analyzer" : "english"
+          },
+          "Subscriber" : {
+            "type" : "ip"
+          },
+          "host" : {
+            "type" : "text"
+          },
+          "message" : {
+            "type" : "text"
+          },
+          "path" : {
+            "type" : "text"
+          },
+          "port" : {
+            "type" : "integer"
+          },
+          "syslog_hostname" : {
+            "type" : "text",
+            "fields" : {
+              "raw" : {
+                "type" : "keyword"
+              }
+            },
+            "analyzer" : "english"
+          },
+          "timestamp" : {
+            "type" : "text"
+          }
+        }
+      }
+    }
+}

@@ -19,7 +19,7 @@ import time
 import re
 import string
 sys.path.insert(0, os.path.abspath('.'))
-import f5_sphinx_theme
+#import f5_sphinx_theme
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 on_snops = os.environ.get('SNOPS_ISALIVE', None) == 'True'
