@@ -19,7 +19,7 @@ import time
 import re
 import string
 sys.path.insert(0, os.path.abspath('.'))
-#import f5_sphinx_theme
+import f5_sphinx_theme
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 on_snops = os.environ.get('SNOPS_ISALIVE', None) == 'True'
@@ -196,9 +196,9 @@ todo_include_todos = True
 # if you don't have the F5 Sphinx Theme, it's available here: https://github.com/f5devcentral/f5-sphinx-theme
 # You can also install the required python modules by executing python install --update -r requirements.txt
 # from the root directory of this repository
-#import f5_sphinx_theme
-#html_theme = 'f5_sphinx_theme'
-#html_theme_path = f5_sphinx_theme.get_html_theme_path()
+import f5_sphinx_theme
+html_theme = 'f5_sphinx_theme'
+html_theme_path = f5_sphinx_theme.get_html_theme_path()
 html_sidebars = {'**': ['searchbox.html', 'localtoc.html', 'globaltoc.html','relations.html']}
 html_theme_options = {
                         'site_name': 'Community Training Classes & Labs',
