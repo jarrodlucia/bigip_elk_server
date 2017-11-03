@@ -1,0 +1,662 @@
+[
+  {
+    "_id": "88c103f0-5f51-11e7-996d-61148c130088",
+    "_type": "visualization",
+    "_source": {
+      "title": "top_10_attack_type__vbuilder",
+      "visState": "{\"title\":\"top_10_attack_type__vbuilder\",\"type\":\"metrics\",\"params\":{\"id\":\"606ceb30-5f51-11e7-996d-61148c130088\",\"type\":\"top_n\",\"series\":[{\"id\":\"606ceb31-5f51-11e7-996d-61148c130088\",\"color\":\"#68BC00\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"9406e900-5f51-11e7-996d-61148c130088\",\"type\":\"count\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"terms_field\":\"attack_type.keyword\",\"terms_order_by\":\"606ceb32-5f51-11e7-996d-61148c130088\",\"split_filters\":[{\"color\":\"#68BC00\",\"id\":\"7b4245e0-5f51-11e7-996d-61148c130088\"}]}],\"time_field\":\"@timestamp\",\"index_pattern\":\"*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"background_color_rules\":[{\"id\":\"6306cff0-5f51-11e7-996d-61148c130088\"}],\"bar_color_rules\":[{\"id\":\"6405f070-5f51-11e7-996d-61148c130088\"}],\"gauge_color_rules\":[{\"id\":\"6503b160-5f51-11e7-996d-61148c130088\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4293ad00-601a-11e7-b25d-ab73b5e85353",
+    "_type": "visualization",
+    "_source": {
+      "title": "violation_count_by_rating__timelion",
+      "visState": "{\"title\":\"violation_count_by_rating__timelion\",\"type\":\"timelion\",\"params\":{\"expression\":\"(.es(\\\"violation_rating:2\\\").color(purple),.es(\\\"violation_rating:3\\\").color(orange),.es(\\\"violation_rating:4\\\").color(green),.es(\\\"violation_rating:5\\\").color(blue)).lines()\",\"interval\":\"12h\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV68VX4sEdOvjSNhQwwh",
+    "_type": "visualization",
+    "_source": {
+      "title": "top_10_APPCategoryName_vbuilder",
+      "visState": "{\"title\":\"top_10_APPCategoryName_vbuilder\",\"type\":\"metrics\",\"params\":{\"id\":\"3dbea920-5fc9-11e7-a687-c7a0509be864\",\"type\":\"top_n\",\"series\":[{\"id\":\"3dbea921-5fc9-11e7-a687-c7a0509be864\",\"color\":\"rgba(171,20,158,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"type\":\"count\",\"field\":\"geo_location\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"terms_field\":\"APPCategoryName.raw\",\"terms_order_by\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"label\":\"Top 10 Application Categories\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"background_color_rules\":[{\"id\":\"41414030-5fc9-11e7-a687-c7a0509be864\"}],\"bar_color_rules\":[{\"id\":\"41d12420-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_color_rules\":[{\"id\":\"42797210-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV68WCKPEdOvjSNhQxGO",
+    "_type": "visualization",
+    "_source": {
+      "title": "top_10_Application_Name_vbuilder",
+      "visState": "{\"title\":\"top_10_Application_Name_vbuilder\",\"type\":\"metrics\",\"params\":{\"id\":\"3dbea920-5fc9-11e7-a687-c7a0509be864\",\"type\":\"top_n\",\"series\":[{\"id\":\"3dbea921-5fc9-11e7-a687-c7a0509be864\",\"color\":\"rgba(7,128,68,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"type\":\"count\",\"field\":\"geo_location\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"terms_field\":\"ApplicationName.raw\",\"terms_order_by\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"label\":\"Top 10 Applications\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"background_color_rules\":[{\"id\":\"41414030-5fc9-11e7-a687-c7a0509be864\"}],\"bar_color_rules\":[{\"id\":\"41d12420-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_color_rules\":[{\"id\":\"42797210-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV68U6eeEdOvjSNhQwkU",
+    "_type": "visualization",
+    "_source": {
+      "title": "top_10_subscribers__vbuilder",
+      "visState": "{\"title\":\"top_10_subscribers__vbuilder\",\"type\":\"metrics\",\"params\":{\"id\":\"3dbea920-5fc9-11e7-a687-c7a0509be864\",\"type\":\"top_n\",\"series\":[{\"id\":\"3dbea921-5fc9-11e7-a687-c7a0509be864\",\"color\":\"rgba(0,156,224,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"type\":\"count\",\"field\":\"geo_location\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"terms_field\":\"SubscriberName.raw\",\"terms_order_by\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"label\":\"Top 10 Subscribers\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"background_color_rules\":[{\"id\":\"41414030-5fc9-11e7-a687-c7a0509be864\"}],\"bar_color_rules\":[{\"id\":\"41d12420-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_color_rules\":[{\"id\":\"42797210-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV68erVsEdOvjSNhQ1-w",
+    "_type": "visualization",
+    "_source": {
+      "title": "IP Protocol Traffic",
+      "visState": "{\"title\":\"IP Protocol Traffic\",\"type\":\"metrics\",\"params\":{\"axis_formatter\":\"number\",\"axis_position\":\"left\",\"id\":\"c7dbc610-a272-11e7-8e1d-f3a1ab254c58\",\"index_pattern\":\"*\",\"interval\":\"auto\",\"series\":[{\"axis_position\":\"right\",\"chart_type\":\"line\",\"color\":\"rgba(104,188,0,0.2)\",\"fill\":0.5,\"filter\":\"ip_protocol:\\\"6\\\"\",\"formatter\":\"number\",\"id\":\"c7dbc611-a272-11e7-8e1d-f3a1ab254c58\",\"line_width\":1,\"metrics\":[{\"id\":\"c7dbc612-a272-11e7-8e1d-f3a1ab254c58\",\"type\":\"count\"}],\"point_size\":1,\"seperate_axis\":0,\"split_mode\":\"filter\",\"stacked\":\"none\",\"terms_field\":\"ip_protocol\",\"terms_order_by\":\"c7dbc612-a272-11e7-8e1d-f3a1ab254c58\",\"split_filters\":[{\"color\":\"#68BC00\",\"id\":\"99d94020-a273-11e7-8e1d-f3a1ab254c58\"}],\"label\":\"TCP\"},{\"id\":\"36059110-a274-11e7-8e1d-f3a1ab254c58\",\"color\":\"rgba(159,5,0,0)\",\"split_mode\":\"filter\",\"metrics\":[{\"id\":\"36059111-a274-11e7-8e1d-f3a1ab254c58\",\"type\":\"count\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"filter\":\"ip_protocol:\\\"1\\\"\",\"label\":\"ICMP\"},{\"id\":\"557e8330-a274-11e7-8e1d-f3a1ab254c58\",\"color\":\"rgba(0,0,188,0.54)\",\"split_mode\":\"filter\",\"metrics\":[{\"id\":\"557e8331-a274-11e7-8e1d-f3a1ab254c58\",\"type\":\"count\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"UDP\",\"filter\":\"ip_protocol:\\\"17\\\"\"}],\"show_legend\":1,\"time_field\":\"@timestamp\",\"type\":\"timeseries\",\"background_color_rules\":[{\"id\":\"0c5cef60-a275-11e7-8e1d-f3a1ab254c58\"}],\"bar_color_rules\":[{\"id\":\"0dc35d30-a275-11e7-8e1d-f3a1ab254c58\"}]},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV8E1m4C1My63gr50wAS",
+    "_type": "visualization",
+    "_source": {
+      "title": "AFM (Accept / Reject Rules)",
+      "visState": "{\"title\":\"AFM (Accept / Reject Rules)\",\"type\":\"timelion\",\"params\":{\"expression\":\"(.es(index=afm*,q='Action:Accept').color(green))(.es(index=afm*,q='Action:Reject').color(red)).lines()\",\"interval\":\"auto\",\"type\":\"timelion\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV7BsOhSEdOvjSNhR8m4",
+    "_type": "visualization",
+    "_source": {
+      "title": "test",
+      "visState": "{\"type\":\"timelion\",\"title\":\"test\",\"params\":{\"expression\":\"(.es(\\\"ip_protocol:6\\\").color(purple),.es(\\\"ip_protocol:1\\\").color(orange),.es(\\\"ip_protocol:17\\\").color(green),).lines()\",\"interval\":\"auto\"}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    }
+  },
+  {
+    "_id": "AV7BqlSeEdOvjSNhR8UN",
+    "_type": "visualization",
+    "_source": {
+      "title": "Average Throughput",
+      "visState": "{\"type\":\"timelion\",\"title\":\"Average Throughput\",\"params\":{\"expression\":\".es(index=pem*, metric=avg:volume_uplink, metric=avg:volume_downlink)\",\"interval\":\"auto\"}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    }
+  },
+  {
+    "_id": "AV7BsY0gEdOvjSNhR8qL",
+    "_type": "visualization",
+    "_source": {
+      "title": "test",
+      "visState": "{\"type\":\"timelion\",\"title\":\"test\",\"params\":{\"expression\":\".es(index=pem*, metric=avg:volume_uplink, metric=avg:volume_downlink)\",\"interval\":\"auto\"}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    }
+  },
+  {
+    "_id": "9439ca50-5fc9-11e7-a687-c7a0509be864",
+    "_type": "visualization",
+    "_source": {
+      "title": "top_10_source_ip__vbuilder",
+      "visState": "{\"title\":\"top_10_source_ip__vbuilder\",\"type\":\"metrics\",\"params\":{\"id\":\"3dbea920-5fc9-11e7-a687-c7a0509be864\",\"type\":\"top_n\",\"series\":[{\"id\":\"3dbea921-5fc9-11e7-a687-c7a0509be864\",\"color\":\"rgba(0,156,224,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"type\":\"count\",\"field\":\"geo_location\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"terms_field\":\"source_ip\",\"terms_order_by\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"label\":\"Top 10 Source IPs\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"background_color_rules\":[{\"id\":\"41414030-5fc9-11e7-a687-c7a0509be864\"}],\"bar_color_rules\":[{\"id\":\"41d12420-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_color_rules\":[{\"id\":\"42797210-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "d8fae710-5f00-11e7-bae6-732364731eff",
+    "_type": "visualization",
+    "_source": {
+      "title": "violation_count_per_hour__timelion",
+      "visState": "{\"title\":\"violation_count_per_hour__timelion\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(*)\",\"interval\":\"1h\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV68VoT6EdOvjSNhQw4I",
+    "_type": "visualization",
+    "_source": {
+      "title": "top_10_URL_categories_vbuilder",
+      "visState": "{\"title\":\"top_10_URL_categories_vbuilder\",\"type\":\"metrics\",\"params\":{\"id\":\"3dbea920-5fc9-11e7-a687-c7a0509be864\",\"type\":\"top_n\",\"series\":[{\"id\":\"3dbea921-5fc9-11e7-a687-c7a0509be864\",\"color\":\"rgba(35,116,147,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"type\":\"count\",\"field\":\"geo_location\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"terms_field\":\"URLCategoryName.raw\",\"terms_order_by\":\"3dbea922-5fc9-11e7-a687-c7a0509be864\",\"label\":\"Top 10 URL Categories\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"background_color_rules\":[{\"id\":\"41414030-5fc9-11e7-a687-c7a0509be864\"}],\"bar_color_rules\":[{\"id\":\"41d12420-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_color_rules\":[{\"id\":\"42797210-5fc9-11e7-a687-c7a0509be864\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV8o72wZCiOevFtjJ_4e",
+    "_type": "visualization",
+    "_source": {
+      "title": "AFM VS Context",
+      "visState": "{\"title\":\"AFM VS Context\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"ContextInfo.keyword\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Program-Table",
+    "_type": "visualization",
+    "_source": {
+      "title": "Program - Table",
+      "visState": "{\"title\":\"Program - Table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"syslog_program.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Severity-Pie",
+    "_type": "visualization",
+    "_source": {
+      "title": "Severity - Pie",
+      "visState": "{\"title\":\"Severity - Pie\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"json\":\"{ \\\"script\\\" : \\\"doc['grade'].value * 2\\\" }\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"syslog_severity.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"err\":\"#BF1B00\"}},\"spy\":{\"mode\":{\"name\":\"request\",\"fill\":false}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "BIG-IP-Devices",
+    "_type": "visualization",
+    "_source": {
+      "title": "BIG-IP Devices",
+      "visState": "{\"title\":\"BIG-IP Devices\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"syslog_hostname.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Severity",
+    "_type": "visualization",
+    "_source": {
+      "title": "Severity",
+      "visState": "{\"title\":\"Severity\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":true,\"showPartialRows\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"syslog_severity.raw\",\"size\":8,\"order\":\"desc\",\"orderBy\":\"_term\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Logs-per-Severity-over-time",
+    "_type": "visualization",
+    "_source": {
+      "title": "Logs per Severity over time",
+      "visState": "{\"title\":\"Logs per Severity over time\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"syslog_severity.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Severity-Bars",
+    "_type": "visualization",
+    "_source": {
+      "title": "Severity Bars",
+      "visState": "{\"title\":\"Severity Bars\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"syslog_severity.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"syslog_severity.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"err\":\"#BF1B00\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Attacks-per-severity",
+    "_type": "visualization",
+    "_source": {
+      "title": "Attacks per severity",
+      "visState": "{\"title\":\"Attacks per severity\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"severity\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Attack-Types",
+    "_type": "visualization",
+    "_source": {
+      "title": "Attack Types",
+      "visState": "{\"title\":\"Attack Types\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"dos_attack_id.raw\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"dos_attack_name.raw\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"_term\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Avg.-Packets-Dropped-over-time-per-Severity",
+    "_type": "visualization",
+    "_source": {
+      "title": "Avg. Packets Dropped over time per Severity",
+      "visState": "{\"title\":\"Avg. Packets Dropped over time per Severity\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"packets_dropped\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"severity\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Attacks-per-Source-IP",
+    "_type": "visualization",
+    "_source": {
+      "title": "Attacks per Source IP",
+      "visState": "{\"title\":\"Attacks per Source IP\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"dos_attack_id.raw\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"source_ip\",\"size\":8,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"source_ip\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Attacks-per-Destination-IP",
+    "_type": "visualization",
+    "_source": {
+      "title": "Attacks per Destination IP",
+      "visState": "{\"title\":\"Attacks per Destination IP\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"dos_attack_id.raw\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"dest_ip\",\"size\":8,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"dest_ip\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Total-Attacks",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total Attacks",
+      "visState": "{\"title\":\"Total Attacks\",\"type\":\"metric\",\"params\":{\"fontSize\":\"60\"},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"dos_attack_id.raw\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Attacks-per-Source-IP-table",
+    "_type": "visualization",
+    "_source": {
+      "title": "Attacks per Source IP table",
+      "visState": "{\"title\":\"Attacks per Source IP table\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"packets_dropped\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"source_ip\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Attacks-per-Vserver-table",
+    "_type": "visualization",
+    "_source": {
+      "title": "Attacks per Vserver table",
+      "visState": "{\"title\":\"Attacks per Vserver table\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"packets_dropped\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"context.raw\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "BIG-IP-Processes",
+    "_type": "visualization",
+    "_source": {
+      "title": "BIG-IP Processes",
+      "visState": "{\"title\":\"BIG-IP Processes\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"syslog_program.raw\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Logs-over-time",
+    "_type": "visualization",
+    "_source": {
+      "title": "Logs over time",
+      "visState": "{\"title\":\"Logs over time\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Slowest-URLs",
+    "_type": "visualization",
+    "_source": {
+      "title": "Slowest URLs",
+      "visState": "{\"title\":\"Slowest URLs\",\"type\":\"table\",\"params\":{\"perPage\":8,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"response_time\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"uri_path.raw\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Avg.-Response-Time",
+    "_type": "visualization",
+    "_source": {
+      "title": "Avg. Response Time",
+      "visState": "{\"title\":\"Avg. Response Time\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"response_time\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Top-Referrers",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Referrers",
+      "visState": "{\"title\":\"Top Referrers\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"referrer.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Top-URLs",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top URLs",
+      "visState": "{\"title\":\"Top URLs\",\"type\":\"table\",\"params\":{\"perPage\":8,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"uri_path.raw\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Server-Transactions",
+    "_type": "visualization",
+    "_source": {
+      "title": "Server Transactions",
+      "visState": "{\"title\":\"Server Transactions\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"server_ip\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"server_ip\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Top-Virtual-Servers",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Virtual Servers",
+      "visState": "{\"title\":\"Top Servers\",\"type\":\"table\",\"params\":{\"perPage\":7,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"vitual_ip\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Top-Servers",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Servers",
+      "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":7,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"server_ip\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Top-Clients",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Clients",
+      "visState": "{\"title\":\"Top Clients\",\"type\":\"table\",\"params\":{\"perPage\":8,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"client_ip\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Total-Logs",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total Logs",
+      "visState": "{\"title\":\"Total Logs\",\"type\":\"metric\",\"params\":{\"fontSize\":\"68\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV84j_eh-zI4nyjF_f1B",
+    "_type": "visualization",
+    "_source": {
+      "title": "AFM Destination IP Map",
+      "visState": "{\"title\":\"AFM Destination IP Map\",\"type\":\"tile_map\",\"params\":{\"mapType\":\"Scaled Circle Markers\",\"isDesaturated\":true,\"addTooltip\":true,\"heatMaxZoom\":0,\"heatMinOpacity\":0.1,\"heatRadius\":25,\"heatBlur\":15,\"legendPosition\":\"bottomright\",\"mapZoom\":2,\"mapCenter\":[0,0],\"wms\":{\"enabled\":false,\"url\":\"https://basemap.nationalmap.gov/arcgis/services/USGSTopo/MapServer/WMSServer\",\"options\":{\"version\":\"1.3.0\",\"layers\":\"0\",\"format\":\"image/png\",\"transparent\":true,\"attribution\":\"Maps provided by USGS\",\"styles\":\"\"}},\"type\":\"tile_map\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"DestinationIp_geo.location\",\"autoPrecision\":true,\"useGeocentroid\":true,\"precision\":2}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iJcD-zI4nyjF_fnV\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV8j8v-f1My63gr55G4R",
+    "_type": "visualization",
+    "_source": {
+      "title": "Application Name Top 10",
+      "visState": "{\"title\":\"Application Name Top 10\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"ApplicationName.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iG9n-zI4nyjF_fm6\",\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"AV8A3Rox1My63gr50dy5\",\"negate\":true,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ApplicationName\",\"value\":\"\\\\\\\"/Common/home.app/home\\\\\\\"\"},\"query\":{\"match\":{\"ApplicationName\":{\"query\":\"\\\\\\\"/Common/home.app/home\\\\\\\"\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AV8kBySx1My63gr55H5E",
+    "_type": "visualization",
+    "_source": {
+      "title": "Subscriber Names",
+      "visState": "{\"title\":\"Subscriber Names\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"legendPosition\":\"right\",\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pem_subscriber_id.keyword\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iG9n-zI4nyjF_fm6\",\"query\":{\"match_all\":{}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AV8A3Rox1My63gr50dy5\",\"key\":\"SubscriberName.raw\",\"negate\":true,\"type\":\"phrase\",\"value\":\"\\\\\\\"Aggregated\\\\\\\"\"},\"query\":{\"match\":{\"SubscriberName.raw\":{\"query\":\"\\\\\\\"Aggregated\\\\\\\"\",\"type\":\"phrase\"}}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AV8kDHCL1My63gr55IXX",
+    "_type": "visualization",
+    "_source": {
+      "title": "Subscriber IP List",
+      "visState": "{\"title\":\"Subscriber IP List\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"legendPosition\":\"right\",\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"source_ip\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV84iG9n-zI4nyjF_fm6\",\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"AV8A3Rox1My63gr50dy5\",\"negate\":true,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"IPList.raw\",\"value\":\"N/A\"},\"query\":{\"match\":{\"IPList.raw\":{\"query\":\"N/A\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AV8pMSXKCiOevFtjKDq2",
+    "_type": "visualization",
+    "_source": {
+      "title": "Average Data PEM",
+      "visState": "{\"title\":\"Average Data PEM\",\"type\":\"metrics\",\"params\":{\"axis_formatter\":\"number\",\"axis_position\":\"left\",\"background_color_rules\":[{\"id\":\"ef135a70-b309-11e7-981b-c30fffd8ca1b\"}],\"id\":\"ca83ead0-b309-11e7-981b-c30fffd8ca1b\",\"index_pattern\":\"pem*\",\"interval\":\"auto\",\"series\":[{\"axis_position\":\"right\",\"chart_type\":\"line\",\"color\":\"rgba(188,185,0,1)\",\"fill\":0.5,\"formatter\":\"number\",\"id\":\"ca83ead1-b309-11e7-981b-c30fffd8ca1b\",\"label\":\"Average Upload\",\"line_width\":1,\"metrics\":[{\"field\":\"volume_downlink\",\"id\":\"ca83ead2-b309-11e7-981b-c30fffd8ca1b\",\"type\":\"avg\"}],\"point_size\":1,\"seperate_axis\":0,\"split_mode\":\"everything\",\"stacked\":\"none\",\"terms_field\":\"AvgCpu.keyword\"},{\"axis_position\":\"right\",\"chart_type\":\"line\",\"color\":\"rgba(0,71,188,1)\",\"fill\":0.5,\"formatter\":\"number\",\"id\":\"fc132480-b309-11e7-981b-c30fffd8ca1b\",\"label\":\"Average Download\",\"line_width\":1,\"metrics\":[{\"id\":\"fc132481-b309-11e7-981b-c30fffd8ca1b\",\"type\":\"avg\",\"field\":\"volume_uplink\"}],\"point_size\":1,\"seperate_axis\":0,\"split_mode\":\"everything\",\"stacked\":\"none\"}],\"show_legend\":1,\"time_field\":\"@timestamp\",\"type\":\"timeseries\",\"bar_color_rules\":[{\"id\":\"127466c0-b30b-11e7-abdb-85c952fc94b7\"}],\"gauge_color_rules\":[{\"id\":\"13d9c320-b30b-11e7-abdb-85c952fc94b7\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Attacks-per-Destination-table",
+    "_type": "visualization",
+    "_source": {
+      "title": "Attacks per Destination table",
+      "visState": "{\n  \"title\": \"Attacks per Destination table\",\n  \"type\": \"table\",\n  \"params\": {\n    \"perPage\": 5,\n    \"showPartialRows\": false,\n    \"showMeticsAtAllLevels\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"sum\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"drop_reason\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"terms\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"dest_ip\",\n        \"size\": 0,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"AV84iJcD-zI4nyjF_fnV\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+      }
+    }
+  },
+  {
+    "_id": "AV9L5Vlx-zI4nyjFDsmw",
+    "_type": "visualization",
+    "_source": {
+      "title": "Destination Port Top 10",
+      "visState": "{\"title\":\"Destination Port Top 10\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"dest_port\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Destination-Port",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV9L44sI-zI4nyjFDsf5",
+    "_type": "visualization",
+    "_source": {
+      "title": "Destination IP Top Ten",
+      "visState": "{\"title\":\"Destination IP Top Ten\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"dest_ip\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Destination-IP",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]

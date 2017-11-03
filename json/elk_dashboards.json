@@ -1,0 +1,67 @@
+[
+  {
+    "_id": "AV7BuTl8EdOvjSNhR9BS",
+    "_type": "dashboard",
+    "_source": {
+      "title": "PEM Dashboard v3",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":12,\"size_y\":5,\"panelIndex\":1,\"type\":\"search\",\"id\":\"AV84qM9z-zI4nyjF_gwH\",\"col\":1,\"row\":1,\"columns\":[\"Entity\",\"SubscriberName\",\"IPList\",\"SubscriberFlowsOpened\",\"SubscriberFlowsClosed\",\"BytesIn\",\"BytesOut\"],\"sort\":[\"@timestamp\",\"desc\"]},{\"size_x\":12,\"size_y\":7,\"panelIndex\":3,\"type\":\"search\",\"id\":\"AV84rFmR-zI4nyjF_g5e\",\"col\":1,\"row\":6,\"columns\":[\"Entity\",\"SubscriberName\",\"IPList\",\"CategoryName\",\"ApplicationName\",\"BytesIn\",\"BytesOut\",\"HitCount\"],\"sort\":[\"@timestamp\",\"desc\"]},{\"size_x\":12,\"size_y\":5,\"panelIndex\":4,\"type\":\"search\",\"id\":\"AV84rpT8-zI4nyjF_g8o\",\"col\":1,\"row\":13,\"columns\":[\"Entity\",\"SubscriberName\",\"IPList\",\"URLCategoryName\",\"BytesIn\",\"BytesOut\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now/d",
+      "timeFrom": "now/d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AV6h7oNC8vb-A0kx-96h",
+    "_type": "dashboard",
+    "_source": {
+      "title": "PEM Dashboard v2",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AV68erVsEdOvjSNhQ1-w\",\"panelIndex\":10,\"row\":7,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV8kBySx1My63gr55H5E\",\"panelIndex\":13,\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AV8kDHCL1My63gr55IXX\",\"panelIndex\":15,\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV8pMSXKCiOevFtjKDq2\",\"panelIndex\":16,\"row\":4,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AV9L44sI-zI4nyjFDsf5\",\"panelIndex\":17,\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AV9L5Vlx-zI4nyjFDsmw\",\"panelIndex\":18,\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now/d",
+      "timeFrom": "now/d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AV8E16B81My63gr50wAq",
+    "_type": "dashboard",
+    "_source": {
+      "title": "AFM Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AV8E1m4C1My63gr50wAS\",\"panelIndex\":1,\"row\":1,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AV8o72wZCiOevFtjJ_4e\",\"panelIndex\":2,\"row\":1,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AV84j_eh-zI4nyjF_f1B\",\"panelIndex\":3,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":6,\"panelIndex\":4,\"type\":\"search\",\"id\":\"AV84liSx-zI4nyjF_gFP\",\"col\":1,\"row\":5,\"columns\":[\"source_ip\",\"source_port\",\"sa_translation_type\",\"translated_source_ip\",\"translated_source_port\",\"dest_ip\",\"dest_port\",\"translated_dest_ip\",\"translated_dest_port\",\"action\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-3\":{\"mapCenter\":[20.632784250388028,20.214843749999996],\"mapZoom\":2}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
