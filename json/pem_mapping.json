@@ -536,15 +536,6 @@
           "dest_ip" : {
             "type" : "ip"
           },
-         "dest_ip_geo"  : {
-            "dynamic": true,
-            "properties" : {
-             "ip": { "type": "ip" },
-             "location" : { "type" : "geo_point" },
-             "latitude" : { "type" : "half_float" },
-             "longitude" : { "type" : "half_float" }
-            }
-         },
           "dest_port" : {
             "type" : "integer"
           },
@@ -691,15 +682,6 @@
           "source_ip" : {
             "type" : "ip"
           },
-         "source_ip_geo"  : {
-            "dynamic": true,
-            "properties" : {
-             "ip": { "type": "ip" },
-             "location" : { "type" : "geo_point" },
-             "latitude" : { "type" : "half_float" },
-             "longitude" : { "type" : "half_float" }
-            }
-         },
           "source_port" : {
             "type" : "integer"
           },
