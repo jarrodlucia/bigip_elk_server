@@ -15,10 +15,8 @@ Please follow the instructions provided by this documentation to start your
 lab and access your lab.
 
 .. NOTE::
-	All work for this lab will be performed exclusively from the Linux Jumphost
-  and Linux Client Machines. All required access and servies needed to perform
-  classes and labs are provided by the UDF. No installation or interaction with your local 
-  system is required.
+	All work for this lab will be performed exclusively from the Linux Jumphost and Linux Client Machines. 
+  All required access and servies needed to perform classes and labs are provided by the UDF. No installation or interaction with your local system is required.
 
 Prerequisits
 ----------------
@@ -41,8 +39,7 @@ Please follow the instructions provided by your lab instructor to access your
 lab environment. The lab environment will be delivered  via UDF blueprints to 
 each student.
 
-.. NOTE:: Please deploy and start your lab as soon as you have access to the class
-the lab takes some time to boot all the components.
+.. NOTE:: Please deploy and start your lab as soon as you have access to the class as the lab takes some time to boot all the components.
 
 
 Lab Topology
@@ -81,6 +78,8 @@ components:
     "", "Internal", "10.1.10.25", ""
     "Client 01", "Mgmt", "10.1.1.7", "udfclient/S3rv1ceP0weR"
     "", "Internal", "10.1.10.30", ""
+    "ELK Stack", "Mgmt", "10.1.1.8", "ubuntu/default"
+    "", "Control", "10.1.30.15", ""
 
 .. |lab_topo1| image:: /_static/lab_topology.png
    :width: 8in
