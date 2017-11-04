@@ -69,27 +69,15 @@ Insert diagram here
 The following table lists VLANS, IP Addresses and Credentials for all
 components:
 
-.. list-table::
-    :widths: 40 60 60
-    :header-rows: 1
-    :stub-columns: 1
+.. csv-table:: Lab Network Information
+    :header: "Component", "IP Address", "Credentials"
+    :widths: 40, 40, 60
 
-    * - **Component**
-      - **VLAN/IP Address(es)**
-      - **Credentials**
-    * - Linux Jumphost
-      - - **Management:** 10.1.1.20
-    * - BIG-IP
-      - - **Management:** 10.1.1.4
-        - **Internal:** 10.1.10.5
-        - **External:** 10.1.20.5
-        - **Control:** 10.1.30.5
-      - admin/admin
-    * - Client 00
-      - - **Management:** 10.1.1.7
-        - **Internal:** 10.1.10.30
-      - udfclient/S3rv1ceP0weR
-    * - Client 01
-      - - **Management:** 10.1.1.9
-        - **Internal:** 10.1.10.25
-      - udfclient/S3rv1ceP0weR
+    "Linux Jumphost", "10.1.1.20", "needtoadd"
+    "BIG-IP Internal", "10.1.10.5", "admin/admin"
+    "BIG-IP External", "10.1.20.5", "^"
+    "BIG-IP Control", "10.1.30.5", "^"
+    "Client 00 Mgmt", "10.1.1.9", "udfclient/S3rv1ceP0weR"
+    "Client 00 Net", "10.1.10.25", "^"
+    "Client 01 Mgmt", "10.1.1.7", "udfclient/S3rv1ceP0weR"
+    "Client 01 Net", "10.1.10.30", "^"
