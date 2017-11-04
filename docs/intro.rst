@@ -71,7 +71,7 @@ components:
 
 .. csv-table:: Lab Network Information
     :header: "Component", "VLAN", "IP Address", "Credentials"
-    :widths: 40, 40, 60
+    :widths: 40, 40, 40, 60
 
     "Linux Jumphost", "Mgmt" "10.1.1.20", "needtoadd"
     "BIG-IP", "Internal", "10.1.10.5", "admin/admin"
@@ -83,7 +83,7 @@ components:
     "", "Internal", "10.1.10.30", ""
 
 .. |lab_topo1| image:: /_static/lab_topology.png
-   :width: 6.32968in
-   :height: 2.38889in
+   :width: 8in
+   :height: 4in
 
 
