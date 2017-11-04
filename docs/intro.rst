@@ -73,7 +73,7 @@ components:
     :header: "Component", "VLAN", "IP Address", "Credentials"
     :widths: 40, 40, 40, 60
 
-    "Linux Jumphost", "Mgmt" "10.1.1.20", "needtoadd"
+    "Linux Jumphost", "Mgmt", "10.1.1.20", "needtoadd"
     "BIG-IP", "Internal", "10.1.10.5", "admin/admin"
     "", "External", "10.1.20.5", ""
     "", "Control", "10.1.30.5", ""
