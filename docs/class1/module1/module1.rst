@@ -24,10 +24,6 @@ This is a cut down version of the F5 Programmibility Super Net Ops training.
       
       - /var/log/restjavad.0.log
 
-    - iWorkflow: 
-
-      - /var/log/restjavad.0.log
-
 .. toctree::
    :maxdepth: 1
    :glob:

@@ -78,7 +78,7 @@ components:
     "", "Internal", "10.1.10.25", ""
     "Client 01", "Mgmt", "10.1.1.7", "udfclient/S3rv1ceP0weR"
     "", "Internal", "10.1.10.30", ""
-    "ELK Stack", "Mgmt", "10.1.1.8", "ubuntu/default"
+    "ELK Stack", "Mgmt", "10.1.1.5", "ubuntu/default"
     "", "Control", "10.1.30.15", ""
 
 .. |lab_topo1| image:: /_static/lab_topology.png

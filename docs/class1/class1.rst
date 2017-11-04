@@ -1,14 +1,11 @@
-Class 1: BIG-IP AVR (BIG-IP goodness)
-=====================================
+Class 1: BIG-IP AVR (BIG-IP Goodiness)
+======================================
 
 This class covers the following topics:
 
 - Module 1
 
-  - Introduction to REST API
-
-  - Configure BIG-IP SP modules
-   - AVR configuration
+  - REST API Basics
 
 - Module 2
       

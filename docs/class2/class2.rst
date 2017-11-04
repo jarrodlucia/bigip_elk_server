@@ -1,5 +1,5 @@
-Class 2: Introduction to ELK Stack
-==================================
+Class 2: Introduction to ELK Stack (ELK Coolness)
+=================================================
 
 This class covers the following topics:
 
