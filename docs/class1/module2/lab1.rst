@@ -8,15 +8,9 @@
 Lab |labmodule|\.\ |labnum|\: Configure AVR Profiles
 ----------------------------------------------------
 
-An Analytics profile is a set of definitions that determines the circumstances
- under which the system gathers, logs, notifies, and graphically displays
-  information regarding traffic to an application or service. The Analytics 
-  module requires that you select an Analytics profile for each application
-   you want to monitor. You associate the Analytics profile with one or more
-    virtual servers used by the application / service. 
+An Analytics profile is a set of definitions that determines the circumstances under which the system gathers, logs, notifies, and graphically displays information regarding traffic to an application or service. The Analytics module requires that you select an Analytics profile for each application you want to monitor. You associate the Analytics profile with one or more virtual servers used by the application / service. 
 
 In the Analytics profile, you customize:
-
    -  What statistics to collect
    -  Where to collect data (locally, remotely, or both)
    -  Whether to capture the traffic itself
