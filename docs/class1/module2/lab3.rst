@@ -5,36 +5,31 @@
 .. |labname| replace:: Lab\ |labdot|
 .. |labnameund| replace:: Lab\ |labund|
 
-Lab |labmodule|\.\ |labnum|\: Modify and Export AVR Reports
------------------------------------------------------------
+Lab |labmodule|\.\ |labnum|\: Navigating AVR
+--------------------------------------------
 
-Using AVR reports for good and evil.
+Navigating and vieing AVR reports.
 
-Task 1 – Modify PEM AVR Dashboard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-In this task we will do stuff.
+Task 1 – BIG-IP Performance Report
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Perform the following steps to complete this task:
 
-#. Expand the “Lab 2.3 – Create Tenant & Local Connector” folder in the Postman
-   collection.
+#. Expand the “Lab 2.2: Discover & License BIG-IP Devices” folder in the
+   Postman collection
 
+Task 2 – Traffic Classification Report
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Task 2 - Export AVR Report
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Perform the following steps to complete this task:
 
-#. Click the “TCP Analytics Report” 
+#. Expand the “Lab 2.2: Discover & License BIG-IP Devices” folder in the
+   Postman collection
 
-#. Click the ‘Export’ button to export.
+Task 3 – PEM Analytics Report
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Click the “PDF” item in the decision box
+Perform the following steps to complete this task:
 
-   |image57|
-   |image58|
-
-.. |image57| image:: /_static/image057.png
-   :width: 5.24968in
-   :height: 2.77172in
-.. |image58| image:: /_static/image058.png
-   :scale: 40%
+#. Expand the “Lab 2.2: Discover & License BIG-IP Devices” folder in the
+   Postman collection

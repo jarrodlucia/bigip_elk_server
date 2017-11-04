@@ -7,9 +7,8 @@ This class covers the following topics:
 
   - Introduction to REST API
 
-  - Initial BIG-IP setup and Provisioning
-
   - Configure BIG-IP SP modules
+   - AVR configuration
 
 - Module 2
       

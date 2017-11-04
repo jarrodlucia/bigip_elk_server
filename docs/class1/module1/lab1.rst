@@ -21,7 +21,7 @@ TMSH to create the object as needed and then use this tool to view the
 created object with all the correct attributes already populated.
 
 #. Open Google Chrome and navigate to the following bookmarks: BIG-IP
-   A GUI. Bypass any SSL errors that
+ GUI. Bypass any SSL errors that
    appear and ensure you see the login screen for each bookmark.
 
    |image1|

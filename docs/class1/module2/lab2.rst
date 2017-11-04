@@ -5,31 +5,33 @@
 .. |labname| replace:: Lab\ |labdot|
 .. |labnameund| replace:: Lab\ |labund|
 
-Lab |labmodule|\.\ |labnum|\: Navigating AVR
---------------------------------------------
+Lab |labmodule|\.\ |labnum|\: Access Clients and Generate Traffic
+-----------------------------------------------------------------
 
-Navigating and vieing AVR reports.
+In this lab you will walk through installing the ubuntu
+base ready for ELK stack
 
-Task 1 – BIG-IP Performance Report
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Task 1 - Configure Client00 Netwoking
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Perform the following steps to complete this task:
+RDP access
 
-#. Expand the “Lab 2.2: Discover & License BIG-IP Devices” folder in the
-   Postman collection
+netqorking script
 
-Task 2 – Traffic Classification Report
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+check all working
 
-Perform the following steps to complete this task:
+Task 2 - Configure Client01 Netwoking
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Expand the “Lab 2.2: Discover & License BIG-IP Devices” folder in the
-   Postman collection
+RDP access
 
-Task 3 – PEM Analytics Report
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+netqorking script
 
-Perform the following steps to complete this task:
+check all working
 
-#. Expand the “Lab 2.2: Discover & License BIG-IP Devices” folder in the
-   Postman collection
+Task 2 - Verify traffic on F5
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+check VS statistics
+
+check AVR as previous

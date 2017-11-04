@@ -5,13 +5,15 @@
 .. |labname| replace:: Lab\ |labdot|
 .. |labnameund| replace:: Lab\ |labund|
 
-Lab |labmodule|\.\ |labnum| – Kibana Navigation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lab |labmodule|\.\ |labnum| – Kibana Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-kibana interface explantion
+import json info
 
-Task 1 - Looking around Kibana
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Task 1 - import json for kibana
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Task 2 - Searching Kibana
 ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+update imported search index in any that did not import
