@@ -9,8 +9,7 @@ Lab |labmodule|\.\ |labnum|\: REST API Authentication & ‘example’ Templates
 ---------------------------------------------------------------------------
 
 One of the many basic concepts related to interaction with REST API’s is
-how a particular consumer is authenticated to the system. BIG-IP and
-iWorkflow support two types of authentication: HTTP BASIC and Token
+how a particular consumer is authenticated to the system. BIG-IP supports two types of authentication: HTTP BASIC and Token
 based. It’s important to understand both of these authentication
 mechanisms, as consumers of the API will often make use of both types
 depending on the use case. This lab will demonstrate how to interact
@@ -23,7 +22,7 @@ In this task you will Import a Postman Collection & Environment for this lab.
 Perform the following steps to complete this task:
 
 #. Open the Postman tool by clicking the |image8| icon of the taskbar of
-   your Windows Jumphost
+   your Linux Jumphost
 
 #. Click the 'Import' button in the top left of the Postman window
 
