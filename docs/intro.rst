@@ -63,21 +63,27 @@ The following components have been included in your lab environment:
 
 .. _lab-topology:
 
-Insert diagram here
+|lab_topo1|
 
 
 The following table lists VLANS, IP Addresses and Credentials for all
 components:
 
 .. csv-table:: Lab Network Information
-    :header: "Component", "IP Address", "Credentials"
+    :header: "Component", "VLAN", "IP Address", "Credentials"
     :widths: 40, 40, 60
 
-    "Linux Jumphost", "10.1.1.20", "needtoadd"
-    "BIG-IP Internal", "10.1.10.5", "admin/admin"
-    "BIG-IP External", "10.1.20.5", "^"
-    "BIG-IP Control", "10.1.30.5", "^"
-    "Client 00 Mgmt", "10.1.1.9", "udfclient/S3rv1ceP0weR"
-    "Client 00 Net", "10.1.10.25", "^"
-    "Client 01 Mgmt", "10.1.1.7", "udfclient/S3rv1ceP0weR"
-    "Client 01 Net", "10.1.10.30", "^"
+    "Linux Jumphost", "Mgmt" "10.1.1.20", "needtoadd"
+    "BIG-IP", "Internal", "10.1.10.5", "admin/admin"
+    "", "External", "10.1.20.5", ""
+    "", "Control", "10.1.30.5", ""
+    "Client 00", "Mgmt", "10.1.1.9", "udfclient/S3rv1ceP0weR"
+    "", "Internal", "10.1.10.25", ""
+    "Client 01", "Mgmt", "10.1.1.7", "udfclient/S3rv1ceP0weR"
+    "", "Internal", "10.1.10.30", ""
+
+.. |lab_topo1| image:: /_static/lab_topology.png
+   :width: 6.32968in
+   :height: 2.38889in
+
+
