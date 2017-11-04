@@ -15,8 +15,7 @@ Please follow the instructions provided by this documentation to start your
 lab and access your lab.
 
 .. NOTE::
-	All work for this lab will be performed exclusively from the Linux Jumphost and Linux Client Machines. 
-  All required access and servies needed to perform classes and labs are provided by the UDF. No installation or interaction with your local system is required.
+	All work for this lab will be performed exclusively from the Linux Jumphost and Linux Client Machines. All required access and servies needed to perform classes and labs are provided by the UDF. No installation or interaction with your local system is required.
 
 Prerequisits
 ----------------
@@ -71,7 +70,8 @@ components:
     :widths: 40, 40, 40, 60
 
     "Linux Jumphost", "Mgmt", "10.1.1.20", "needtoadd"
-    "BIG-IP", "Internal", "10.1.10.5", "admin/admin"
+    "BIG-IP", "Mgmt", "10.1.1.4", "admin/admin"
+    "", "Internal", "10.1.10.5", ""
     "", "External", "10.1.20.5", ""
     "", "Control", "10.1.30.5", ""
     "Client 00", "Mgmt", "10.1.1.9", "udfclient/S3rv1ceP0weR"
