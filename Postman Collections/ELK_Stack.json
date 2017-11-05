@@ -524,19 +524,19 @@
         "header": [],
         "body": {},
         "url": {
-          "raw": "http://localhost:9200/_template/*?pretty",
+          "raw": "http://localhost:9200/_cat/indices?v",
           "protocol": "http",
           "host": [
             "localhost"
           ],
           "port": "9200",
           "path": [
-            "_template",
-            "*"
+            "_cat",
+            "indices"
           ],
           "query": [
             {
-              "key": "pretty",
+              "key": "v",
               "value": "",
               "equals": false
             }
