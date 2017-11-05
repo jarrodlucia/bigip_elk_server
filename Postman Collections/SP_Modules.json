@@ -246,6 +246,26 @@
             "description": ""
           },
           "response": []
+        },
+        {
+          "_postman_id": "a167e8ea-823a-880c-ffb7-6e0589f0aff2",
+          "name": "Request TCP Analytics Profiles copy",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Basic YWRtaW46YWRtaW4="
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
+            },
+            "url": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/tcp-analytics",
+            "description": ""
+          },
+          "response": []
         }
       ]
     },
