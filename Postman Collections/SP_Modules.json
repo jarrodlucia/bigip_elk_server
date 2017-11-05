@@ -436,30 +436,6 @@
       ]
     },
     {
-      "_postman_id": "a70c6059-ba8f-7e27-f9aa-21c3437e0881",
-      "name": "https://10.1.1.245/mgmt/tm/pem/policy/test_rest",
-      "request": {
-        "method": "PUT",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "Basic YWRtaW46YWRtaW4="
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"kind\": \"tm:pem:policy:policystate\",\n  \"name\": \"test_rest\",\n  \"fullPath\": \"test_rest\",\n  \"generation\": 326,\n  \"selfLink\": \"https://localhost/mgmt/tm/pem/policy/test_rest?ver=13.0.0\",\n  \"status\": \"enabled\",\n  \"transactional\": \"disabled\",\n  \"rulesReference\": {\n    \"link\": \"https://localhost/mgmt/tm/pem/policy/~Common~test_rest/rules?ver=13.0.0\",\n    \"isSubcollection\": true\n  }\n}"
-        },
-        "url": "https://10.1.1.245/mgmt/tm/pem/policy/test_rest",
-        "description": "PUT PEM Policy changes"
-      },
-      "response": []
-    },
-    {
       "_postman_id": "b1f46655-699c-745f-eceb-a9fccb2d87ba",
       "name": "https://10.1.1.245/mgmt/tm/pem/policy/",
       "request": {
