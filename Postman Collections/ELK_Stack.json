@@ -545,6 +545,36 @@
         "description": ""
       },
       "response": []
+    },
+    {
+      "_postman_id": "5056c020-7eb4-f398-3c26-12c0a5c2e47c",
+      "name": "GET Elasticsearch Template Searches",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:9200/_template/*?pretty",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9200",
+          "path": [
+            "_template",
+            "*"
+          ],
+          "query": [
+            {
+              "key": "pretty",
+              "value": "",
+              "equals": false
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
     }
   ]
 }
