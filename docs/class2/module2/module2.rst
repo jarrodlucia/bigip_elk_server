@@ -11,6 +11,10 @@ There are many ready made ELK stack services that can be used, however
 it is important to understand how ELK stack is build and the configuration
 files and thier purposes.
 
+External Reference Documentation:
+
+https://www.elastic.co/guide/index.html
+
 
 .. toctree::
    :maxdepth: 1
