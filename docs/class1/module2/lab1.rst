@@ -38,10 +38,10 @@ Perform the following steps to complete this task:
 
    |image88|
 
-#. You should now see a collection named 'F5 Automation & Orchestration Intro'
+#. You should now see a collection named 'SP Modules'
    in your Postman Collections sidebar:
 
-   |image10|
+   |postman_sp_mod|
 
 #. Import the Environment file by clicking 'Import' -> 'Import from Link' and
    pasting the following URL and clicking 'Import':
@@ -49,6 +49,8 @@ Perform the following steps to complete this task:
    .. parsed-literal:: 
 
       :raw_github_url:`/postman_collections/F5 SPDevOps.postman_environment.json`
+
+    |postman_sp_env|
 
 Task 2 – Configure TCP Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -124,9 +126,11 @@ Perform the following steps to complete this task:
 .. |image8| image:: /_static/image008.png
    :width: 0.46171in
    :height: 0.43269in
-.. |image10| image:: /_static/image010.png
+.. |postman_sp_mod| image:: /_static/postman_sp_mod.png
    :width: 3.54657in
    :height: 2.80000in
+.. |postman_sp_env| image:: /_static/postman_sp_env.png
+   :scale 80%
 .. |image87| image:: /_static/image087.png
    :scale: 40%
 .. |image88| image:: /_static/image088.png
