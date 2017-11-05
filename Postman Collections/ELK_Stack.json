@@ -142,12 +142,11 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "http://localhost:9200/_template/pem?pretty",
+                  "raw": "http://{{elk_stack}}/_template/pem?pretty",
                   "protocol": "http",
                   "host": [
-                    "localhost"
+                    "{{elk_stack}}"
                   ],
-                  "port": "9200",
                   "path": [
                     "_template",
                     "pem"
