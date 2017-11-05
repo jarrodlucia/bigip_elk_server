@@ -174,7 +174,7 @@ Perform the following steps to complete this task:
 
     |get_afm_log|
 
-#. Click on the 'Create AFM Event Log Profile' , check the body message for ELK_PEM_Publisher.
+#. Click on the 'Create AFM Event Log Profile' , check the body message for ELK_AFM_Publisher.
 
     |create_afm_log|
 
@@ -191,8 +191,7 @@ Perform the following steps to complete this task:
    :width: 7.0in
    :height: 5.0in
 .. |create_afm_log|image:: /_static/create_afm_log.png
-   :width: 7.0in
-   :height: 5.0in
+   :scale 50%
 
 Task 5 – Configure DNS Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
