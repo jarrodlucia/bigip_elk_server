@@ -457,11 +457,10 @@
           "raw": ""
         },
         "url": {
-          "raw": "localhost:9200/_cat/indices?v",
+          "raw": "{{elk_stack}}/_cat/indices?v",
           "host": [
-            "localhost"
+            "{{elk_stack}}"
           ],
-          "port": "9200",
           "path": [
             "_cat",
             "indices"
