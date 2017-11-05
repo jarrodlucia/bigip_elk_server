@@ -444,12 +444,11 @@
               "raw": ""
             },
             "url": {
-              "raw": "http://localhost:9200/dns-?pretty",
+              "raw": "http://{{elk_stack}}/dns-?pretty",
               "protocol": "http",
               "host": [
-                "localhost"
+                "{{elk_stack}}"
               ],
-              "port": "9200",
               "path": [
                 "dns-"
               ],
