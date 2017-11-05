@@ -551,12 +551,11 @@
         "header": [],
         "body": {},
         "url": {
-          "raw": "http://localhost:9200/_template/*?pretty",
+          "raw": "http://{{elk_stack}}/_template/*?pretty",
           "protocol": "http",
           "host": [
-            "localhost"
+            "{{elk_stack}}"
           ],
-          "port": "9200",
           "path": [
             "_template",
             "*"
