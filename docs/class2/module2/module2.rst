@@ -1,20 +1,17 @@
-Module 2: ELK Stack Build Ubuntu Server
-=======================================
+Module 2: Kibana and Visualisation
+==================================
 
-ELK stack from the previous module is made up of three key components.
-These being logstash, elasticsearch and kibana.
+Coolness of Kibana interface
 
-This module will guide you through the installation of ELK stack onto
-a ubuntu server.
+- Navigation
 
-There are many ready made ELK stack services that can be used, however
-it is important to understand how ELK stack is build and the configuration
-files and thier purposes.
+- Searching
 
-External Reference Documentation:
+- Creating Searches
 
-https://www.elastic.co/guide/index.html
+- Creating Visualisations
 
+- Creating Dashboards
 
 .. toctree::
    :maxdepth: 1

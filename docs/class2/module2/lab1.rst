@@ -5,21 +5,15 @@
 .. |labname| replace:: Lab\ |labdot|
 .. |labnameund| replace:: Lab\ |labund|
 
-Lab |labmodule|\.\ |labnum|\: Install the Ubuntu Base
------------------------------------------------------
+Lab |labmodule|\.\ |labnum| – Kibana Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this lab you will walk through installing the ubuntu
-base ready for ELK stack
+import json info
 
-Task 1 - Install additional features for app
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Task 1 - import json for kibana
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-sudo apt-get install software-properties-common
-sudo apt install curl
+Task 2 - Searching Kibana
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-Task 2 - Add and install Java
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sudo add-apt-repository -y ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get -y install oracle-java8-installer
+update imported search index in any that did not import
