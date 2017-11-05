@@ -442,42 +442,6 @@
       ]
     },
     {
-      "_postman_id": "ba4239c3-83ab-2c91-b276-4ada60107db7",
-      "name": "get Elasticsearch indices",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "text/html"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{elk_stack}}/_cat/indices?v",
-          "host": [
-            "{{elk_stack}}"
-          ],
-          "path": [
-            "_cat",
-            "indices"
-          ],
-          "query": [
-            {
-              "key": "v",
-              "value": "",
-              "equals": false
-            }
-          ]
-        },
-        "description": ""
-      },
-      "response": []
-    },
-    {
       "_postman_id": "0ed8ed71-6cad-97b3-c12c-02bb7ebff484",
       "name": "GET Elasticsearch indices",
       "request": {
