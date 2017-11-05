@@ -34,7 +34,10 @@ Perform the following steps to complete this task:
 
 	|tcp_avr|
 
-	Explore the different screens and options available for display. See the following link for further TCP AVR information:
+#. Explore the different display options by clicking around the dashboard.
+
+
+	See the following link for further TCP AVR information:
 
 	https://support.f5.com/kb/en-us/products/big-ip_analytics/manuals/product/analytics-implementations-12-1-0/9.html 
 
@@ -52,7 +55,7 @@ Perform the following steps to complete this task:
 
 	|avr_classification|
 
-	Explore the different screens and options available for display. See the following link for further AVR information: 
+#. Explore the different display options by clicking around the dashboard.
 
 .. |avr_classification| image:: /_static/avr_classification.png
    :width: 12.0in
@@ -63,9 +66,11 @@ Task 4 – PEM Analytics Report
 
 Perform the following steps to complete this task:
 
-#. Navigate to Policy Enforcement Analytics.
+#. Navigate to Policy Enforcement Analytics Overview.
 
 	|pem_avr_overview|
+
+#. Navigate to Policy Enforcement Analytics Statistics.
 
 	|pem_avr_stats|
 
