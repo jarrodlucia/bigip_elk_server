@@ -299,7 +299,7 @@
               "mode": "raw",
               "raw": "curl 'localhost:9200/_cat/indices?v'"
             },
-            "url": "localhost:9200",
+            "url": "{{elk_stack}}",
             "description": ""
           },
           "response": []
