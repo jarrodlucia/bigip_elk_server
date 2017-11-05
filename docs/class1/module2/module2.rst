@@ -11,23 +11,27 @@ The BIG-IP in the lab is preconfigured with DNS / PEM / and AFM provisioned and 
 
 Confirm the following main config items to verify your BIG-IP lab is on working order:
 
-# Checked Provisioned Modules refelcts the below image (DNS / PEM / AFM and AVR).
+#. Checked Provisioned Modules refelcts the below image (DNS / PEM / AFM and AVR).
 
 |prov_image|
 
-# Check VLAN setup. Make sure Interval VLAN is set to source (SP DAG).
+#. Check VLAN setup. Make sure Interval VLAN is set to source (SP DAG).
 
-|vlans| |vlan_dag|
+|vlans|
 
-# Verify SELF-IP's and routes are present.
+|vlan_dag|
 
-|self_ip|	|routes|
+#. Verify SELF-IP's and routes are present.
 
-# Check that PeM Data plane is setup, you should see four PEM data plane VS as below.
+|self_ip|	
+
+|routes|
+
+#. Check that PeM Data plane is setup, you should see four PEM data plane VS as below.
 
 |pem_data_plane|
 
-# Check that DNS Listener is configured.
+#. Check that DNS Listener is configured.
 
 |sp_dns|
 
@@ -36,7 +40,7 @@ Confirm the following main config items to verify your BIG-IP lab is on working 
 
 .. |prov_image| image:: /_static/prov_image.png
    :scale: 80%
-.. |vlans| image:: /_static/vlan.png
+.. |vlans| image:: /_static/vlans.png
    :scale: 80%
 .. |vlan_dag| image:: /_static/vlan_dag.png
    :scale: 80%
