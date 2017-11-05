@@ -36,7 +36,8 @@ Perform the following steps to complete this task:
 
 	Explore the different screens and options available for display. See the following link for further TCP AVR information:
 
-		https://support.f5.com/kb/en-us/products/big-ip_analytics/manuals/product/analytics-implementations-12-1-0/9.html 
+	https://support.f5.com/kb/en-us/products/big-ip_analytics/manuals/product/analytics-implementations-12-1-0/9.html 
+
 
 .. |tcp_avr| image:: /_static/tcp_avr.png
    :width: 12.0in
@@ -70,7 +71,7 @@ Perform the following steps to complete this task:
 
 	Explore the different screens and options available for display. See the following link for further AVR information:
 
-		https://support.f5.com/kb/en-us/products/big-ip-pem/manuals/product/pem-implementations-13-0-0.html 
+	https://support.f5.com/kb/en-us/products/big-ip-pem/manuals/product/pem-implementations-13-0-0.html 
 
 .. |pem_avr_overview| image:: /_static/pem_avr_overview.png
    :width: 12.0in
