@@ -279,6 +279,42 @@
 					"response": []
 				},
 				{
+					"name": "Create a TCP Analytics Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"ELK_TCP_Logger\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"ELK_PEM_Publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/tcp-analytics",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"ltm",
+								"profile",
+								"tcp-analytics"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
 					"name": "Modify a TCP Analytics Profile",
 					"request": {
 						"method": "PUT",
@@ -309,42 +345,6 @@
 								"profile",
 								"tcp-analytics",
 								"tcp-test"
-							]
-						},
-						"description": ""
-					},
-					"response": []
-				},
-				{
-					"name": "Create a TCP Analytics Profile",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "Basic YWRtaW46YWRtaW4="
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"name\":\"ELK_TCP_Logger\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"ELK_PEM_Publisher\"\n}"
-						},
-						"url": {
-							"raw": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/tcp-analytics",
-							"protocol": "https",
-							"host": [
-								"{{bigip_mgmt}}"
-							],
-							"path": [
-								"mgmt",
-								"tm",
-								"ltm",
-								"profile",
-								"tcp-analytics"
 							]
 						},
 						"description": ""
@@ -427,38 +427,6 @@
 				},
 				{
 					"name": "Request AFM Device DoS Settings",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Basic YWRtaW46YWRtaW4="
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
-						},
-						"url": {
-							"raw": "https://{{bigip_mgmt}}/mgmt/tm/security/dos/device-config",
-							"protocol": "https",
-							"host": [
-								"{{bigip_mgmt}}"
-							],
-							"path": [
-								"mgmt",
-								"tm",
-								"security",
-								"dos",
-								"device-config"
-							]
-						},
-						"description": ""
-					},
-					"response": []
-				},
-				{
-					"name": "Request AFM Device DoS Settings copy",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -634,84 +602,6 @@
 					"response": []
 				}
 			]
-		},
-		{
-			"name": "https://10.1.1.245/mgmt/tm/pem/policy/test_rest",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "Authorization",
-						"value": "Basic YWRtaW46YWRtaW4="
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"kind\": \"tm:pem:policy:policystate\",\n  \"name\": \"test_rest\",\n  \"fullPath\": \"test_rest\",\n  \"generation\": 326,\n  \"selfLink\": \"https://localhost/mgmt/tm/pem/policy/test_rest?ver=13.0.0\",\n  \"status\": \"enabled\",\n  \"transactional\": \"disabled\",\n  \"rulesReference\": {\n    \"link\": \"https://localhost/mgmt/tm/pem/policy/~Common~test_rest/rules?ver=13.0.0\",\n    \"isSubcollection\": true\n  }\n}"
-				},
-				"url": {
-					"raw": "https://10.1.1.245/mgmt/tm/pem/policy/test_rest",
-					"protocol": "https",
-					"host": [
-						"10",
-						"1",
-						"1",
-						"245"
-					],
-					"path": [
-						"mgmt",
-						"tm",
-						"pem",
-						"policy",
-						"test_rest"
-					]
-				},
-				"description": "PUT PEM Policy changes"
-			},
-			"response": []
-		},
-		{
-			"name": "https://10.1.1.245/mgmt/tm/pem/policy/",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "Authorization",
-						"value": "Basic YWRtaW46YWRtaW4="
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"kind\": \"tm:pem:policy:policystate\",\n  \"name\": \"test_rest\",\n  \"fullPath\": \"test_rest\",\n  \"generation\": 1,\n  \"selfLink\": \"https://localhost/mgmt/tm/pem/policy/test_rest?ver=13.0.0\",\n  \"status\": \"disabled\",\n  \"transactional\": \"disabled\",\n  \"rulesReference\": {\n    \"link\": \"https://localhost/mgmt/tm/pem/policy/~Common~test_rest/rules?ver=13.0.0\",\n    \"isSubcollection\": true\n  }\n}"
-				},
-				"url": {
-					"raw": "https://10.1.1.245/mgmt/tm/pem/policy/",
-					"protocol": "https",
-					"host": [
-						"10",
-						"1",
-						"1",
-						"245"
-					],
-					"path": [
-						"mgmt",
-						"tm",
-						"pem",
-						"policy",
-						""
-					]
-				},
-				"description": "PEM Policy Creation"
-			},
-			"response": []
 		}
 	]
 }

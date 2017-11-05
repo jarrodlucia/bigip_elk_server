@@ -16,7 +16,41 @@ In the Analytics profile, you customize:
    -  Whether to capture the traffic itself
    -  Whether to send notifications.
 
-Task 1 – Configure TCP Analytics
+Task 1 - Import the Postman Collection & Environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this task you will Import a Postman Collection & Environment for this lab.
+Perform the following steps to complete this task:
+
+#. Open the Postman tool by clicking the |image8| icon of the desktop of
+   your Linux Jumphost (Postman should be open from previous Lab)
+
+#. Click the 'Import' button in the top left of the Postman window
+
+   |image87|
+
+#. Click the 'Import from Link' tab.  Paste the following URL into the
+   text box and click 'Import'
+
+   .. parsed-literal:: 
+
+      :raw_github_url:`/postman_collections/SP Modules.postman_collection.json`
+
+   |image88|
+
+#. You should now see a collection named 'F5 Automation & Orchestration Intro'
+   in your Postman Collections sidebar:
+
+   |image10|
+
+#. Import the Environment file by clicking 'Import' -> 'Import from Link' and
+   pasting the following URL and clicking 'Import':
+
+   .. parsed-literal:: 
+
+      :raw_github_url:`/postman_collections/F5 SPDevOps.postman_environment.json`
+
+Task 2 – Configure TCP Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this task we will create and configure TCP AVR profile and apply this to 
@@ -38,7 +72,7 @@ Perform the following steps to complete this task:
    :height: 1.23217in
    
 
-Task 2 – Configure PEM Analytics
+Task 3 – Configure PEM Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this task we will create and configure TCP AVR profile and apply this to 
@@ -55,8 +89,24 @@ Perform the following steps to complete this task:
    |image41|
 
 
-Task 3 – Configure Traffic Classification Analytics
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Task 4 – Configure AFM Analytics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this task we will create and configure TCP AVR profile and apply this to 
+the requried VS.
+
+Perform the following steps to complete this task:
+
+#. Click the ‘Step 1: Get Authentication Token’ item in the Lab 2.1
+   Postman Collection
+
+#. Notice that we are sending a POST request to the
+   ``/mgmt/shared/authn/login`` endpoint.
+
+   |image41|
+
+Task 5 – Configure DNS Analytics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this task we will create and configure TCP AVR profile and apply this to 
 the requried VS.
