@@ -478,43 +478,6 @@
       "response": []
     },
     {
-      "_postman_id": "2f471ee9-cb59-de15-9e32-3cfcca9425c6",
-      "name": "Template Searches",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "text/html"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "http://{{elk_stack}}/_template/*?pretty",
-          "protocol": "http",
-          "host": [
-            "{{elk_stack}}"
-          ],
-          "path": [
-            "_template",
-            "*"
-          ],
-          "query": [
-            {
-              "key": "pretty",
-              "value": "",
-              "equals": false
-            }
-          ]
-        },
-        "description": ""
-      },
-      "response": []
-    },
-    {
       "_postman_id": "0ed8ed71-6cad-97b3-c12c-02bb7ebff484",
       "name": "GET Elasticsearch indices",
       "request": {
