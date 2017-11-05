@@ -43,7 +43,7 @@ Perform the following steps to complete this task:
    :width: 12.0in
    :height: 5.0in
 
-Task 2 – AVR Traffic Classification
+Task 3 – AVR Traffic Classification
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Perform the following steps to complete this task:
@@ -58,7 +58,7 @@ Perform the following steps to complete this task:
    :width: 12.0in
    :height: 5.0in
 
-Task 3 – PEM Analytics Report
+Task 4 – PEM Analytics Report
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Perform the following steps to complete this task:
@@ -77,5 +77,48 @@ Perform the following steps to complete this task:
    :width: 12.0in
    :height: 5.0in
 .. |pem_avr_stats| image:: /_static/pem_avr_stats.png
+   :width: 12.0in
+   :height: 5.0in
+
+Task 5 – Modify PEM AVR Dashboard / Export AVR Report
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this task we will modify and add widgets to default dashboard, and export an Analytics dashboard to a PDF report.
+
+Perform the following steps to complete this task:
+
+#. Navigate to Policy Enforcement Analytics.
+
+	|pem_avr_adjust|
+
+#. Click on Add Widget
+
+#. Create a New Wdiget of your choice.
+
+#. Explore the options within the Dashboard widgets for display
+
+#. Click on Export, select PDF to generate report.
+
+
+.. |pem_avr_adjust| image:: /_static/pem_avr_adjust.png
+   :width: 12.0in
+   :height: 5.0in
+
+
+Task 6 - PEM Scheduled Reports
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this task we will configure a Scheduled PEM report.
+
+Perform the following steps to complete this task:
+
+#. Navigate to Policy Enforcement Analytics Scheduled Reports.
+
+	|pem_sched_report|
+
+#. Explore the options for scheduled reporting.
+
+
+.. |pem_sched_report| image:: /_static/pem_sched_report.png
    :width: 12.0in
    :height: 5.0in
