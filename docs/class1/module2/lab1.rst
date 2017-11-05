@@ -27,7 +27,7 @@ Perform the following steps to complete this task:
 
 #. Click the 'Import' button in the top left of the Postman window
 
-  |image87|
+|image87|
 
 #. Click the 'Import from Link' tab.  Paste the following URL into the
    text box and click 'Import'
@@ -36,7 +36,7 @@ Perform the following steps to complete this task:
 
       :raw_github_url:`/postman_collections/SP Modules.postman_collection.json`
 
-  |image88|
+      |image88|
 
 .. |image8| image:: /_static/image008.png
    :width: 0.46171in
@@ -49,7 +49,7 @@ Perform the following steps to complete this task:
 #. You should now see a collection named 'SP Modules'
    in your Postman Collections sidebar:
 
-  |postman_sp_mod|
+   |postman_sp_mod|
 
 #. Import the Environment file by clicking 'Import' -> 'Import from Link' and
    pasting the following URL and clicking 'Import':
@@ -58,13 +58,14 @@ Perform the following steps to complete this task:
 
       :raw_github_url:`/postman_collections/F5 SPDevOps.postman_environment.json`
 
-  |postman_sp_env|
+      |postman_sp_env|
 
 .. |postman_sp_mod| image:: /_static/postman_sp_mod.png
    :width: 3.54657in
    :height: 2.80000in
 .. |postman_sp_env| image:: /_static/postman_sp_env.png
-   :scale 80%
+   :width: 2.0in
+   :height: 1.0in
 
 Task 2 – Configure TCP Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
