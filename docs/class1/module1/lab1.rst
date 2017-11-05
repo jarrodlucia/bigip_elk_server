@@ -26,7 +26,7 @@ created object with all the correct attributes already populated.
 
    |image1|
 
-#. Navigate to the URL https://10.1.1.4/mgmt/toc (or click the BIG-IP A
+#. Navigate to the URL https://10.1.1.4/mgmt/toc (or click the BIG-IP
    REST TOC bookmark). The ‘/mgmt/toc’ path in the URL is available on
    all TMOS versions 11.6 or newer.
 
@@ -62,7 +62,7 @@ created object with all the correct attributes already populated.
        *OC=Organizing Collection
 
 .. |image1| image:: /_static/image1.png
-   :width: 6.60194in
+   :width: 4.0in
    :height: 0.88663in
 .. |image2| image:: /_static/image002.png
    :width: 0.90641in

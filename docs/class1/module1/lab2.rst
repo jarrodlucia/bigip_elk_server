@@ -16,7 +16,7 @@ Task 1 - Import the Postman Collection & Environment
 In this task you will Import a Postman Collection & Environment for this lab.
 Perform the following steps to complete this task:
 
-#. Open the Postman tool by clicking the |image8| icon of the taskbar of
+#. Open the Postman tool by clicking the |image8| icon of the desktop of
    your Linux Jumphost
 
 #. Click the 'Import' button in the top left of the Postman window
