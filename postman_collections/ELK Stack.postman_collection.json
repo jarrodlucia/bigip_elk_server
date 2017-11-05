@@ -1,0 +1,563 @@
+{
+	"info": {
+		"name": "ELK Stack",
+		"_postman_id": "f8ff5b82-7889-0c9e-a598-d08600125f35",
+		"description": "ELK Stack Postman calls to ease configuration and management of Elasticsearch.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Templates",
+			"description": "",
+			"item": [
+				{
+					"name": "DNS",
+					"description": "",
+					"item": [
+						{
+							"name": "Create Template DNS",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"template\" : \"dns-*\",\n    \"mappings\" : {\n      \"dns\" : {\n        \"properties\" : {\n          \"@timestamp\" : {\n            \"type\" : \"date\"\n          },\n          \"@version\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"answer\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"dns_len\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"dns_server_ip\" : {\n            \"type\" : \"ip\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"f5_irule\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"host\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"is_wideip\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"message\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"port\" : {\n            \"type\" : \"integer\"\n          },\n          \"question_class\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"question_name\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"question_type\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"src_ip\" : {\n            \"type\" : \"ip\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"type\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          }\n        }\n      },\n      \"logs\" : {\n        \"properties\" : {\n          \"@timestamp\" : {\n            \"type\" : \"date\"\n          },\n          \"@version\" : {\n            \"type\" : \"text\"\n          },\n          \"DNS_response\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\"\n              }\n            },\n            \"analyzer\" : \"english\"\n          },\n          \"Query\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\"\n              }\n            },\n            \"analyzer\" : \"english\"\n          },\n          \"QueryType\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\"\n              }\n            },\n            \"analyzer\" : \"english\"\n          },\n          \"Subscriber\" : {\n            \"type\" : \"ip\"\n          },\n          \"host\" : {\n            \"type\" : \"text\"\n          },\n          \"message\" : {\n            \"type\" : \"text\"\n          },\n          \"path\" : {\n            \"type\" : \"text\"\n          },\n          \"port\" : {\n            \"type\" : \"integer\"\n          },\n          \"syslog_hostname\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\"\n              }\n            },\n            \"analyzer\" : \"english\"\n          },\n          \"timestamp\" : {\n            \"type\" : \"text\"\n          }\n        }\n      }\n    }\n}\n"
+								},
+								"url": {
+									"raw": "http://localhost:9200/_template/dns?pretty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_template",
+										"dns"
+									],
+									"query": [
+										{
+											"key": "pretty",
+											"value": "",
+											"equals": false
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Template DNS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:9200/_template/dns?pretty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_template",
+										"dns"
+									],
+									"query": [
+										{
+											"key": "pretty",
+											"value": "",
+											"equals": false
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PEM",
+					"description": "",
+					"item": [
+						{
+							"name": "Create Template PEM",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"template\" : \"pem-*\",\n    \"mappings\" : {\n      \"_default_\" : {\n        \"_all\" : {\n          \"enabled\" : true,\n          \"norms\" : false\n        }\n      },\n      \"logs\" : {\n        \"_all\" : {\n          \"enabled\" : true,\n          \"norms\" : false\n        },\n        \"dynamic_templates\" : [\n          {\n            \"message_field\" : {\n              \"match\" : \"message\",\n              \"match_mapping_type\" : \"string\",\n              \"mapping\" : {\n                \"fielddata\" : {\n                  \"format\" : \"disabled\"\n                },\n                \"index\" : \"analyzed\",\n                \"omit_norms\" : true,\n                \"type\" : \"string\"\n              }\n            }\n          },\n          {\n            \"string_fields\" : {\n              \"match\" : \"*\",\n              \"match_mapping_type\" : \"string\",\n              \"mapping\" : {\n                \"fielddata\" : {\n                  \"format\" : \"disabled\"\n                },\n                \"fields\" : {\n                  \"raw\" : {\n                    \"ignore_above\" : 256,\n                    \"index\" : \"not_analyzed\",\n                    \"type\" : \"string\",\n                    \"doc_values\" : true\n                  }\n                },\n                \"index\" : \"analyzed\",\n                \"omit_norms\" : true,\n                \"type\" : \"string\"\n              }\n            }\n          },\n          {\n            \"double_fields\" : {\n              \"match\" : \"*\",\n              \"match_mapping_type\" : \"double\",\n              \"mapping\" : {\n                \"doc_values\" : true,\n                \"type\" : \"double\"\n              }\n            }\n          },\n          {\n            \"long_fields\" : {\n              \"match\" : \"*\",\n              \"match_mapping_type\" : \"long\",\n              \"mapping\" : {\n                \"doc_values\" : true,\n                \"type\" : \"long\"\n              }\n            }\n          },\n          {\n            \"date_fields\" : {\n              \"match\" : \"*\",\n              \"match_mapping_type\" : \"date\",\n              \"mapping\" : {\n                \"doc_values\" : true,\n                \"type\" : \"date\"\n              }\n            }\n          }\n        ],\n        \"properties\" : {\n          \"3gpp_parameters\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"@timestamp\" : {\n            \"type\" : \"date\"\n          },\n          \"@version\" : {\n            \"type\" : \"keyword\"\n          },\n          \"APPCategoryName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"Actiontype\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"AggrInterval\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ApplicationName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"BytesIn\" : {\n            \"type\" : \"integer\"\n          },\n          \"BytesOut\" : {\n            \"type\" : \"integer\"\n          },\n          \"CalledName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"CallingName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"CategoryName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"CityPostcode\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ConnStatsDurSum\" : {\n            \"type\" : \"integer\"\n          },\n          \"ConnStatsNumEndings\" : {\n            \"type\" : \"integer\"\n          },\n          \"ConnStatsNumStarts\" : {\n            \"type\" : \"integer\"\n          },\n          \"Continent\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"CountryRegion\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"DestinatioGeo\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"DestinationIP\" : {\n            \"type\" : \"ip\"\n          },\n          \"DestinationPort\" : {\n            \"type\" : \"integer\"\n          },\n          \"DeviceNmae\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"DeviceOs\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"DistinctApplications\" : {\n            \"type\" : \"integer\"\n          },\n          \"DistinctCategories\" : {\n            \"type\" : \"integer\"\n          },\n          \"EOCTimestamp\" : {\n            \"type\" : \"date\"\n          },\n          \"Entity\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"FlowsClosed\" : {\n            \"type\" : \"integer\"\n          },\n          \"FlowsOpened\" : {\n            \"type\" : \"integer\"\n          },\n          \"HitCount\" : {\n            \"type\" : \"integer\"\n          },\n          \"Hostname\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"IPList\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"Module\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"NextHop\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"Origin\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"PolicyName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ProfileName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"RadioType\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"RemoteHostIP\" : {\n            \"type\" : \"ip\"\n          },\n          \"RequestSide\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"Risk\" : {\n            \"type\" : \"integer\"\n          },\n          \"SlotId\" : {\n            \"type\" : \"integer\"\n          },\n          \"SourceGeo\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SourceIP\" : {\n            \"type\" : \"ip\"\n          },\n          \"SubnetName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SubscriberFlowsClosed\" : {\n            \"type\" : \"integer\"\n          },\n          \"SubscriberFlowsOpened\" : {\n            \"type\" : \"integer\"\n          },\n          \"SubscriberIdType\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SubscriberName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SubscriberType\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SubscribersLogin\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SubscribersLogout\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"TowerName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"URLCategoryName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"UserKey\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"UserName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"VSName\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"application_category_id\" : {\n            \"type\" : \"integer\"\n          },\n          \"application_category_name\" : {\n            \"type\" : \"text\"\n          },\n          \"called_station_id\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"calling_station_id\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"concurrent_flows\" : {\n            \"type\" : \"integer\"\n          },\n          \"dest_ip\" : {\n            \"type\" : \"ip\"\n          },\n          \"dest_port\" : {\n            \"type\" : \"integer\"\n          },\n          \"dest_port_word\" : {\n            \"type\" : \"text\"\n          },\n          \"duration_sec\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"errdefs_msgno\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"flow_start_msec\" : {\n            \"type\" : \"integer\"\n          },\n          \"flow_start_sec\" : {\n            \"type\" : \"date\",\n            \"format\" : \"epoch_second\"\n          },\n          \"flow_stop_msec\" : {\n            \"type\" : \"integer\"\n          },\n          \"flow_stop_sec\" : {\n            \"type\" : \"date\",\n            \"format\" : \"epoch_second\"\n          },\n          \"host\" : {\n            \"type\" : \"text\"\n          },\n          \"imeisv\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"imsi\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ip_protocol\" : {\n            \"type\" : \"text\"\n          },\n          \"ip_protocol_word\" : {\n            \"type\" : \"text\"\n          },\n          \"last_record_sent_sec\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"message\" : {\n            \"type\" : \"text\"\n          },\n          \"new_flows\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"pem_report_id\" : {\n            \"type\" : \"integer\"\n          },\n          \"pem_report_version\" : {\n            \"type\" : \"text\"\n          },\n          \"pem_subscriber_id\" : {\n            \"type\" : \"text\"\n          },\n          \"pem_subscriber_id_type\" : {\n            \"type\" : \"text\"\n          },\n          \"policy_id\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"port\" : {\n            \"type\" : \"long\"\n          },\n          \"record_reason\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"record_type\" : {\n            \"type\" : \"integer\"\n          },\n          \"route_domain\" : {\n            \"type\" : \"integer\"\n          },\n          \"rule_id\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"source_ip\" : {\n            \"type\" : \"ip\"\n          },\n          \"source_port\" : {\n            \"type\" : \"integer\"\n          },\n          \"successful_transactions\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"tags\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"terminated_flows\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"timestamp\" : {\n            \"type\" : \"date\",\n            \"format\" : \"epoch_second\"\n          },\n          \"timestamp_msec\" : {\n            \"type\" : \"integer\"\n          },\n          \"total_transactions\" : {\n            \"type\" : \"integer\"\n          },\n          \"url_category_id\" : {\n            \"type\" : \"integer\"\n          },\n          \"url_category_name\" : {\n            \"type\" : \"text\"\n          },\n          \"user_name\" : {\n            \"type\" : \"text\",\n            \"norms\" : false,\n            \"fields\" : {\n              \"raw\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"vlan_id\" : {\n            \"type\" : \"integer\"\n          },\n          \"volume_downlink\" : {\n            \"type\" : \"integer\"\n          },\n          \"volume_uplink\" : {\n            \"type\" : \"integer\"\n          }\n        }\n      }\n    }\n}\n"
+								},
+								"url": {
+									"raw": "http://localhost:9200/_template/pem?pretty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_template",
+										"pem"
+									],
+									"query": [
+										{
+											"key": "pretty",
+											"value": "",
+											"equals": false
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Template PEM",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:9200/_template/pem?pretty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_template",
+										"pem"
+									],
+									"query": [
+										{
+											"key": "pretty",
+											"value": "",
+											"equals": false
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "AFM",
+					"description": "",
+					"item": [
+						{
+							"name": "Delete Template AFM",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:9200/_template/afm?pretty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_template",
+										"afm"
+									],
+									"query": [
+										{
+											"key": "pretty",
+											"value": "",
+											"equals": false
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Create Template AFM",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"template\" : \"afm-*\",\n    \"mappings\" : {\n      \"afm\" : {\n        \"properties\" : {\n          \"@timestamp\" : {\n            \"type\" : \"date\"\n          },\n          \"@version\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"AbandonedConns\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"Action\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"AggrInterval\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ApplicationName\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"AvgConcurrentConnections\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"AvgCpu\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"AvgMemory\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"AvgThroughput\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ClientBytesIn\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ClientConcurrentConns\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ClientNewConns\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ClientOutBytes\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ClientPktsIn\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ClientPktsOut\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ConcurrentAttacks\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ConcurrentBlockedIps\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ConcurrentConnectionsHealth\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ConcurrentIps\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ConcurrentIpsParticipatingInAttacks\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ContextInfo\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ContextType\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"CpuHealth\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"dest_ip\" : {\n            \"type\" : \"ip\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"DestinationIp\" : {\n            \"type\" : \"ip\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n         \"DestinationIp_geo\"  : {\n            \"dynamic\": true,\n            \"properties\" : {\n             \"ip\": { \"type\": \"ip\" },\n             \"location\" : { \"type\" : \"geo_point\" },\n             \"latitude\" : { \"type\" : \"half_float\" },\n             \"longitude\" : { \"type\" : \"half_float\" }\n            }\n         },\n          \"DestinationIpRouteDomain\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"DestinationPort\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"DstCountry\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"DstRegion\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"DstUserName\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"EOCTimestamp\" : {\n            \"type\" : \"date\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"Entity\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ExpiredConns\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"FailedConns\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"HitCount\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"Hostname\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"MaxClientConcurrentConns\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"MaxServerConcurrentConns\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"MemoryHealth\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"Policy\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"RuleName\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SaTranslationPool\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SaTranslationType\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SelfIp\" : {\n            \"type\" : \"string\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SelfRouteDomain\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerBytesIn\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerBytesOut\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerConcurrentConns\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerIp\" : {\n            \"type\" : \"string\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerLatency\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerLatencyHealth\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerLatencyHitCount\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerNewConns\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerPktsIn\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerPktsOut\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ServerRemoteRouteDomain\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SlotId\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"source_ip\" : {\n            \"type\" : \"ip\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SourceIp\" : {\n            \"type\" : \"ip\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n         \"SourceIp_geo\"  : {\n            \"dynamic\": true,\n            \"properties\" : {\n             \"ip\": { \"type\": \"ip\" },\n             \"location\" : { \"type\" : \"geo_point\" },\n             \"latitude\" : { \"type\" : \"half_float\" },\n             \"longitude\" : { \"type\" : \"half_float\" }\n            }\n         },\n          \"SourceIpRouteDomain\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SourcePort\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SrcCountry\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SrcRegion\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"SrcUserName\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"ThroughputHealth\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"TotalBytes\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"VLAN\" : {\n            \"type\" : \"string\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"VipName\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"errdefs_msgno\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"host\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"message\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"port\" : {\n            \"type\" : \"long\"\n          },\n          \"specialConcurrentIpsForAllVips\" : {\n            \"type\" : \"integer\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          },\n          \"type\" : {\n            \"type\" : \"text\",\n            \"fields\" : {\n              \"keyword\" : {\n                \"type\" : \"keyword\",\n                \"ignore_above\" : 256\n              }\n            }\n          }\n        }\n      }\n    }\n}\n"
+								},
+								"url": {
+									"raw": "http://localhost:9200/_template/afm?pretty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_template",
+										"afm"
+									],
+									"query": [
+										{
+											"key": "pretty",
+											"value": "",
+											"equals": false
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Template AFM",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:9200/_template/pem?pretty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_template",
+										"pem"
+									],
+									"query": [
+										{
+											"key": "pretty",
+											"value": "",
+											"equals": false
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Elasticsearch Mgmt",
+			"description": "",
+			"item": [
+				{
+					"name": "get Elasticsearch information",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "curl 'localhost:9200/_cat/indices?v'"
+						},
+						"url": {
+							"raw": "localhost:9200",
+							"host": [
+								"localhost"
+							],
+							"port": "9200"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Index Mgmt",
+			"description": "",
+			"item": [
+				{
+					"name": "Delete AFM Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9200/afm-*?pretty",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"afm-*"
+							],
+							"query": [
+								{
+									"key": "pretty",
+									"value": "",
+									"equals": false
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete DNS Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9200/dns-*?pretty",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"dns-*"
+							],
+							"query": [
+								{
+									"key": "pretty",
+									"value": "",
+									"equals": false
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create DNS Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9200/dns-?pretty",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"dns-"
+							],
+							"query": [
+								{
+									"key": "pretty",
+									"value": "",
+									"equals": false
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete PEM Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9200/pem-*?pretty",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"pem-*"
+							],
+							"query": [
+								{
+									"key": "pretty",
+									"value": "",
+									"equals": false
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get Elasticsearch indices",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/html"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9200/_cat/indices?v",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"_cat",
+						"indices"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": "",
+							"equals": false
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Template Searches",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/html"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9200/_template/*?pretty",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"_template",
+						"*"
+					],
+					"query": [
+						{
+							"key": "pretty",
+							"value": "",
+							"equals": false
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Elasticsearch indices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9200/_cat/indices?v",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"_cat",
+						"indices"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": "",
+							"equals": false
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Elasticsearch Template Searches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9200/_template/*?pretty",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"_template",
+						"*"
+					],
+					"query": [
+						{
+							"key": "pretty",
+							"value": "",
+							"equals": false
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

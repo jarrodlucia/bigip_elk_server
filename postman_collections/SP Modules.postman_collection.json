@@ -1,0 +1,717 @@
+{
+	"info": {
+		"name": "SP Modules",
+		"_postman_id": "2973f949-1207-7477-2150-c9738da0369b",
+		"description": "Service Provider API Rest calls.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PEM",
+			"description": "",
+			"item": [
+				{
+					"name": "Classification Profile",
+					"description": "PEM Classification Profile REST",
+					"item": [
+						{
+							"name": "Request PEM Classification Profile",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic YWRtaW46YWRtaW4="
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
+								},
+								"url": {
+									"raw": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/classification/classification_pem",
+									"protocol": "https",
+									"host": [
+										"{{bigip_mgmt}}"
+									],
+									"path": [
+										"mgmt",
+										"tm",
+										"ltm",
+										"profile",
+										"classification",
+										"classification_pem"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Update PEM Classification Profile",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic YWRtaW46YWRtaW4="
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"appDetection\": \"on\",\n    \"avrPublisher\": \"ELK_PEM_Publisher\",\n    \"avrStatCollect\": \"on\",\n    \"iruleEvent\": \"on\",\n    \"logPublisher\": \"ELK_PEM_Publisher\",\n    \"logUnclassifiedDomain\": \"on\",\n    \"preset\": \"/Common/ce_pem\",\n    \"urlcat\": \"on\"\n}"
+								},
+								"url": {
+									"raw": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/classification/classification_pem",
+									"protocol": "https",
+									"host": [
+										"{{bigip_mgmt}}"
+									],
+									"path": [
+										"mgmt",
+										"tm",
+										"ltm",
+										"profile",
+										"classification",
+										"classification_pem"
+									]
+								},
+								"description": "Update PEM Classification profile to inculde AVR and External Logging"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Global Settings",
+					"description": "",
+					"item": [
+						{
+							"name": "Request PEM Global Analytics Options",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic YWRtaW46YWRtaW4="
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
+								},
+								"url": {
+									"raw": "https://{{bigip_mgmt}}/mgmt/tm/pem/global-settings/analytics",
+									"protocol": "https",
+									"host": [
+										"{{bigip_mgmt}}"
+									],
+									"path": [
+										"mgmt",
+										"tm",
+										"pem",
+										"global-settings",
+										"analytics"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Update PEM Global Analytics Options - External Logging",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic YWRtaW46YWRtaW4="
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"logging\": {\n        \"hsl\": {\n            \"endpointId\": \"/Common/ELK_PEM_Publisher\"\n            }\n        },\n    \"mode\": \"enabled\",\n    \"subscriberAware\": \"enabled\"\n}"
+								},
+								"url": {
+									"raw": "https://{{bigip_mgmt}}/mgmt/tm/pem/global-settings/analytics",
+									"protocol": "https",
+									"host": [
+										"{{bigip_mgmt}}"
+									],
+									"path": [
+										"mgmt",
+										"tm",
+										"pem",
+										"global-settings",
+										"analytics"
+									]
+								},
+								"description": "Update PEM Classification profile to inculde AVR and External Logging"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Policy Create / Modify / Delete",
+					"description": "",
+					"item": [
+						{
+							"name": "Enable / Disable PEM Policy",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic YWRtaW46YWRtaW4="
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"kind\": \"tm:pem:policy:policystate\",\n  \"name\": \"test_rest\",\n  \"status\": \"enabled\"\n}"
+								},
+								"url": {
+									"raw": "https://{{bigip_mgmt}}/mgmt/tm/pem/policy/test_rest",
+									"protocol": "https",
+									"host": [
+										"{{bigip_mgmt}}"
+									],
+									"path": [
+										"mgmt",
+										"tm",
+										"pem",
+										"policy",
+										"test_rest"
+									]
+								},
+								"description": "PUT PEM Policy change State Disable / Enable"
+							},
+							"response": []
+						},
+						{
+							"name": "Create Basic PEM Policy - No rules",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic YWRtaW46YWRtaW4="
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"kind\": \"tm:pem:policy:policystate\",\n  \"name\": \"test_rest00\"\n}"
+								},
+								"url": {
+									"raw": "https://{{bigip_mgmt}}mgmt/tm/pem/policy/",
+									"protocol": "https",
+									"host": [
+										"{{bigip_mgmt}}mgmt"
+									],
+									"path": [
+										"tm",
+										"pem",
+										"policy",
+										""
+									]
+								},
+								"description": "PEM Policy Creation"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "TCP Analytics",
+			"description": "",
+			"item": [
+				{
+					"name": "Request TCP Analytics Profiles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/tcp-analytics",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"ltm",
+								"profile",
+								"tcp-analytics"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Modify a TCP Analytics Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"ELK_TCP_Logger\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"ELK_PEM_Publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/tcp-analytics/tcp-test",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"ltm",
+								"profile",
+								"tcp-analytics",
+								"tcp-test"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create a TCP Analytics Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"ELK_TCP_Logger\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"ELK_PEM_Publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/tcp-analytics",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"ltm",
+								"profile",
+								"tcp-analytics"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AFM",
+			"description": "",
+			"item": [
+				{
+					"name": "Request AFM Security Reporting Settings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/security/analytics/settings",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"security",
+								"analytics",
+								"settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update AFM Security Reporting Settings",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"aclRules\": {\n        \"collectClientIp\": \"enabled\",\n        \"collectClientPort\": \"enabled\",\n        \"collectDestIp\": \"enabled\",\n        \"collectDestPort\": \"enabled\",\n        \"collectServerSideStats\": \"enabled\"\n    },\n    \"collectAllDosStatistic\": \"enabled\",\n    \"collectedStatsExternalLogging\": \"enabled\",\n    \"collectedStatsInternalLogging\": \"enabled\",\n    \"dns\": {\n        \"collectClientIp\": \"enabled\"\n    },\n    \"dosL2L4\": {\n        \"collectClientIp\": \"enabled\",\n        \"collectDestGeo\": \"enabled\"\n    },\n    \"l3L4Errors\": {\n        \"collectClientIp\": \"enabled\",\n        \"collectDestIp\": \"enabled\"\n    },\n    \"publisher\": \"ELK_AFM_Publisher\",\n    \"staleRules\": {\n        \"collect\": \"enabled\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/security/analytics/settings",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"security",
+								"analytics",
+								"settings"
+							]
+						},
+						"description": "Update PEM Classification profile to inculde AVR and External Logging"
+					},
+					"response": []
+				},
+				{
+					"name": "Request AFM Device DoS Settings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/security/dos/device-config",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"security",
+								"dos",
+								"device-config"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Request AFM Device DoS Settings copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/security/dos/device-config",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"security",
+								"dos",
+								"device-config"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Request AFM Event Logger",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/security/log/profile/",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"security",
+								"log",
+								"profile",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create AFM Event Log Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ELK_AFM_Logger\",\n    \"dosNetworkPublisher\": \"/Common/ELK_AFM_Publisher\",\n    \"ipIntelligence\": {\n        \"aggregateRate\": 4294967295,\n        \"logPublisher\": \"/Common/ELK_AFM_Publisher\",\n        \"logRtbh\": \"disabled\",\n        \"logScrubber\": \"disabled\",\n        \"logShun\": \"disabled\",\n        \"logTranslationFields\": \"enabled\"\n    },\n    \"nat\": {\n        \"endInboundSession\": \"disabled\",\n        \"endOutboundSession\": {\n            \"action\": \"enabled\"\n        },\n        \"errors\": \"enabled\",\n        \"logPublisher\": \"/Common/ELK_AFM_Publisher\",\n        \"lsnLegacyMode\": \"disabled\",\n        \"quotaExceeded\": \"disabled\",\n        \"rateLimit\": {\n            \"aggregateRate\": 4294967295,\n            \"endInboundSession\": 4294967295,\n            \"endOutboundSession\": 4294967295,\n            \"errors\": 4294967295,\n            \"quotaExceeded\": 4294967295,\n            \"startInboundSession\": 4294967295,\n            \"startOutboundSession\": 4294967295\n        },\n        \"startInboundSession\": \"disabled\",\n        \"startOutboundSession\": {\n            \"action\": \"enabled\"\n        }\n    },\n    \"portMisuse\": {\n        \"aggregateRate\": 4294967295,\n        \"logPublisher\": \"/Common/ELK_AFM_Publisher\"\n    },\n    \"protocolDnsDosPublisher\": \"/Common/ELK_AFM_Publisher\",\n    \"protocolSipDosPublisher\": \"/Common/ELK_AFM_Publisher\",\n    \"trafficStatistics\": {\n        \"activeFlows\": \"enabled\",\n        \"logPublisher\": \"/Common/ELK_AFM_Publisher\",\n        \"missedFlows\": \"enabled\",\n        \"reapedFlows\": \"enabled\",\n        \"syncookies\": \"enabled\",\n        \"syncookiesWhitelist\": \"enabled\"\n    },\n    \"protocolTransfer\": [\n        {\n            \"name\": \"ELK_AFM_Logger\",\n            \"partition\": \"Common\",\n            \"publisher\": \"/Common/ELK_AFM_Publisher\"\n        }\n    ],\n    \"sshProxy\": [\n        {\n            \"name\": \"ELK_AFM_Logger\",\n            \"partition\": \"Common\",\n            \"allowedChannelAction\": \"disabled\",\n            \"disallowedChannelAction\": \"disabled\",\n            \"nonSshTraffic\": \"disabled\",\n            \"sshTimeout\": \"disabled\",\n            \"successfulClientSideAuth\": \"disabled\",\n            \"successfulServerSideAuth\": \"disabled\",\n            \"unsuccessfulClientSideAuth\": \"disabled\",\n            \"unsuccessfulServerSideAuth\": \"disabled\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/security/log/profile/",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"security",
+								"log",
+								"profile",
+								""
+							]
+						},
+						"description": "Update PEM Classification profile to inculde AVR and External Logging"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DNS",
+			"description": "",
+			"item": [
+				{
+					"name": "Request DNS Logging profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/dns-logging",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"ltm",
+								"profile",
+								"dns-logging"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create DNS Log Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"name\": \"ELK_DNS_Logging\",\n            \"description\": \"DNS logging profile for AVR\",\n            \"enableQueryLogging\": \"yes\",\n            \"enableResponseLogging\": \"yes\",\n            \"includeCompleteAnswer\": \"yes\",\n            \"includeQueryId\": \"yes\",\n            \"includeSource\": \"yes\",\n            \"includeTimestamp\": \"yes\",\n            \"includeView\": \"yes\",\n            \"logPublisher\": \"/Common/ELK_DNS_Publisher\"\n}"
+						},
+						"url": {
+							"raw": "https://{{bigip_mgmt}}/mgmt/tm/ltm/profile/dns-logging",
+							"protocol": "https",
+							"host": [
+								"{{bigip_mgmt}}"
+							],
+							"path": [
+								"mgmt",
+								"tm",
+								"ltm",
+								"profile",
+								"dns-logging"
+							]
+						},
+						"description": "Update DNS Logging profile to inculde AVR and External Logging"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "https://10.1.1.245/mgmt/tm/pem/policy/test_rest",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"kind\": \"tm:pem:policy:policystate\",\n  \"name\": \"test_rest\",\n  \"fullPath\": \"test_rest\",\n  \"generation\": 326,\n  \"selfLink\": \"https://localhost/mgmt/tm/pem/policy/test_rest?ver=13.0.0\",\n  \"status\": \"enabled\",\n  \"transactional\": \"disabled\",\n  \"rulesReference\": {\n    \"link\": \"https://localhost/mgmt/tm/pem/policy/~Common~test_rest/rules?ver=13.0.0\",\n    \"isSubcollection\": true\n  }\n}"
+				},
+				"url": {
+					"raw": "https://10.1.1.245/mgmt/tm/pem/policy/test_rest",
+					"protocol": "https",
+					"host": [
+						"10",
+						"1",
+						"1",
+						"245"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"pem",
+						"policy",
+						"test_rest"
+					]
+				},
+				"description": "PUT PEM Policy changes"
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.1.1.245/mgmt/tm/pem/policy/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"kind\": \"tm:pem:policy:policystate\",\n  \"name\": \"test_rest\",\n  \"fullPath\": \"test_rest\",\n  \"generation\": 1,\n  \"selfLink\": \"https://localhost/mgmt/tm/pem/policy/test_rest?ver=13.0.0\",\n  \"status\": \"disabled\",\n  \"transactional\": \"disabled\",\n  \"rulesReference\": {\n    \"link\": \"https://localhost/mgmt/tm/pem/policy/~Common~test_rest/rules?ver=13.0.0\",\n    \"isSubcollection\": true\n  }\n}"
+				},
+				"url": {
+					"raw": "https://10.1.1.245/mgmt/tm/pem/policy/",
+					"protocol": "https",
+					"host": [
+						"10",
+						"1",
+						"1",
+						"245"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"pem",
+						"policy",
+						""
+					]
+				},
+				"description": "PEM Policy Creation"
+			},
+			"response": []
+		}
+	]
+}
