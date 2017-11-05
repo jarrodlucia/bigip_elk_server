@@ -38,6 +38,14 @@ Perform the following steps to complete this task:
 
   |image88|
 
+.. |image8| image:: /_static/image008.png
+   :width: 0.46171in
+   :height: 0.43269in
+.. |image87| image:: /_static/image087.png
+   :scale: 40%
+.. |image88| image:: /_static/image088.png
+   :scale: 40%
+
 #. You should now see a collection named 'SP Modules'
    in your Postman Collections sidebar:
 
@@ -51,6 +59,12 @@ Perform the following steps to complete this task:
       :raw_github_url:`/postman_collections/F5 SPDevOps.postman_environment.json`
 
   |postman_sp_env|
+
+.. |postman_sp_mod| image:: /_static/postman_sp_mod.png
+   :width: 3.54657in
+   :height: 2.80000in
+.. |postman_sp_env| image:: /_static/postman_sp_env.png
+   :scale 80%
 
 Task 2 – Configure TCP Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,6 +91,14 @@ Perform the following steps to complete this task:
 
   |add_tcp_vs|
 
+.. |get_tcp_profile| image:: /_static/get_tcp_profile.png
+   :scale 80%
+.. |create_tcp_profile| image:: /_static/create_tcp_profile.png
+   :scale 80%
+.. |verify_tcp_profile| image:: /_static/verify_tcp_profile.png
+   :scale 80%
+.. |add_tcp_vs| image:: /_static/add_tcp_vs.png
+   :scale 80%
 
 Task 3 – Configure PEM Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,6 +119,10 @@ Perform the following steps to complete this task:
 
 #. Verify in BIG-IP TMUI that the new updates where changed in PEM global options.
 
+.. |update_pem_global| image:: /_static/update_pem_global.png
+   :scale 80%
+.. |get_pem_global| image:: /_static/get_pem_global.png
+   :scale 80%
 
 Task 4 – Configure AFM Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,28 +154,3 @@ Perform the following steps to complete this task:
 #. Notice that we are sending a POST request to the
    ``/mgmt/shared/authn/login`` endpoint.
 
-
-.. |update_pem_global| image:: /_static/update_pem_global.png
-   :scale 80%
-.. |get_pem_global| image:: /_static/get_pem_global.png
-   :scale 80%
-.. |get_tcp_profile| image:: /_static/get_tcp_profile.png
-   :scale 80%
-.. |create_tcp_profile| image:: /_static/create_tcp_profile.png
-   :scale 80%
-.. |verify_tcp_profile| image:: /_static/verify_tcp_profile.png
-   :scale 80%
-.. |add_tcp_vs| image:: /_static/add_tcp_vs.png
-   :scale 80%
-.. |image8| image:: /_static/image008.png
-   :width: 0.46171in
-   :height: 0.43269in
-.. |postman_sp_mod| image:: /_static/postman_sp_mod.png
-   :width: 3.54657in
-   :height: 2.80000in
-.. |postman_sp_env| image:: /_static/postman_sp_env.png
-   :scale 80%
-.. |image87| image:: /_static/image087.png
-   :scale: 40%
-.. |image88| image:: /_static/image088.png
-   :scale: 40%
