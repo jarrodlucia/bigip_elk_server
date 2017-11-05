@@ -197,11 +197,14 @@ Perform the following steps to complete this task:
    :width: 7.0in
    :height: 5.0in
 .. |create_afm_log| image:: /_static/create_afm_log.png
-   :scale 70%
+   :width: 7.0in
+   :height: 5.0in
 .. |update_afm_log_1| image:: /_static/update_afm_log_1.png
-   :scale 70%
+   :width: 7.0in
+   :height: 5.0in
 .. |update_afm_log_2| image:: /_static/update_afm_log_2.png
-   :scale 70%
+   :width: 7.0in
+   :height: 5.0in
 
 Task 5 – Configure DNS Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

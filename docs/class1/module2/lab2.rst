@@ -11,8 +11,9 @@ Lab |labmodule|\.\ |labnum|\: Access Clients and Generate Traffic
 In this lab you will walk through installing the ubuntu
 base ready for ELK stack
 
-Task 1 - Configure Client00 Netwoking
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Task 1 - Configure Client Netwoking & Traffic Generation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 RDP access
 
@@ -20,14 +21,6 @@ netqorking script
 
 check all working
 
-Task 2 - Configure Client01 Netwoking
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-RDP access
-
-netqorking script
-
-check all working
 
 Task 2 - Verify traffic on F5
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
