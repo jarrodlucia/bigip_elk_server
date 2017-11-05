@@ -161,7 +161,7 @@ Perform the following steps to complete this task:
 
     |get_afm_report|
 
-#. Click on the 'Update AFM Security Reporting Settings' , check the body message for ELK_PEM_Publisher.
+#. Click on the 'Update AFM Security Reporting Settings' , check the body message for ELK_AFM_Publisher.
 
     |update_afm_report|
 
@@ -197,38 +197,25 @@ Perform the following steps to complete this task:
 Task 5 – Configure DNS Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this task we will query and configure TCP AVR profile. This will be done using REST API (explored in previous Lab)
+In this task we will query and configure DNS AVR profile. This will be done using REST API (explored in previous Lab)
 
 Perform the following steps to complete this task:
 
-#. Click the ‘TCP Analytics’ item in the SP Module Postman Collection
+#. Click the ‘DNS’ item in the SP Module Postman Collection
 
-#. Notice that we are sending a GET request to the ``/mgmt/tm/ltm/profile/tcp-analytics`` endpoint. Check the body returned and observer the default values.
+#. Notice that we are sending a GET request to the ``/mgmt/tm/ltm/profile/dns-logging`` endpoint. Check the body returned and observer the default values.
 
-    |get_tcp_profile|
+    |get_dns_log|
 
-#. Click on the 'Create TCP Analtics Profile' , check the body message for ELK_PEM_Publisher (We will use the PEM index in ELK for logging TCP Optimisation)
+#. Click on the 'Create DNS Log Profile' , check the body message for ELK_DNS_Publisher.
 
-    |create_tcp_profile|
+    |create_dns_log|
 
 #. Verify in BIG-IP TMUI that the new profile was created.
 
-    |verify_tcp_profile|
-
-#. Add in the VS manually (This is not available in REST API currently)
-
-    |add_tcp_vs|
-
-.. |get_tcp_profile| image:: /_static/get_tcp_profile.png
+.. |get_dns_log| image:: /_static/get_dns_log.png
    :width: 7.0in
    :height: 5.0in
-.. |create_tcp_profile| image:: /_static/create_tcp_profile.png
+.. |create_dns_log| image:: /_static/create_dns_log.png
    :width: 7.0in
    :height: 5.0in
-.. |verify_tcp_profile| image:: /_static/verify_tcp_profile.png
-   :width: 7.0in
-   :height: 5.0in
-.. |add_tcp_vs| image:: /_static/add_tcp_vs.png
-   :width: 7.0in
-   :height: 5.0in
-
