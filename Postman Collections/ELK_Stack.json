@@ -303,6 +303,35 @@
             "description": ""
           },
           "response": []
+        },
+        {
+          "_postman_id": "0ed8ed71-6cad-97b3-c12c-02bb7ebff484",
+          "name": "GET Elasticsearch indices",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "http://{{elk_stack}}/_cat/indices?v",
+              "protocol": "http",
+              "host": [
+                "{{elk_stack}}"
+              ],
+              "path": [
+                "_cat",
+                "indices"
+              ],
+              "query": [
+                {
+                  "key": "v",
+                  "value": "",
+                  "equals": false
+                }
+              ]
+            },
+            "description": ""
+          },
+          "response": []
         }
       ]
     },
@@ -440,35 +469,6 @@
           "response": []
         }
       ]
-    },
-    {
-      "_postman_id": "0ed8ed71-6cad-97b3-c12c-02bb7ebff484",
-      "name": "GET Elasticsearch indices",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {},
-        "url": {
-          "raw": "http://{{elk_stack}}/_cat/indices?v",
-          "protocol": "http",
-          "host": [
-            "{{elk_stack}}"
-          ],
-          "path": [
-            "_cat",
-            "indices"
-          ],
-          "query": [
-            {
-              "key": "v",
-              "value": "",
-              "equals": false
-            }
-          ]
-        },
-        "description": ""
-      },
-      "response": []
     },
     {
       "_postman_id": "5056c020-7eb4-f398-3c26-12c0a5c2e47c",
