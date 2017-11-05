@@ -80,7 +80,7 @@ Perform the following steps to complete this task:
 
     |get_tcp_profile|
 
-#. Click on the 'Create TCP Analtics Profile' , check the body message for ELK_PEM_Publisher (We will use the PEM index in ELK for logging TCP Optimisation)
+#. Click on the 'Create TCP Analytics Profile' , check the body message for ELK_PEM_Publisher (We will use the PEM index in ELK for logging TCP Optimisation)
 
     |create_tcp_profile|
 
@@ -138,13 +138,13 @@ Perform the following steps to complete this task:
 .. |get_pem_class| image:: /_static/get_pem_class.png
    :width: 7.0in
    :height: 5.0in
-.. |update_pem_class|image:: /_static/update_pem_class.png
+.. |update_pem_class| image:: /_static/update_pem_class.png
    :width: 7.0in
    :height: 5.0in
 .. |get_pem_global| image:: /_static/get_pem_global.png
    :width: 7.0in
    :height: 5.0in
-.. |update_pem_global|image:: /_static/update_pem_global.png
+.. |update_pem_global| image:: /_static/update_pem_global.png
    :width: 7.0in
    :height: 5.0in
 
@@ -184,14 +184,14 @@ Perform the following steps to complete this task:
 .. |get_afm_report| image:: /_static/get_afm_report.png
    :width: 7.0in
    :height: 5.0in
-.. |update_afm_report|image:: /_static/update_afm_report.png
+.. |update_afm_report| image:: /_static/update_afm_report.png
    :width: 7.0in
    :height: 5.0in
 .. |get_afm_log| image:: /_static/get_afm_log.png
    :width: 7.0in
    :height: 5.0in
-.. |create_afm_log|image:: /_static/create_afm_log.png
-   :scale 50%
+.. |create_afm_log| image:: /_static/create_afm_log.png
+   :scale 70%
 
 Task 5 – Configure DNS Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
