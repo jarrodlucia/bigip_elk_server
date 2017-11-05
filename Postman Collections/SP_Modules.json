@@ -319,26 +319,6 @@
           "response": []
         },
         {
-          "_postman_id": "ddf38c63-7acb-9e6d-ab0c-d9512a6d66f7",
-          "name": "Request AFM Device DoS Settings copy",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Basic YWRtaW46YWRtaW4="
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"name\":\"tcp-test\",\n            \"collectCity\": \"enabled\",\n            \"collectContinent\": \"enabled\",\n            \"collectCountry\": \"enabled\",\n            \"collectNexthop\": \"enabled\",\n            \"collectPostCode\": \"enabled\",\n            \"collectRegion\": \"enabled\",\n            \"collectRemoteHostIp\": \"enabled\",\n            \"collectRemoteHostSubnet\": \"enabled\",\n            \"collectedByClientSide\": \"enabled\",\n            \"collectedByServerSide\": \"enabled\",\n            \"collectedStatsExternalLogging\": \"enabled\",\n            \"collectedStatsInternalLogging\": \"enabled\",\n            \"externalLoggingPublisher\": \"elk_pem_publisher\"\n}"
-            },
-            "url": "https://{{bigip_mgmt}}/mgmt/tm/security/dos/device-config",
-            "description": ""
-          },
-          "response": []
-        },
-        {
           "_postman_id": "05c84991-f871-3fcd-82e3-b6052907f4e5",
           "name": "Request AFM Event Logger",
           "request": {
