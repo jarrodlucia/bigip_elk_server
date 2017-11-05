@@ -125,5 +125,5 @@ Perform the following steps to complete this task:
 
 
 .. |pem_sched_report| image:: /_static/pem_sched_report.png
-   :width: 12.0in
-   :height: 5.0in
+   :width: 7.0in
+   :height: 7.0in
