@@ -13,27 +13,27 @@ Confirm the following main config items to verify your BIG-IP lab is on working 
 
 #. Checked Provisioned Modules refelcts the below image (DNS / PEM / AFM and AVR).
 
-|prov_image|
+	|prov_image|
 
 #. Check VLAN setup. Make sure Interval VLAN is set to source (SP DAG).
 
-|vlans|
+	|vlans|
 
-|vlan_dag|
+	|vlan_dag|
 
 #. Verify SELF-IP's and routes are present.
 
-|self_ip|	
+	|self_ip|	
 
-|routes|
+	|routes|
 
 #. Check that PeM Data plane is setup, you should see four PEM data plane VS as below.
 
-|pem_data_plane|
+	|pem_data_plane|
 
 #. Check that DNS Listener is configured.
 
-|sp_dns|
+	|sp_dns|
 
 .. NOTE::
 	Explore the rest of the configuration. Please look at the DNS setup (cache / monitor) and AFM CGNAT (NAPT) configurations.

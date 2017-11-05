@@ -119,4 +119,15 @@ Perform the following steps to complete this task:
 #. Notice that we are sending a POST request to the
    ``/mgmt/shared/authn/login`` endpoint.
 
-   |image41|
+
+
+.. |image8| image:: /_static/image008.png
+   :width: 0.46171in
+   :height: 0.43269in
+.. |image10| image:: /_static/image010.png
+   :width: 3.54657in
+   :height: 2.80000in
+.. |image87| image:: /_static/image087.png
+   :scale: 40%
+.. |image88| image:: /_static/image088.png
+   :scale: 40%
