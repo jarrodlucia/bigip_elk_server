@@ -241,39 +241,6 @@
                 "description": ""
               },
               "response": []
-            },
-            {
-              "_postman_id": "e2776ec4-01af-2606-f592-a0dcf361a08e",
-              "name": "Delete Template AFM",
-              "request": {
-                "method": "DELETE",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "http://localhost:9200/_template/pem?pretty",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "9200",
-                  "path": [
-                    "_template",
-                    "pem"
-                  ],
-                  "query": [
-                    {
-                      "key": "pretty",
-                      "value": "",
-                      "equals": false
-                    }
-                  ]
-                },
-                "description": ""
-              },
-              "response": []
             }
           ],
           "_postman_isSubFolder": true
