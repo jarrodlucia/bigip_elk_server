@@ -522,12 +522,11 @@
         "header": [],
         "body": {},
         "url": {
-          "raw": "http://localhost:9200/_cat/indices?v",
+          "raw": "http://{{elk_stack}}/_cat/indices?v",
           "protocol": "http",
           "host": [
-            "localhost"
+            "{{elk_stack}}"
           ],
-          "port": "9200",
           "path": [
             "_cat",
             "indices"
