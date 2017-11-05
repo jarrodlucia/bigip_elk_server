@@ -78,32 +78,32 @@ Perform the following steps to complete this task:
 
 #. Notice that we are sending a GET request to the ``/mgmt/tm/ltm/profile/tcp-analytics`` endpoint. Check the body returned and observer the default values.
 
-  |get_tcp_profile|
+    |get_tcp_profile|
 
 #. Click on the 'Create TCP Analtics Profile' , check the body message for ELK_PEM_Publisher (We will use the PEM index in ELK for logging TCP Optimisation)
 
-  |create_tcp_profile|
+    |create_tcp_profile|
 
 #. Verify in BIG-IP TMUI that the new profile was created.
 
-  |verify_tcp_profile|
+    |verify_tcp_profile|
 
 #. Add in the VS manually (This is not available in REST API currently)
 
-  |add_tcp_vs|
+    |add_tcp_vs|
 
 .. |get_tcp_profile| image:: /_static/get_tcp_profile.png
-   :width: 3.54657in
-   :height: 2.80000in
+   :width: 7.0in
+   :height: 5.0in
 .. |create_tcp_profile| image:: /_static/create_tcp_profile.png
-   :width: 3.54657in
-   :height: 2.80000in
+   :width: 7.0in
+   :height: 5.0in
 .. |verify_tcp_profile| image:: /_static/verify_tcp_profile.png
-   :width: 3.54657in
-   :height: 2.80000in
+   :width: 7.0in
+   :height: 5.0in
 .. |add_tcp_vs| image:: /_static/add_tcp_vs.png
-   :width: 3.54657in
-   :height: 2.80000in
+   :width: 7.0in
+   :height: 5.0in
 
 Task 3 – Configure PEM Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,18 +116,20 @@ Perform the following steps to complete this task:
 
 #. Notice there are two sections we must update Global and Classification. We will do Global first, click on 'Request PEM Global Analytics Options' we are sending a GET request to the ``/mgmt/tm/pem/global-settings/analytics`` endpoint. Check the body returned and observer the default values.
 
-  |get_pem_global|
+    |get_pem_global|
 
 #. Click on the 'Update PEM Global Analytics Options - External Logging' , check the body message for ELK_PEM_Publisher.
 
-  |update_pem_global|
+    |update_pem_global|
 
 #. Verify in BIG-IP TMUI that the new updates where changed in PEM global options.
 
-.. |update_pem_global| image:: /_static/update_pem_global.png
-   :scale 80%
+.. |update_pem_global|image:: /_static/update_pem_global.png
+   :width: 7.0in
+   :height: 5.0in
 .. |get_pem_global| image:: /_static/get_pem_global.png
-   :scale 80%
+   :width: 7.0in
+   :height: 5.0in
 
 Task 4 – Configure AFM Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
