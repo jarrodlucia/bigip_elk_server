@@ -14,7 +14,7 @@
 				{
 					"name": "Step 1: HTTP BASIC Authentication",
 					"request": {
-						"url": "https://{{bigip_a_mgmt}}/mgmt/tm/ltm",
+						"url": "https://{{bigip_mgmt}}/mgmt/tm/ltm",
 						"method": "GET",
 						"header": [
 							{
@@ -34,7 +34,7 @@
 				{
 					"name": "Step 2: Get Authentication Token",
 					"request": {
-						"url": "https://{{bigip_a_mgmt}}/mgmt/shared/authn/login",
+						"url": "https://{{bigip_mgmt}}/mgmt/shared/authn/login",
 						"method": "POST",
 						"header": [
 							{
@@ -59,7 +59,7 @@
 				{
 					"name": "Setp 3: Verify Authentication Works",
 					"request": {
-						"url": "https://{{bigip_a_mgmt}}/mgmt/tm/ltm",
+						"url": "https://{{bigip_mgmt}}/mgmt/tm/ltm",
 						"method": "GET",
 						"header": [
 							{
@@ -79,7 +79,7 @@
 				{
 					"name": "Step 4: Set Authentication Token Timeout",
 					"request": {
-						"url": "https://{{bigip_a_mgmt}}/mgmt/shared/authz/tokens/{{bigip_a_auth_token}}",
+						"url": "https://{{bigip_mgmt}}/mgmt/shared/authz/tokens/{{bigip_auth_token}}",
 						"method": "PATCH",
 						"header": [
 							{
@@ -89,7 +89,7 @@
 							},
 							{
 								"key": "X-F5-Auth-Token",
-								"value": "{{bigip_a_auth_token}}",
+								"value": "{{bigip_auth_token}}",
 								"description": ""
 							}
 						],
@@ -104,7 +104,7 @@
 				{
 					"name": "Step 5: Get 'example' of a Pool Resource",
 					"request": {
-						"url": "https://{{bigip_a_mgmt}}/mgmt/tm/ltm/pool/example",
+						"url": "https://{{bigip_mgmt}}/mgmt/tm/ltm/pool/example",
 						"method": "GET",
 						"header": [
 							{
@@ -114,7 +114,7 @@
 							},
 							{
 								"key": "X-F5-Auth-Token",
-								"value": "{{bigip_a_auth_token}}",
+								"value": "{{bigip_auth_token}}",
 								"description": ""
 							}
 						],
