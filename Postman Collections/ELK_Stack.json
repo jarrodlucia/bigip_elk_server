@@ -518,7 +518,7 @@
     },
     {
       "_postman_id": "0ed8ed71-6cad-97b3-c12c-02bb7ebff484",
-      "name": "GET Elasticsearch Templates",
+      "name": "GET Elasticsearch indices",
       "request": {
         "method": "GET",
         "header": [],
