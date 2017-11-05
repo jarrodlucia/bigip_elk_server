@@ -11,7 +11,6 @@ This is a cut down version of the F5 Programmibility Super Net Ops training.
     The Lab Deployment for this lab includes a single BIG-IP devices.
     For most of the labs we will configuring the BIG-IP
     device (management IP and licensing have already been completed).
-    BIG-IP-B already has some minimal configuration loaded.
 
 .. NOTE::
     It’s beneficial to have GUI/SSH sessions open to BIG-IP devices while 
