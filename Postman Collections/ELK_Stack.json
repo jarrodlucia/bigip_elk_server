@@ -281,7 +281,7 @@
       "item": [
         {
           "_postman_id": "3c0609fb-965e-c376-92a6-12c75e8227ea",
-          "name": "get Elasticsearch information",
+          "name": "GET Elasticsearch information",
           "request": {
             "method": "GET",
             "header": [],
