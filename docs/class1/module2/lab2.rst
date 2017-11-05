@@ -21,7 +21,7 @@ Perform the following steps to complete this task:
 
 	|rdp_access|
 
-	Accept warning allways
+	Accept warning always
 
 	|rdp_accept|
 
@@ -56,8 +56,8 @@ Perform the following steps to complete this task:
    :width: 7.0in
    :height: 5.0in
 .. |verify_traffic| image:: /_static/verify_traffic.png
-   :width: 7.0in
-   :height: 5.0in
+   :width: 12.0in
+   :height: 4.0in
 .. |traffic_gen| image:: /_static/traffic_gen.png
    :width: 7.0in
    :height: 5.0in
