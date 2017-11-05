@@ -182,12 +182,11 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "http://localhost:9200/_template/afm?pretty",
+                  "raw": "http://{{elk_stack}}/_template/afm?pretty",
                   "protocol": "http",
                   "host": [
-                    "localhost"
+                    "{{elk_stack}}"
                   ],
-                  "port": "9200",
                   "path": [
                     "_template",
                     "afm"
