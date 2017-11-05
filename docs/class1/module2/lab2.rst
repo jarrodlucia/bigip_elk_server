@@ -44,11 +44,11 @@ Perform the following steps to complete this task:
     |traffic_gen|
 
 .. |rdp_access| image:: /_static/rdp_access.png
-   :width: 7.0in
-   :height: 5.0in
+   :width: 3.5in
+   :height: 2.0in
 .. |rdp_accept| image:: /_static/rdp_accept.png
-   :width: 7.0in
-   :height: 5.0in
+   :width: 3.5in
+   :height: 2.0in
 .. |net_script| image:: /_static/net_script.png
    :width: 7.0in
    :height: 5.0in
