@@ -124,6 +124,23 @@ Perform the following steps to complete this task:
 
 #. Verify in BIG-IP TMUI that the new updates where changed in PEM global options.
 
+#. Click on 'Request PEM Classification Profile' we are sending a GET request to the ``/mgmt/tm/ltm/profile/classification/classification_pem`` endpoint. Check the body returned and observer the default values.
+
+    |get_pem_class|
+
+#. Click on the 'Update PEM GUpdate PEM Classification Profile' , check the body message for ELK_PEM_Publisher.
+
+    |update_pem_class|
+
+#. Verify in BIG-IP TMUI that the new updates where changed in PEM Classification.
+
+
+.. |update_pem_class|image:: /_static/update_pem_call.png
+   :width: 7.0in
+   :height: 5.0in
+.. |get_pem_class| image:: /_static/get_pem_class.png
+   :width: 7.0in
+   :height: 5.0in
 .. |update_pem_global|image:: /_static/update_pem_global.png
    :width: 7.0in
    :height: 5.0in
