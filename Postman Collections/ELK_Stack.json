@@ -65,12 +65,11 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "http://localhost:9200/_template/dns?pretty",
+                  "raw": "http://{{elk_stack}}/_template/dns?pretty",
                   "protocol": "http",
                   "host": [
-                    "localhost"
+                    "{{elk_stack}}"
                   ],
-                  "port": "9200",
                   "path": [
                     "_template",
                     "dns"
