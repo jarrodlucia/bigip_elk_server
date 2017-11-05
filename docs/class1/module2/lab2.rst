@@ -8,23 +8,56 @@
 Lab |labmodule|\.\ |labnum|\: Access Clients and Generate Traffic
 -----------------------------------------------------------------
 
-In this lab you will walk through installing the ubuntu
-base ready for ELK stack
+In this lab you will walk through re-configuring the Clients to USE the F5 for traffic. This will generate traffic for PEM / DNS / and AFM for AVR and logging to ELK Stack.
 
 Task 1 - Configure Client Netwoking & Traffic Generation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+In this task we will configure and use the Client UDF machines. These Clients are required to be reconfigured to utilise the network and DNS from the F5.. 
 
-RDP access
+Perform the following steps to complete this task:
 
-netqorking script
+#. Click the on the RDP access for UDF for each client.
 
-check all working
+	|rdp_access|
 
+	Accept warning allways
 
-Task 2 - Verify traffic on F5
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	|rdp_accept|
 
-check VS statistics
+#. Click on the networking script (this will prompt for Sudo password)
 
-check AVR as previous
+    |net_script|
+
+#. Once the script has completed, check netstat -nr and nslookup to verify you have traffic passing the F5.
+
+    |netstat|
+
+#. Verify in BIG-IP TMUI that you see traffic on the F5 VS's
+
+    |verify_traffic|
+
+#. Apply the same fix for the other client.
+
+#. Once both clients are fixed, generate traffic by opening applications and webpages (Leave the applications open so traffic generation continues)
+
+    |traffic_gen|
+
+.. |rdp_access| image:: /_static/rdp_access.png
+   :width: 7.0in
+   :height: 5.0in
+.. |rdp_accept| image:: /_static/rdp_accept.png
+   :width: 7.0in
+   :height: 5.0in
+.. |net_script| image:: /_static/net_script.png
+   :width: 7.0in
+   :height: 5.0in
+.. |netstat| image:: /_static/netstat.png
+   :width: 7.0in
+   :height: 5.0in
+.. |verify_traffic| image:: /_static/verify_traffic.png
+   :width: 7.0in
+   :height: 5.0in
+.. |traffic_gen| image:: /_static/traffic_gen.png
+   :width: 7.0in
+   :height: 5.0in
