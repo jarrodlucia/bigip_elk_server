@@ -61,7 +61,7 @@ created object with all the correct attributes already populated.
        | Root | OC | OC  |  Collection  | Resource
        *OC=Organizing Collection
 
-.. |image1| image:: /_static/image001.png
+.. |image1| image:: /_static/image1.png
    :width: 6.60194in
    :height: 0.88663in
 .. |image2| image:: /_static/image002.png
