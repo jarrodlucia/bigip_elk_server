@@ -178,7 +178,13 @@ Perform the following steps to complete this task:
 
     |create_afm_log|
 
-#. Verify in BIG-IP TMUI that the new updates where changed in AFM Log.
+#. Addtional Steps are required for AFM as not all REST commands can configure all sections at this time. Go to TMUI on BIG-IP and navigate to Security / Event Logs / Logging Profiles. Change Publishers and tick events to log.
+
+    |update_afm_log_1|
+
+    Update Network Firewall tab and click update.
+
+    |update_afm_log_2|
 
 
 .. |get_afm_report| image:: /_static/get_afm_report.png
@@ -191,6 +197,10 @@ Perform the following steps to complete this task:
    :width: 7.0in
    :height: 5.0in
 .. |create_afm_log| image:: /_static/create_afm_log.png
+   :scale 70%
+.. |update_afm_log_1| image:: /_static/update_afm_log_1.png
+   :scale 70%
+.. |update_afm_log_2| image:: /_static/update_afm_log_2.png
    :scale 70%
 
 Task 5 – Configure DNS Analytics
