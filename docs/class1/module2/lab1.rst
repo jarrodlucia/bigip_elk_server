@@ -36,7 +36,7 @@ Perform the following steps to complete this task:
 
       :raw_github_url:`/postman_collections/SP Modules.postman_collection.json`
 
-      |image88|
+  |image88|
 
 .. |image8| image:: /_static/image008.png
    :width: 0.46171in
@@ -58,7 +58,7 @@ Perform the following steps to complete this task:
 
       :raw_github_url:`/postman_collections/F5 SPDevOps.postman_environment.json`
 
-      |postman_sp_env|
+  |postman_sp_env|
 
 .. |postman_sp_mod| image:: /_static/postman_sp_mod.png
    :width: 3.54657in
@@ -93,13 +93,17 @@ Perform the following steps to complete this task:
   |add_tcp_vs|
 
 .. |get_tcp_profile| image:: /_static/get_tcp_profile.png
-   :scale 80%
+   :width: 3.54657in
+   :height: 2.80000in
 .. |create_tcp_profile| image:: /_static/create_tcp_profile.png
-   :scale 80%
+   :width: 3.54657in
+   :height: 2.80000in
 .. |verify_tcp_profile| image:: /_static/verify_tcp_profile.png
-   :scale 80%
+   :width: 3.54657in
+   :height: 2.80000in
 .. |add_tcp_vs| image:: /_static/add_tcp_vs.png
-   :scale 80%
+   :width: 3.54657in
+   :height: 2.80000in
 
 Task 3 – Configure PEM Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
