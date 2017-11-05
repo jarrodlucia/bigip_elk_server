@@ -128,53 +128,107 @@ Perform the following steps to complete this task:
 
     |get_pem_class|
 
-#. Click on the 'Update PEM GUpdate PEM Classification Profile' , check the body message for ELK_PEM_Publisher.
+#. Click on the 'Update PEM Classification Profile' , check the body message for ELK_PEM_Publisher.
 
     |update_pem_class|
 
 #. Verify in BIG-IP TMUI that the new updates where changed in PEM Classification.
 
 
-.. |update_pem_class|image:: /_static/update_pem_call.png
-   :width: 7.0in
-   :height: 5.0in
 .. |get_pem_class| image:: /_static/get_pem_class.png
    :width: 7.0in
    :height: 5.0in
-.. |update_pem_global|image:: /_static/update_pem_global.png
+.. |update_pem_class|image:: /_static/update_pem_class.png
    :width: 7.0in
    :height: 5.0in
 .. |get_pem_global| image:: /_static/get_pem_global.png
+   :width: 7.0in
+   :height: 5.0in
+.. |update_pem_global|image:: /_static/update_pem_global.png
    :width: 7.0in
    :height: 5.0in
 
 Task 4 – Configure AFM Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this task we will create and configure TCP AVR profile and apply this to 
-the requried VS.
+In this task we will query and configure AFM AVR profile and Logging. This will be done using REST API (explored in previous Lab)
 
 Perform the following steps to complete this task:
 
-#. Click the ‘Step 1: Get Authentication Token’ item in the Lab 2.1
-   Postman Collection
+#. Click the ‘AFM’ item in the SP Module Postman Collection
 
-#. Notice that we are sending a POST request to the
-   ``/mgmt/shared/authn/login`` endpoint.
+#. Notice there are two sections we must update Security Reporting and Event Logging. We will do Security Reporting first, click on 'Request AFM Security Reporting Settings' we are sending a GET request to the ``/mgmt/tm/security/analytics/settings`` endpoint. Check the body returned and observer the default values.
 
-   |image41|
+    |get_afm_report|
+
+#. Click on the 'Update AFM Security Reporting Settings' , check the body message for ELK_PEM_Publisher.
+
+    |update_afm_report|
+
+#. Verify in BIG-IP TMUI that the new updates where changed in AFM Report Settings.
+
+.. NOTE::
+    Request AFM Device DoS Settings - Can be used to report on settings currently set, however REST API cannot be used to update these settings at this time.
+
+#. Click on 'Request AFM Event Logger' we are sending a GET request to the ``/mgmt/tm/security/log/profile/`` endpoint. Check the body returned and observer the default values.
+
+    |get_afm_log|
+
+#. Click on the 'Create AFM Event Log Profile' , check the body message for ELK_PEM_Publisher.
+
+    |create_afm_log|
+
+#. Verify in BIG-IP TMUI that the new updates where changed in AFM Log.
+
+
+.. |get_afm_report| image:: /_static/get_afm_report.png
+   :width: 7.0in
+   :height: 5.0in
+.. |update_afm_report|image:: /_static/update_afm_report.png
+   :width: 7.0in
+   :height: 5.0in
+.. |get_afm_log| image:: /_static/get_afm_log.png
+   :width: 7.0in
+   :height: 5.0in
+.. |create_afm_log|image:: /_static/create_afm_log.png
+   :width: 7.0in
+   :height: 5.0in
 
 Task 5 – Configure DNS Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this task we will create and configure TCP AVR profile and apply this to 
-the requried VS.
+In this task we will query and configure TCP AVR profile. This will be done using REST API (explored in previous Lab)
 
 Perform the following steps to complete this task:
 
-#. Click the ‘Step 1: Get Authentication Token’ item in the Lab 2.1
-   Postman Collection
+#. Click the ‘TCP Analytics’ item in the SP Module Postman Collection
 
-#. Notice that we are sending a POST request to the
-   ``/mgmt/shared/authn/login`` endpoint.
+#. Notice that we are sending a GET request to the ``/mgmt/tm/ltm/profile/tcp-analytics`` endpoint. Check the body returned and observer the default values.
+
+    |get_tcp_profile|
+
+#. Click on the 'Create TCP Analtics Profile' , check the body message for ELK_PEM_Publisher (We will use the PEM index in ELK for logging TCP Optimisation)
+
+    |create_tcp_profile|
+
+#. Verify in BIG-IP TMUI that the new profile was created.
+
+    |verify_tcp_profile|
+
+#. Add in the VS manually (This is not available in REST API currently)
+
+    |add_tcp_vs|
+
+.. |get_tcp_profile| image:: /_static/get_tcp_profile.png
+   :width: 7.0in
+   :height: 5.0in
+.. |create_tcp_profile| image:: /_static/create_tcp_profile.png
+   :width: 7.0in
+   :height: 5.0in
+.. |verify_tcp_profile| image:: /_static/verify_tcp_profile.png
+   :width: 7.0in
+   :height: 5.0in
+.. |add_tcp_vs| image:: /_static/add_tcp_vs.png
+   :width: 7.0in
+   :height: 5.0in
 
