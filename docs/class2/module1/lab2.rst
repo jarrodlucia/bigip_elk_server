@@ -14,6 +14,7 @@ Task 1 Install Repo and Keys
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Download and install the public signing key:
+
 ..code::
 
 	wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
@@ -28,6 +29,7 @@ Task 2 Install elasticseach and setup system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Install Elasticsearch
+
 ..code::
 
 	sudo apt-get install elasticsearch
@@ -52,6 +54,7 @@ Task 2 Install elasticseach and setup system
 	sudo systemctl restart elasticsearch
 
 #. Configure the system to start at boot
+
 ..code::
 	
 	sudo /bin/systemctl daemon-reload
