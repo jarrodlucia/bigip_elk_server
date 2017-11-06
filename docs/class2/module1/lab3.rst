@@ -38,8 +38,8 @@ Task 1 Install Kibana
 
 
 .. |kibana1| image:: /_static/kibana1.png
-   :width: 3.5in
-   :height: 2.0in
+   :width: 7.0in
+   :height: 4.0in
 
 
 #. Kibana restart
@@ -71,8 +71,8 @@ Task 1 Install Kibana
 
 
 .. |kibana2| image:: /_static/kibana2.png
-   :width: 3.5in
-   :height: 2.0in
+   :width: 7.0in
+   :height: 4.0in
 
 
 #. Access Kibana via Linux Jumpbox to verify access
@@ -82,7 +82,7 @@ Task 1 Install Kibana
 
 
 .. |kibana3| image:: /_static/kibana3.png
-   :width: 3.5in
-   :height: 2.0in
+   :width: 7.0in
+   :height: 4.0in
 
 

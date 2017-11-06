@@ -34,8 +34,8 @@ Task 2 - Add and install Java
 |oracle|
 
 .. |oracle| image:: /_static/oracle.png
-   :width 4.0in
-   :height 1.5in
+   :width: 7.0in
+   :height: 4.0in
 
 **Fix Below for Java8 Error (If Required)**
 

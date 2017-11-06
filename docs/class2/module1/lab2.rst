@@ -48,8 +48,8 @@ Task 2 Install elasticseach and setup system
 |elastic1|
 
 .. |elastic1| image:: /_static/elastic1.png
-   :width: 3.5in
-   :height: 2.0in
+   :width: 7.0in
+   :height: 4.0in
 
 
 #. Install additional plugins
@@ -86,5 +86,5 @@ Task 2 Install elasticseach and setup system
 |elastic2|
 
 .. |elastic2| image:: /_static/elastic2.png
-   :width: 3.5in
-   :height: 2.0in
+   :width: 7.0in
+   :height: 4.0in
