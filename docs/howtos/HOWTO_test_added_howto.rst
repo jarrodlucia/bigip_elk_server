@@ -23,8 +23,8 @@ Update by clicking on the refresh button
 |howto2|
 
 .. |howto2| image:: /_static/howto2.png
-   :width: 12.0in
-   :height: 6.0in
+   :width: 6.0in
+   :height: 3.0in
 
 
 **Note the increased change**
@@ -32,8 +32,8 @@ Update by clicking on the refresh button
 |howto3|
 
 .. |howto3| image:: /_static/howto3.png
-   :width: 12.0in
-   :height: 6.0in
+   :width: 2.0in
+   :height: 1.0in
 
 
 
@@ -46,5 +46,3 @@ Index changes in json can be done manually if importing from another system.
 #. Export the new search json
 #. Open the json and copy the index id
 #. Open the json to be imported and paste the updated index id
-
-

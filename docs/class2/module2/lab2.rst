@@ -22,7 +22,7 @@ Create and Save a 3 x search based on the previous lab.
 
 .. |create1| image:: /_static/create1.png
    :width: 12.0in
-   :height: 6.0in
+   :height: 5.0in
 
 
 Task 2 - Creating Visualisations
@@ -33,7 +33,7 @@ Create and Save a 3 x visualisation based on the above search or the previous la
 |create2|
 
 .. |create2| image:: /_static/create2.png
-   :width: 12.0in
+   :width: 10.0in
    :height: 6.0in
 
 
@@ -55,4 +55,4 @@ Create a dashboard from your 3 visualisations created above.
 
 .. |create4| image:: /_static/create4.png
    :width: 12.0in
-   :height: 6.0in
+   :height: 4.0in
