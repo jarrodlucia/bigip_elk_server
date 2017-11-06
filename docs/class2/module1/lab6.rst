@@ -21,7 +21,7 @@ Task 1 - Confirm BIG-IP is sending logs to ELK Stack
 add in screens
 
 
-..NOTE:: 
+.. NOTE:: 
 
 	Make sure the correct port is allocated as per previous Logstash configuration
 		- Pool = tcp server:5514 - PEM

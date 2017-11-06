@@ -3,7 +3,7 @@ Module 1: ELK Stack Build Ubuntu Server
 
 ELK stack from the previous module is made up of three key components:
 	- Logstash, 
-	- Elasticsearch
+	- Elasticsearch,
 	- Kibana.
 
 There are many ready made ELK stack services that can be used:

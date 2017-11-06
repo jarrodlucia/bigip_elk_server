@@ -21,7 +21,6 @@ This class covers the following topics:
     
   - Dashboards
 
-- Kibana Competition, best visualisation, best dashboard
 
 Expected time to complete: **1.5 hours**
 
