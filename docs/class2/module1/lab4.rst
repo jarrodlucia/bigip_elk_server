@@ -15,7 +15,7 @@ Task 1 - Install Logstah
 
 #. Install Logstash
 
-  ..code::
+  .. code::
 
     sudo apt-get install logstash
 

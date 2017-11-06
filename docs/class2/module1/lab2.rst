@@ -15,14 +15,14 @@ Task 1 Install Repo and Keys
 
 #. Download and install the public signing key:
 	
-	..code::
+	.. code::
 
 	  wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 
 
 #. Save the repository definition to /etc/apt/sources.list.d/elastic-5.x.list:
 
-	..code::
+	.. code::
 	
 	  echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
 	  sudo apt-get update
@@ -33,14 +33,14 @@ Task 2 Install elasticseach and setup system
 
 #. Install Elasticsearch
 
-	..code::
+	.. code::
 
 	  sudo apt-get install elasticsearch
 
 
 #. Edit config file to change bind address
 
-	..code::
+	.. code::
 	
 	  sudo vi /etc/elasticsearch/elasticsearch.yml
 
@@ -52,7 +52,7 @@ Task 2 Install elasticseach and setup system
 
 #. Install additional plugins
 
-	..code::
+	.. code::
 
 	  sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-geoip
       sudo /usr/share/elasticsearch/bin/logstash-plugin install logstash-filter-dns
@@ -60,14 +60,14 @@ Task 2 Install elasticseach and setup system
 
 #. Restart Elastic Search
 
-	..code::
+	.. code::
 	
 	  sudo systemctl restart elasticsearch
 
 
 #. Configure the system to start at boot
 
-	..code::
+	.. code::
 	
 	  sudo /bin/systemctl daemon-reload
 	  sudo /bin/systemctl enable elasticsearch.service
@@ -75,7 +75,7 @@ Task 2 Install elasticseach and setup system
 
 #.	Checking Start / Stop / Status
 
-	..code::
+	.. code::
 
 	  sudo systemctl start elasticsearch.service
 	  sudo systemctl stop elasticsearch.service
