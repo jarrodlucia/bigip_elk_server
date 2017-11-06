@@ -143,21 +143,21 @@ Task 1 - Install Logstah
         output {
             if [type] == 'pem' {
               elasticsearch {
-              hosts => ["localhost:9200"]
+              hosts => ["10.1.1.5:9200"]
               index => "pem-%{+YYYY.MM.dd}"
               template_name => "pem"
             }
             }
             if [type] == 'afm' {
               elasticsearch {
-              hosts => ["localhost:9200"]
+              hosts => ["10.1.1.5:9200"]
               index => "afm-%{+YYYY.MM.dd}"
               template_name => "afm"
             }
             }
             if [type] == 'dns' {
               elasticsearch {
-              hosts => ["localhost:9200"]
+              hosts => ["10.1.1.5:9200"]
               index => "dns-%{+YYYY.MM.dd}"
               template_name => "dns"
             }

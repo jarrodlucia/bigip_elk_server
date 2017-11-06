@@ -38,7 +38,7 @@ Task 2 Install elasticseach and setup system
   sudo apt-get install elasticsearch
 
 
-#. Edit config file to change bind address
+#. Edit config file to change bind address to Host address 10.1.1.5
 
 .. code::
 	

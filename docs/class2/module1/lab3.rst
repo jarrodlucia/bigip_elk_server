@@ -32,7 +32,7 @@ Task 1 Install Kibana
 
 	- server.port: 5601
 	- server.host: "10.1.1.5"
-	- elasticsearch.url: "http://localhost:9200"
+	- elasticsearch.url: "http://10.1.1.5:9200"
 
 |kibana1|
 
