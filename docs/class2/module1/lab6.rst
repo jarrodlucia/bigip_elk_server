@@ -40,9 +40,17 @@ sudo tcpdump -i eth1 port 5514
 
 curl 'localhost:9200/_cat/indices?v'
 
-- health status index          uuid                   pri rep docs.count docs.deleted store.size pri.store.size
-- yellow open   pem-2017.01.18 -drykpvETBK0wVN3dKTDxw   5   1        526            0      1.5mb          1.5mb
-- yellow open   .kibana        da8KKtaLS12mpj9bm7Izig   1   1          1            0      3.1kb          3.1kb
+|template8|
+
+.. |template8| image:: /_static/template8.png
+   :width: 6.0in
+   :height: 5.0in
 
 
-or Postman screenshot
+or via POSTMAN
+
+|template9|
+
+.. |template9| image:: /_static/template9.png
+   :width: 6.0in
+   :height: 5.0in
