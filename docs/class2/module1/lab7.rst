@@ -48,7 +48,7 @@ Searches
 |template10|
 
 .. |template10| image:: /_static/template10.png
-   :width: 6.0in
+   :width: 12.0in
    :height: 5.0in
 
 |template11|
@@ -83,5 +83,5 @@ Dashboards
 
 .. NOTE::
 
-	**The JSON files have been placed in the In_CASE_OF_EMERGENCY folder on the desktop**
+	**The JSON files have been placed in the IN_CASE_OF_EMERGENCY folder on the desktop**
 
