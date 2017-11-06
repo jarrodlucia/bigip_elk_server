@@ -20,8 +20,8 @@ Task 1 - Create Kibana Index's
 
 Configure the first and default index
 
-- index pattern = pem-*
-- select @timestamps
+- index pattern = ``pem-*``
+- select ``@timestamps``
 
 |template15|
 
@@ -30,11 +30,11 @@ Configure the first and default index
    :height: 5.0in
 
 
-- index pattern = afm-*
-- select @timestamps
+- index pattern = ``afm-*``
+- select ``@timestamps``
 
-- index pattern = dns-*
-- select @timestamps
+- index pattern = ``dns-*``
+- select ``@timestamps``
 
 |template14|
 
@@ -46,11 +46,12 @@ Configure the first and default index
 Task 2 - Import preconfigured Kibana json's
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-# Searches / Visualisation and Dashboards
+Searches / Visualisation and Dashboards
 
 #. Import object data into Kibana
 
 Import the JSON files in the following order:
+
 - Searches
 - Visualisations
 - Dashboards

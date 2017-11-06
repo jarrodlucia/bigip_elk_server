@@ -45,6 +45,7 @@ Task 3 - Add and install Java
    :width: 7.0in
    :height: 4.0in
 
+
 **Fix Below for Java8 Error (If Required)**
 
 .. code-block:: none

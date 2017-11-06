@@ -20,7 +20,7 @@ Task 1 Option1 - Install module templates in Elasticsearch via cURL
 
 #. Install Index Templates into Elastic Search for the required modules
 
-  cd <git clone directory>/json/ **git clone directory from Lab 1**
+  cd ``<git clone directory>/json/`` **git clone directory from Lab 1**
 
 .. code::
 
