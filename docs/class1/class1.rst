@@ -1,4 +1,4 @@
-Class 1: BIG-IP AVR (BIG-IP Goodiness)
+Class 1: BIG-IP AVR (BIG-IP Goodness)
 ======================================
 
 This class covers the following topics:

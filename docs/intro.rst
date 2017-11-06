@@ -17,8 +17,8 @@ lab and access your lab.
 .. NOTE::
 	All work for this lab will be performed exclusively from the Linux Jumphost and Linux Client Machines. All required access and servies needed to perform classes and labs are provided by the UDF. No installation or interaction with your local system is required.
 
-Prerequisits
-----------------
+Prerequisites
+-------------
 
 In order to complete this series of training classes you will need to utilize
 the provided blueprint for the course session. To access the UDF sessions you will
@@ -49,7 +49,7 @@ path. The focus of the lab is Control Plane programmability and Data Plane eleme
 so this lab will focus at both parts at different time.
 The following components have been included in your lab environment:
 
--  1 x F5 BIG-IP VE (v13.0 HF2)
+-  1 x ``F5 BIG-IP VE`` (v13.0 HF2)
 
 -  1 x Linux Jumphost (ubuntu 16.04 - mate)
 
