@@ -43,8 +43,8 @@ curl 'localhost:9200/_cat/indices?v'
 |template8|
 
 .. |template8| image:: /_static/template8.png
-   :width: 6.0in
-   :height: 5.0in
+   :width: 5.0in
+   :height: 7.0in
 
 
 or via POSTMAN
