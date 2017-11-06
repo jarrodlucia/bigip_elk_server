@@ -34,7 +34,10 @@ Task 2 - Import preconfigured Kibana json's
 
 #. Import object data into Kibana
 
-add screen of import
+Import the JSON files in the following order:
+- Searches
+- Visualisations
+- Dashboards
 
 Searches
 
@@ -42,14 +45,43 @@ Searches
 
       :raw_github_url:`/json/elk_searches.json`
 
+|template10|
+
+.. |template10| image:: /_static/template10.png
+   :width: 6.0in
+   :height: 5.0in
+
+|template11|
+
+.. |template11| image:: /_static/template11.png
+   :width: 4.0in
+   :height: 3.0in
+
 Visuals
 
    .. parsed-literal:: 
 
       :raw_github_url:`/json/elk_visualisations.json`
 
+|template12|
+
+.. |template12| image:: /_static/template12.png
+   :width: 6.0in
+   :height: 5.0in
+
 Dashboards
 
    .. parsed-literal:: 
 
       :raw_github_url:`/json/elk_dashboards.json`
+
+|template13|
+
+.. |template13| image:: /_static/template13.png
+   :width: 12.0in
+   :height: 6.0in
+
+.. NOTE::
+
+	**The JSON files have been placed in the In_CASE_OF_EMERGENCY folder on the desktop**
+
