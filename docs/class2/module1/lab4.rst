@@ -15,25 +15,40 @@ Task 1 - Install Logstah
 
 #. Install Logstash
 
-sudo apt-get install logstash
+  ..code::
 
-#. Install Additional Plugin (This step can take a while be patient)
- cd /usr/share/logstash/bin/
+    sudo apt-get install logstash
 
+
+#. Install Additional Plugins
+
+  .. code::
+
+    sudo /usr/share/logstash/bin/logstash-plugin install logstash-filter-dns
+    sudo /usr/share/logstash/bin/logstash-plugin install logstash-filter-geoip
 
 
 #. Copy config file to logstash_main.conf or create new file to Directory /etc/logstash/conf.d/
 
-  sudo cp logstash_main.conf /etc/logstash/conf.d/logstash.conf
+  .. code::
+
+    sudo cp logstash_main.conf /etc/logstash/conf.d/logstash.conf
+
 
 #. Logstash restart
 
-  sudo systemctl restart logstash.service
+  .. code::
+
+    sudo systemctl restart logstash.service
+
 
 #. To configure Logstash to start automatically when the system boots up, run the following commands:
+   
+  .. code::
 
-  sudo /bin/systemctl daemon-reload
-  sudo /bin/systemctl enable logstash.service
+    sudo /bin/systemctl daemon-reload
+    sudo /bin/systemctl enable logstash.service
+
 
 #. Logstash Control
 
@@ -44,13 +59,13 @@ sudo apt-get install logstash
     sudo systemctl status logstash.service
 
 
-#. logstash.conf
+**logstash.conf**
 
    Logstash Contents:
 
    .. code-block:: json
       :linenos:
-      :emphasize-lines: 29-38
+      :emphasize-lines: 3,7,11
 
         input {
             tcp {

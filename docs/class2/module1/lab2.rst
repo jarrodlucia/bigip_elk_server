@@ -14,17 +14,19 @@ Task 1 Install Repo and Keys
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Download and install the public signing key:
-
-	..code::
 	
-		wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+	..code::
+
+	  wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+
 
 #. Save the repository definition to /etc/apt/sources.list.d/elastic-5.x.list:
 
 	..code::
 	
-		echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
-		sudo apt-get update
+	  echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
+	  sudo apt-get update
+
 
 Task 2 Install elasticseach and setup system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,38 +35,48 @@ Task 2 Install elasticseach and setup system
 
 	..code::
 
-		sudo apt-get install elasticsearch
+	  sudo apt-get install elasticsearch
+
 
 #. Edit config file to change bind address
 
 	..code::
 	
-		sudo vi /etc/elasticsearch/elasticsearch.yml
+	  sudo vi /etc/elasticsearch/elasticsearch.yml
 
-		Set bind to localhost
-		# ---------------------------------- Network -----------------------------------
-		#
-		# Set the bind address to a specific IP (IPv4 or IPv6):
-		#
+
+	Set bind to localhost
+		
 		network.host: localhost
+
+
+#. Install additional plugins
+
+	..code::
+
+	  sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-geoip
+      sudo /usr/share/elasticsearch/bin/logstash-plugin install logstash-filter-dns
+
 
 #. Restart Elastic Search
 
 	..code::
 	
-		sudo systemctl restart elasticsearch
+	  sudo systemctl restart elasticsearch
+
 
 #. Configure the system to start at boot
 
 	..code::
 	
-		sudo /bin/systemctl daemon-reload
-		sudo /bin/systemctl enable elasticsearch.service
+	  sudo /bin/systemctl daemon-reload
+	  sudo /bin/systemctl enable elasticsearch.service
+
 
 #.	Checking Start / Stop / Status
 
 	..code::
 
-		sudo systemctl start elasticsearch.service
-		sudo systemctl stop elasticsearch.service
-		sudo systemctl status elasticsearch.service
+	  sudo systemctl start elasticsearch.service
+	  sudo systemctl stop elasticsearch.service
+	  sudo systemctl status elasticsearch.service
