@@ -45,8 +45,11 @@ Task 2 Install elasticseach and setup system
   sudo vi /etc/elasticsearch/elasticsearch.yml
 
 
-	- Set bind to localhost
-	- network.host: localhost
+  |elastic1|
+
+.. |elastic1| image:: /_static/elastic1.png
+   :width: 3.5in
+   :height: 2.0in
 
 
 #. Install additional plugins
@@ -54,7 +57,6 @@ Task 2 Install elasticseach and setup system
 .. code::
 
   sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-geoip
-  sudo /usr/share/elasticsearch/bin/logstash-plugin install logstash-filter-dns
 
 
 #. Restart Elastic Search

@@ -29,6 +29,12 @@ Task 2 - Add and install Java
   sudo apt-get update
   sudo apt-get -y install oracle-java8-installer
 
+**Accept the Oracle License Agreement**
+
+  |oracle|
+
+.. |oracle| image:: /_static/oracle.png
+   :scale 80%
 
 **Fix Below for Java8 Error (If Required)**
 
