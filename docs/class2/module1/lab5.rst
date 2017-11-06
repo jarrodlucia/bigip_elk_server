@@ -33,5 +33,34 @@ Task 1 Option1 - Install module templates in Elasticsearch via POSTMAN
 
 #. Import ELK Postman Collection and Environment
 
+#. Click the 'Import from Link' tab.  Paste the following URL into the
+   text box and click 'Import'
+
+   .. parsed-literal:: 
+
+      :raw_github_url:`/postman_collections/ELK Stack.postman_collection.json`
+
+   |template1|
+
+#. You should now see a collection named 'F5 ELK'
+   in your Postman Collections sidebar:
+
+   |template2|
+
+#. Import the Environment file by clicking 'Import' -> 'Import from Link' and
+   pasting the following URL and clicking 'Import':
+
+   .. parsed-literal:: 
+
+      :raw_github_url:`/postman_collections/F5 ELK Env.postman_environment.json` 
 
 
+.. |template1| image:: /_static/template1.png
+   :width: 12.0in
+   :height: 3.0in
+.. |template2| image:: /_static/template2.png
+   :width: 12.0in
+   :height: 3.0in
+
+
+#. 
