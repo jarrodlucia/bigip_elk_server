@@ -23,7 +23,7 @@ Update by clicking on the refresh button
 |howto2|
 
 .. |howto2| image:: /_static/howto2.png
-   :width: 6.0in
+   :width: 12.0in
    :height: 3.0in
 
 

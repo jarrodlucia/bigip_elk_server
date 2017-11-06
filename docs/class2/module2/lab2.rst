@@ -55,4 +55,4 @@ Create a dashboard from your 3 visualisations created above.
 
 .. |create4| image:: /_static/create4.png
    :width: 12.0in
-   :height: 4.0in
+   :height: 3.0in
