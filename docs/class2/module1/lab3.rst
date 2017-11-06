@@ -13,32 +13,49 @@ In this lab we will install Kibana
 Task 1 Install Kibana
 ~~~~~~~~~~~~~~~~~~~~~
 
-#Install Kibana
-sudo apt-get install kibana
+#. Install Kibana
 
-#Change config file to set Outside IP address
-sudo vi /etc/kibana/kibana.yml
+..code::
 
-# Kibana is served by a back end server. This setting specifies the port to use.
-server.port: 5601
+	sudo apt-get install kibana
 
-# Specifies the address to which the Kibana server will bind. IP addresses and host names are both valid values.
-# The default is 'localhost', which usually means remote machines will not be able to connect.
-# To allow connections from remote users, set this parameter to a non-loopback address.
-server.host: "192.168.1.4"
+#. Change config file to set Outside IP address
 
-# The URL of the Elasticsearch instance to use for all your queries.
-elasticsearch.url: "http://localhost:9200"
+..code::
+
+	sudo vi /etc/kibana/kibana.yml
+
+#. Kibana is served by a back end server. This setting specifies the port to use.
+
+	server.port: 5601
+
+	# Specifies the address to which the Kibana server will bind. IP addresses and host names are both valid values.
+	# The default is 'localhost', which usually means remote machines will not be able to connect.
+	# To allow connections from remote users, set this parameter to a non-loopback address.
+	server.host: "192.168.1.4"
+
+#. The URL of the Elasticsearch instance to use for all your queries.
+
+	elasticsearch.url: "http://localhost:9200"
 
 
-#Kiabana restart
+#. Kibana restart
+
+..code::
+
 sudo systemctl restart kibana.service
 
-#To configure Kibana to start automatically when the system boots up, run the following commands:
+#. To configure Kibana to start automatically when the system boots up, run the following commands:
+
+..code::
+
 sudo /bin/systemctl daemon-reload
 sudo /bin/systemctl enable kibana.service
 
-#Kibana Control
+#. Kibana Control
+
+..code::
+
 sudo systemctl start kibana.service
 sudo systemctl stop kibana.service
 sudo systemctl status kibana.service
