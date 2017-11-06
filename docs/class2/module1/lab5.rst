@@ -72,7 +72,8 @@ Task 1 Option1 - Install module templates in Elasticsearch via POSTMAN
 .. |template3| image:: /_static/template3.png
    :scale 80%
 
-   You should see cluster information regarding elasticsearch
+
+You should see cluster information regarding elasticsearch
 
 
 #. Click on GET Elasticsearch indices, **HIT SEND**.
@@ -83,9 +84,10 @@ Task 1 Option1 - Install module templates in Elasticsearch via POSTMAN
    :width: 6.0in
    :height: 5.0in
 
-   You should see the current index's and information regarding each index.
 
-   **We will use this command to observe the creation of new indexes**
+You should see the current index's and information regarding each index.
+
+**We will use this command to observe the creation of new indexes**
 
 
 #. Click on GET Elasticsearch Template Searches, **HIT SEND**
@@ -96,7 +98,8 @@ Task 1 Option1 - Install module templates in Elasticsearch via POSTMAN
    :width: 6.0in
    :height: 5.0in
 
-   You should see any current templates listed.
+
+You should see any current templates listed.
 
 .. NOTE::
     New Install will **NOT** contain any templates showing {}

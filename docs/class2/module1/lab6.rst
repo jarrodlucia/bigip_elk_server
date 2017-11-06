@@ -8,9 +8,9 @@
 Lab |labmodule|\.\ |labnum|\: Send Logs to ELK Stack
 ----------------------------------------------------
 
-configure f5 for logging to new ELK stack
+Configure f5 for logging to new ELK stack
 
-check that data is arriving at ELK stack
+Check that data is arriving at ELK stack
 
 
 Task 1 - Confirm BIG-IP is sending logs to ELK Stack
@@ -18,7 +18,13 @@ Task 1 - Confirm BIG-IP is sending logs to ELK Stack
 
 #. Confirm via TMUI that the setup from **Class 1 Lab 2.1** 
 
-add in screens
+Update AFM Reporting to include what was not included in previous lab.
+
+|template16|
+
+.. |template16| image:: /_static/template16.png
+   :width: 12.0in
+   :height: 4.0in
 
 
 .. NOTE:: 
@@ -43,8 +49,8 @@ curl 'localhost:9200/_cat/indices?v'
 |template8|
 
 .. |template8| image:: /_static/template8.png
-   :width: 5.0in
-   :height: 5.0in
+   :width: 6.0in
+   :height: 4.0in
 
 
 or via POSTMAN
@@ -53,4 +59,4 @@ or via POSTMAN
 
 .. |template9| image:: /_static/template9.png
    :width: 6.0in
-   :height: 5.0in
+   :height: 4.0in

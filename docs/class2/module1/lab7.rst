@@ -8,23 +8,39 @@
 Lab |labmodule|\.\ |labnum|\: Create Index and Import Pre-Configured
 --------------------------------------------------------------------
 
-create index's in kibana
+This Lab will focus on creating the index's for each module based on logstash in **Lab4**
 
-import f5 module json searches / virtuals / dashboards
+We will import the prepared f5 module json kibana searches / virtuals / and dashboards.
 
 
 Task 1 - Create Kibana Index's
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Configure Indexes in Kibana
+
+Configure the first and default index
+
 - index pattern = pem-*
 - select @timestamps
+
+|template15|
+
+.. |template15| image:: /_static/template15.png
+   :width: 12.0in
+   :height: 5.0in
+
 
 - index pattern = afm-*
 - select @timestamps
 
 - index pattern = dns-*
 - select @timestamps
+
+|template14|
+
+.. |template14| image:: /_static/template14.png
+   :width: 12.0in
+   :height: 5.0in
 
 
 Task 2 - Import preconfigured Kibana json's
