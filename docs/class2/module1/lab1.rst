@@ -15,8 +15,9 @@ Task 1 - Install additional software required for ELK Stack
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code::
-		sudo apt-get install software-properties-common
-		sudo apt install curl
+	
+	sudo apt-get install software-properties-common
+	sudo apt install curl
 
 
 Task 2 - Add and install Java
@@ -24,6 +25,6 @@ Task 2 - Add and install Java
 
 .. code::
 
-		sudo add-apt-repository -y ppa:webupd8team/java
-		sudo apt-get update
-		sudo apt-get -y install oracle-java8-installer
+	sudo add-apt-repository -y ppa:webupd8team/java
+	sudo apt-get update
+	sudo apt-get -y install oracle-java8-installer
