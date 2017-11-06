@@ -8,35 +8,23 @@
 Lab |labmodule|\.\ |labnum|\: Configure elasticsearch templates
 ---------------------------------------------------------------
 
-Upload elasticsearch templates and mappings
+Upload elasticsearch templates and mappings. There are multiple way this can be achieved. The most common ways are cURL and a REST based program such as POSTMAN. Feel free to use whichever method you are most comfortable with.
+
+.. NOTE:: 
+
+RECOMMENDAION - use cURL for the uploading of the templates with json file. POSTMAN is useful for Elasticsearch management once the template are in place.
 
 
 
-Task 1 - Curl module templates inot elasticsearch
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Task 1 - Install module templates in Elasticsearch via cURL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #Install Index Templates into Elastic Search for the required modules
-- CURL - XPUT *.json (requried file upload)
-- curl -XPUT http://localhost:9200/_template/pem?pretty -d @pem_mapping.json
-- curl -XPUT http://localhost:9200/_template/afm?pretty -d @afm_mapping.json
-- curl -XPUT http://localhost:9200/_template/dns?pretty -d @dns_mapping.json
-
-
-We will implement a workflow that is best depicted by the following branch
-diagram:
 
 .. code::
 
-   Start
-     |
-     |- Authenticate
-     |  |- Authenticate to BIG-IP A
-     |  |- Authenticate to BIG-IP B
-     |
-     |- Get BIGIP Version
-     |  |- Get BIGIP Version on BIG-IP A
-     |  |- Get BIGIP Version on BIG-IP B
-     |
-   Stop
+  curl -XPUT http://localhost:9200/_template/pem?pretty -d @pem_mapping.json
+  curl -XPUT http://localhost:9200/_template/afm?pretty -d @afm_mapping.json
+  curl -XPUT http://localhost:9200/_template/dns?pretty -d @dns_mapping.json
 
-T
+

@@ -8,7 +8,6 @@
 Lab |labmodule|\.\ |labnum| – Kibana Navigation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-kibana interface explantion
 
 Task 1 - Creating Searches
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

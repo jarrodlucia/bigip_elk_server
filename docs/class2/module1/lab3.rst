@@ -30,9 +30,9 @@ Task 1 Install Kibana
 
 	Kibana is served by a back end server. This setting specifies the port to use. Server port is set as default Kibana Port 5601. Server host should be set to the UDF Management IP address 10.1.1.5 as we will be accessing this via the Linux Jumphost. The URL of the Elasticsearch instance to use for all your queries.
 
-	server.port: 5601
-	server.host: "10.1.1.5"
-	elasticsearch.url: "http://localhost:9200"
+	- server.port: 5601
+	- server.host: "10.1.1.5"
+	- elasticsearch.url: "http://localhost:9200"
 
 
 #. Kibana restart
