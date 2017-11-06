@@ -22,6 +22,7 @@ Task 1 Option1 - Install module templates in Elasticsearch via cURL
 
 .. code::
 
+  cd <git clone directory>/json/ **got clone directory from Lab 1**
   curl -XPUT http://localhost:9200/_template/pem?pretty -d @pem_mapping.json
   curl -XPUT http://localhost:9200/_template/afm?pretty -d @afm_mapping.json
   curl -XPUT http://localhost:9200/_template/dns?pretty -d @dns_mapping.json
@@ -30,5 +31,7 @@ Task 1 Option1 - Install module templates in Elasticsearch via cURL
 Task 1 Option1 - Install module templates in Elasticsearch via POSTMAN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. add screen shot
+#. Import ELK Postman Collection and Environment
+
+
 

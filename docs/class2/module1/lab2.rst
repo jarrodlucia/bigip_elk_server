@@ -86,5 +86,5 @@ Task 2 Install elasticseach and setup system
 |elastic2|
 
 .. |elastic2| image:: /_static/elastic2.png
-   :width: 7.0in
-   :height: 4.0in
+   :width: 12.0in
+   :height: 2.0in

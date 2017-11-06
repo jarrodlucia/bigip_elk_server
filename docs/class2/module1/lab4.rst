@@ -36,14 +36,15 @@ Task 1 - Install Logstah
 
 
 .. |logstash1| image:: /_static/logstash1.png
-   :width: 7.0in
-   :height: 4.0in
+   :width: 12.0in
+   :height: 3.0in
 
 
-#. Create new file to Directory /etc/logstash/conf.d/
+#. Copy or Create new file to Directory /etc/logstash/conf.d/
 
 .. code::
 
+  sudo cp <git clone directory>/config_files/logstash.conf /etc/logstash/conf.d/logstash.conf
   sudo vi /etc/logstash/conf.d/logstash.conf
 
 
@@ -60,9 +61,9 @@ Task 1 - Install Logstah
 |logstash2|
 
 
-.. |logstash1| image:: /_static/logstash2.png
-   :width: 7.0in
-   :height: 4.0in
+.. |logstash2| image:: /_static/logstash2.png
+   :width: 12.0in
+   :height: 3.0in
 
 
 #. To configure Logstash to start automatically when the system boots up, run the following commands:
@@ -83,8 +84,6 @@ Task 1 - Install Logstah
 
 
 **logstash.conf**
-
-   Logstash Contents:
 
    .. code-block:: json
       :linenos:

@@ -71,7 +71,7 @@ Task 1 Install Kibana
 
 
 .. |kibana2| image:: /_static/kibana2.png
-   :width: 7.0in
+   :width: 12.0in
    :height: 4.0in
 
 
@@ -82,7 +82,7 @@ Task 1 Install Kibana
 
 
 .. |kibana3| image:: /_static/kibana3.png
-   :width: 7.0in
+   :width: 14.0in
    :height: 4.0in
 
 

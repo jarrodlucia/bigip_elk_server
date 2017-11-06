@@ -11,7 +11,15 @@ Lab |labmodule|\.\ |labnum|\: Install the Ubuntu Base
 In this lab you will walk through installing the ubuntu
 base ready for ELK stack
 
-Task 1 - Install additional software required for ELK Stack
+Task 1 - GIT Clone Repo onto the Server
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code::
+
+git clone https://github.com/jarrodlucia/bigip_elk_server <directory of choice>
+
+
+Task 2 - Install additional software required for ELK Stack
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code::
@@ -20,7 +28,7 @@ Task 1 - Install additional software required for ELK Stack
   sudo apt install curl
 
 
-Task 2 - Add and install Java
+Task 3 - Add and install Java
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code::
