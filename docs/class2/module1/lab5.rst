@@ -12,14 +12,13 @@ Upload elasticsearch templates and mappings. There are multiple way this can be 
 
 .. NOTE:: 
 
-RECOMMENDAION - use cURL for the uploading of the templates with json file. POSTMAN is useful for Elasticsearch management once the template are in place.
+    **RECOMMENDATION** Use cURL for the uploading of the templates with json file. POSTMAN is useful for Elasticsearch management once the template are in place.
 
 
-
-Task 1 - Install module templates in Elasticsearch via cURL
+Task 1 Option1 - Install module templates in Elasticsearch via cURL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#Install Index Templates into Elastic Search for the required modules
+#. Install Index Templates into Elastic Search for the required modules
 
 .. code::
 
@@ -28,3 +27,7 @@ Task 1 - Install module templates in Elasticsearch via cURL
   curl -XPUT http://localhost:9200/_template/dns?pretty -d @dns_mapping.json
 
 
+Task 1 Option1 - Install module templates in Elasticsearch via POSTMAN
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#. add screen shot
