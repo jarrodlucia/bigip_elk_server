@@ -33,6 +33,8 @@ Configure the first and default index
 - index pattern = ``afm-*``
 - select ``@timestamps``
 
+**Follow PEM example above for AFM**
+
 - index pattern = ``dns-*``
 - select ``@timestamps``
 
@@ -56,7 +58,7 @@ Import the JSON files in the following order:
 - Visualisations
 - Dashboards
 
-Searches
+**Searches**
 
    .. parsed-literal:: 
 
@@ -74,7 +76,7 @@ Searches
    :width: 4.0in
    :height: 3.0in
 
-Visuals
+**Visuals**
 
    .. parsed-literal:: 
 
@@ -86,7 +88,7 @@ Visuals
    :width: 6.0in
    :height: 5.0in
 
-Dashboards
+**Dashboards**
 
    .. parsed-literal:: 
 
