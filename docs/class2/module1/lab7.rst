@@ -32,7 +32,24 @@ Task 2 - Import preconfigured Kibana json's
 
 # Searches / Visualisation and Dashboards
 
-#Import object data into Kibana
+#. Import object data into Kibana
 
-- Change Index UUID in json
-- Import object json into Kibana
+add screen of import
+
+Searches
+
+   .. parsed-literal:: 
+
+      :raw_github_url:`/json/elk_searches.json`
+
+Visuals
+
+   .. parsed-literal:: 
+
+      :raw_github_url:`/json/elk_visualisations.json`
+
+Dashboards
+
+   .. parsed-literal:: 
+
+      :raw_github_url:`/json/elk_dashboards.json`
