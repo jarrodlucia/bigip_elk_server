@@ -19,7 +19,7 @@ This task will focus on explation of the Kibana interface and navigating differe
 
 .. |interface1| image:: /_static/interface1.png
    :width: 12.0in
-   :height: 10.0in
+   :height: 6.0in
 
 
 Try changing the following:
@@ -53,7 +53,7 @@ Field searching is very useful in Kibana and can be used to see types of data an
 
 .. |search1| image:: /_static/search1.png
    :width: 12.0in
-   :height: 8.0in
+   :height: 6.0in
 
 
 #. Click the add button.
@@ -64,7 +64,7 @@ Field searching is very useful in Kibana and can be used to see types of data an
 
 .. |search2| image:: /_static/search2.png
    :width: 12.0in
-   :height: 8.0in
+   :height: 6.0in
 
 
 .. NOTE::
@@ -79,7 +79,7 @@ This type if searching is searching all data fields not only Selected fields as 
 
 .. |search3| image:: /_static/search3.png
    :width: 12.0in
-   :height: 8.0in
+   :height: 6.0in
 
 
 .. NOTE::
