@@ -31,10 +31,11 @@ Task 2 - Add and install Java
 
 **Accept the Oracle License Agreement**
 
-  |oracle|
+|oracle|
 
 .. |oracle| image:: /_static/oracle.png
-   :scale 80%
+   :width 4.0in
+   :height 1.5in
 
 **Fix Below for Java8 Error (If Required)**
 

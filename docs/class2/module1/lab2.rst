@@ -45,7 +45,7 @@ Task 2 Install elasticseach and setup system
   sudo vi /etc/elasticsearch/elasticsearch.yml
 
 
-  |elastic1|
+|elastic1|
 
 .. |elastic1| image:: /_static/elastic1.png
    :width: 3.5in
@@ -81,3 +81,10 @@ Task 2 Install elasticseach and setup system
   sudo systemctl start elasticsearch.service
   sudo systemctl stop elasticsearch.service
   sudo systemctl status elasticsearch.service
+
+
+|elastic2|
+
+.. |elastic2| image:: /_static/elastic2.png
+   :width: 3.5in
+   :height: 2.0in
