@@ -8,6 +8,11 @@
 Lab |labmodule|\.\ |labnum|\: Create Index and Import Pre-Configured
 --------------------------------------------------------------------
 
+Index's are elasticsearchs way of storing ``documents`` in ``shards``. When index's are created the mapping templates we uploaded before are used to map each of the fields to a type. This is only done once when the index is created
+
+.. NOTE::
+	**If mappings are changed are updates required the ``index`` will have to be deleted, the template deleted and mapping changed and template added. At this point re-creating the index will remap to the new template**
+
 This Lab will focus on creating the index's for each module based on logstash in **Lab4**
 
 We will import the prepared f5 module json kibana searches / virtuals / and dashboards.

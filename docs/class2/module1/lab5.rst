@@ -8,6 +8,8 @@
 Lab |labmodule|\.\ |labnum|\: Configure elasticsearch templates
 ---------------------------------------------------------------
 
+Templates are used to create mappings between logstash and elasticsearch. Without the mappings elasticsearch will create automatic mappings however these will be elasticsearch's best guess as to the field. In most cases this will default to ``text``. This means many of the fields such as IP address's will be searchable but not able to be used in Visualisations.
+
 Upload elasticsearch templates and mappings. There are multiple way this can be achieved. The most common ways are cURL and a REST based program such as POSTMAN. Feel free to use whichever method you are most comfortable with.
 
 .. NOTE:: 
