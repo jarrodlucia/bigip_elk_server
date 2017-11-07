@@ -8,7 +8,9 @@
 Lab |labmodule|\.\ |labnum| – Kibana Interface & Search
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This module will be more instructor lead and investigative. This lab will look at the look and feel of the Kibana interface, and some key navigation hints and tips.
+Kibana is the interface to elasticsearch and makes visualisationa and dashboards available. It allows REST API calls for development of additional Cutomer interfaces.
+
+This lab will look at the look and feel of the Kibana interface, and some key navigation hints and tips.
 
 Task 1 - Kibana Interface Explantion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
