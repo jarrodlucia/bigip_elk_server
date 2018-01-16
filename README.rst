@@ -15,7 +15,7 @@ http://bigip-elk-server.readthedocs.io/en/develop/
     :target: http://bigip-elk-server.readthedocs.io/en/develop/
 
 
-Class 1: BIG-IP AVR (Big-IP goodness)
+Class 1: BIG-IP AVR (Big-IP)
 ===================================================
 
 This class covers the following topics:
@@ -32,7 +32,7 @@ This class covers the following topics:
 
     Expected time to complete: **30 mins**
 
-Class 2: ELK-Stack (Big-Data sexyness)
+Class 2: ELK-Stack (Big-Data)
 ================================================
 
 This class covers the following topics:
