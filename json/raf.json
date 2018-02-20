@@ -1,0 +1,765 @@
+[
+  {
+    "_id": "AWATyoUvrh9PwRoNZHMz",
+    "_type": "dashboard",
+    "_source": {
+      "title": "DPI Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AWATwLV2rh9PwRoNZG_S\",\"panelIndex\":1,\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWATwguPrh9PwRoNZHBC\",\"panelIndex\":2,\"row\":1,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"AWATxJTKrh9PwRoNZHER\",\"panelIndex\":3,\"row\":1,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWATxnaZrh9PwRoNZHGO\",\"panelIndex\":4,\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWAbe680rh9PwRoNZ73H\",\"panelIndex\":5,\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWAbfQ7xrh9PwRoNZ75a\",\"panelIndex\":6,\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWA8gPe4rh9PwRoNfbdT\",\"panelIndex\":8,\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWA8hajprh9PwRoNfbrb\",\"panelIndex\":9,\"row\":7,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWA8h2KArh9PwRoNfbwF\",\"panelIndex\":10,\"row\":7,\"size_x\":9,\"size_y\":3,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 10000000000\":\"rgb(0,104,55)\"}}},\"P-9\":{\"vis\":{\"colors\":{\"UDP\":\"#052B51\"}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now/d",
+      "timeFrom": "now/d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBZYgcEf0uuEIUsfda7",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Messaging Analysis",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":4,\"size_y\":3,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"AWBZYB8Ef0uuEIUsfdUv\",\"col\":1,\"row\":1},{\"size_x\":8,\"size_y\":3,\"panelIndex\":13,\"type\":\"visualization\",\"id\":\"AWBZXm_Ef0uuEIUsfdPY\",\"col\":5,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-11\":{\"vis\":{\"defaultColors\":{\"0 - 10000000000\":\"rgb(0,104,55)\"}}},\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 10000000000\":\"rgb(0,104,55)\"}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now/d",
+      "timeFrom": "now/d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWA_iSOjrh9PwRoNgC3r",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Full Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":3,\"h\":3,\"i\":\"1\"},\"id\":\"AWATwLV2rh9PwRoNZG_S\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":3,\"y\":0,\"w\":5,\"h\":3,\"i\":\"2\"},\"id\":\"AWATwguPrh9PwRoNZHBC\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":3,\"i\":\"3\"},\"id\":\"AWATxJTKrh9PwRoNZHER\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":9,\"y\":3,\"w\":3,\"h\":3,\"i\":\"4\"},\"id\":\"AWATxnaZrh9PwRoNZHGO\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":8,\"y\":6,\"w\":4,\"h\":3,\"i\":\"5\"},\"id\":\"AWAbe680rh9PwRoNZ73H\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":9,\"w\":4,\"h\":3,\"i\":\"6\"},\"id\":\"AWAbfQ7xrh9PwRoNZ75a\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":8,\"y\":9,\"w\":4,\"h\":3,\"i\":\"8\"},\"id\":\"AWA8gPe4rh9PwRoNfbdT\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":9,\"y\":12,\"w\":3,\"h\":3,\"i\":\"9\"},\"id\":\"AWA8hajprh9PwRoNfbrb\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":12,\"w\":9,\"h\":3,\"i\":\"10\"},\"id\":\"AWA8h2KArh9PwRoNfbwF\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":3,\"w\":3,\"h\":3,\"i\":\"11\"},\"id\":\"AWA_hVWurh9PwRoNgCyh\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":3,\"y\":3,\"w\":3,\"h\":3,\"i\":\"12\"},\"id\":\"AWA_hfChrh9PwRoNgCzB\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":6,\"y\":3,\"w\":3,\"h\":3,\"i\":\"13\"},\"id\":\"AWA_hzDsrh9PwRoNgCz9\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":0,\"y\":6,\"w\":4,\"h\":3,\"i\":\"14\"},\"id\":\"AWA_h_hbrh9PwRoNgC0u\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":4,\"y\":6,\"w\":4,\"h\":3,\"i\":\"15\"},\"id\":\"AWA_inBHrh9PwRoNgC6I\",\"type\":\"visualization\",\"version\":\"6.1.0\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 10000000000\":\"rgb(0,104,55)\"}}},\"P-9\":{\"vis\":{\"colors\":{\"UDP\":\"#052B51\"}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now/w",
+      "timeFrom": "now/w",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"match_all\":{}}}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBB5LyXrh9PwRoNgRBs",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Youtube Video Analysis",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":2,\"y\":3,\"w\":5,\"h\":3,\"i\":\"1\"},\"id\":\"AWBB4g8-rh9PwRoNgQ-n\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":9,\"w\":8,\"h\":3,\"i\":\"2\"},\"id\":\"AWBB5DUYrh9PwRoNgRBF\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":7,\"y\":3,\"w\":5,\"h\":3,\"i\":\"3\"},\"id\":\"AWBB4xA0rh9PwRoNgQ_8\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":3,\"w\":2,\"h\":3,\"i\":\"4\"},\"id\":\"AWBB5ZParh9PwRoNgRDL\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":3,\"y\":6,\"w\":3,\"h\":3,\"i\":\"5\"},\"id\":\"AWBB6GWJrh9PwRoNgRL7\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":2,\"y\":0,\"w\":5,\"h\":3,\"i\":\"6\"},\"id\":\"AWBCCwnMrh9PwRoNgR5v\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":8,\"y\":9,\"w\":4,\"h\":3,\"i\":\"8\"},\"id\":\"AWBCGXjYrh9PwRoNgSc8\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":7,\"y\":0,\"w\":5,\"h\":3,\"i\":\"9\"},\"id\":\"AWBCHgj-rh9PwRoNgSkm\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":0,\"w\":2,\"h\":3,\"i\":\"11\"},\"id\":\"AWBCDj3Yrh9PwRoNgR-i\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":6,\"y\":6,\"w\":3,\"h\":3,\"i\":\"13\"},\"id\":\"10315510-0c22-11e8-b9a4-3fb6bfd4582c\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":0,\"y\":6,\"w\":3,\"h\":3,\"i\":\"14\"},\"id\":\"bb35c7a0-0c24-11e8-b9a4-3fb6bfd4582c\",\"type\":\"visualization\",\"version\":\"6.1.0\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":9,\"y\":6,\"w\":3,\"h\":3,\"i\":\"15\"},\"version\":\"6.1.0\",\"type\":\"visualization\",\"id\":\"d840e020-0e6b-11e8-a6f1-9ddfae5839df\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-11\":{\"vis\":{\"defaultColors\":{\"0 - 10000000000\":\"rgb(0,104,55)\"}}},\"P-12\":{\"vis\":{\"legendOpen\":false}},\"P-2\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"colors\":{\"Count\":\"#7EB26D\"},\"legendOpen\":false}},\"P-3\":{\"vis\":{\"legendOpen\":false}},\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 10000000000\":\"rgb(0,104,55)\"}}},\"P-6\":{\"vis\":{\"legendOpen\":false}},\"P-8\":{\"vis\":{\"legendOpen\":true}},\"P-9\":{\"vis\":{\"legendOpen\":false}},\"P-15\":{\"vis\":{\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"formattedValue\":\"0B to 256KB\",\"field\":\"Bandwidth\",\"type\":\"range\",\"key\":\"Bandwidth\",\"value\":\"0B to 256KB\",\"params\":{\"gte\":0,\"lt\":262144,\"value\":\">=0B <256KB\"},\"disabled\":false,\"negate\":true,\"alias\":null},\"script\":{\"script\":{\"inline\":\"(8 * 1000 * doc['volume_uplink'].value / (doc['flow_stop_sec'].value + doc['flow_stop_msec'].value - doc['flow_start_sec'].value - doc['flow_start_msec'].value))>=gte && (8 * 1000 * doc['volume_uplink'].value / (doc['flow_stop_sec'].value + doc['flow_stop_msec'].value - doc['flow_start_sec'].value - doc['flow_start_msec'].value))<lt\",\"params\":{\"gte\":0,\"lt\":262144,\"value\":\">=0B <256KB\"},\"lang\":\"expression\"}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"formattedValue\":\"0 to 10\",\"field\":\"flow_duration\",\"type\":\"range\",\"key\":\"flow_duration\",\"value\":\"0 to 10\",\"params\":{\"gte\":0,\"lt\":10000,\"value\":\">=0 <10\"},\"disabled\":false,\"negate\":true,\"alias\":null},\"script\":{\"script\":{\"inline\":\"(doc['flow_stop_sec'].value - doc['flow_start_sec'].value)>=gte && (doc['flow_stop_sec'].value - doc['flow_start_sec'].value)<lt\",\"params\":{\"gte\":0,\"lt\":10000,\"value\":\">=0 <10\"},\"lang\":\"expression\"}},\"$state\":{\"store\":\"appState\"}}],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"match_all\":{}}}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "1cb91d40-0501-11e8-b9a4-3fb6bfd4582c",
+    "_type": "search",
+    "_source": {
+      "title": "Whatsapp_calls",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "flow_duration",
+        "Bandwidth"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"key\":\"application_category_name.raw\",\"negate\":false,\"params\":{\"query\":\"whatsapp_voice\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"whatsapp_voice\"},\"query\":{\"match\":{\"application_category_name.raw\":{\"query\":\"whatsapp_voice\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"key\":\"volume_uplink\",\"negate\":false,\"params\":{\"gte\":128000,\"lt\":null},\"type\":\"range\",\"value\":\"125KB to +∞\"},\"range\":{\"volume_uplink\":{\"gte\":128000,\"lt\":null}}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5e10d0d0-0e6b-11e8-a6f1-9ddfae5839df",
+    "_type": "search",
+    "_source": {
+      "title": "Youtube Video Streams",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"key\":\"record_type\",\"negate\":false,\"params\":{\"query\":2,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"key\":\"application_category_name.raw\",\"negate\":false,\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"youtube_video\"},\"query\":{\"match\":{\"application_category_name.raw\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"field\":\"flow_duration\",\"negate\":true,\"disabled\":false,\"alias\":null,\"type\":\"range\",\"key\":\"flow_duration\",\"value\":\"0 to 0\",\"params\":{\"gte\":0,\"lt\":10,\"value\":\">=0 <0\"}},\"script\":{\"script\":{\"inline\":\"(doc['flow_stop_sec'].value - doc['flow_start_sec'].value)>=gte && (doc['flow_stop_sec'].value - doc['flow_start_sec'].value)<lt\",\"params\":{\"gte\":0,\"lt\":10,\"value\":\">=0 <0\"},\"lang\":\"expression\"}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"field\":\"Bandwidth\",\"negate\":true,\"disabled\":false,\"alias\":null,\"type\":\"range\",\"key\":\"Bandwidth\",\"value\":\"0B to 32KB\",\"params\":{\"gte\":0,\"lt\":32768,\"value\":\">=0B <32KB\"}},\"script\":{\"script\":{\"inline\":\"(8 * 1000 * doc['volume_uplink'].value / (doc['flow_stop_sec'].value + doc['flow_stop_msec'].value - doc['flow_start_sec'].value - doc['flow_start_msec'].value))>=gte && (8 * 1000 * doc['volume_uplink'].value / (doc['flow_stop_sec'].value + doc['flow_stop_msec'].value - doc['flow_start_sec'].value - doc['flow_start_msec'].value))<lt\",\"params\":{\"gte\":0,\"lt\":32768,\"value\":\">=0B <32KB\"},\"lang\":\"expression\"}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWATxJTKrh9PwRoNZHER",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Subscribers By Flows",
+      "visState": "{\"title\":\"Top Subscribers By Flows\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"Subscribers\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Flows\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Flows\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flows\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pem_subscriber_id.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Subscribers\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWATx4cNrh9PwRoNZHHw",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top URL Categories by Hits",
+      "visState": "{\"title\":\"Top URL Categories by Hits\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"URL Category\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"url_category_name.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWATwLV2rh9PwRoNZG_S",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total Traffic",
+      "visState": "{\"title\":\"Total Traffic\",\"type\":\"goal\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"gauge\",\"gauge\":{\"verticalSplit\":false,\"autoExtend\":false,\"percentageMode\":false,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000000000}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":false,\"labels\":false,\"color\":\"#333\",\"width\":2},\"type\":\"meter\",\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Total Traffic\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 10000000000\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWATwguPrh9PwRoNZHBC",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Subscribers By Traffic",
+      "visState": "{\"title\":\"Top Subscribers By Traffic\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"Subscribers\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Traffic\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Download\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true},{\"show\":true,\"mode\":\"stacked\",\"type\":\"histogram\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"3\",\"label\":\"Upload\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"volume_uplink\",\"customLabel\":\"Download\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pem_subscriber_id.raw\",\"size\":10,\"orderAgg\":{\"id\":\"2-orderAgg\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"total_volume\"}},\"order\":\"desc\",\"orderBy\":\"custom\",\"customLabel\":\"Subscribers\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"volume_downlink\",\"customLabel\":\"Upload\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWATxnaZrh9PwRoNZHGO",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Applications by Traffic",
+      "visState": "{\"title\":\"Top Applications by Traffic\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"application_category_name.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBCQRFtrh9PwRoNgThB",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Timeline Flows",
+      "visState": "{\"title\":\"Youtube Timeline Flows\",\"type\":\"metrics\",\"params\":{\"id\":\"2a2e6240-dded-11e7-885c-8774c9e081e2\",\"type\":\"timeseries\",\"series\":[{\"id\":\"2a2e6241-dded-11e7-885c-8774c9e081e2\",\"color\":\"#68BC00\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"2a2e6242-dded-11e7-885c-8774c9e081e2\",\"type\":\"count\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"stacked\",\"label\":\"Youtube Flows\",\"filter\":\"application_category_name: youtube_video\",\"split_filters\":[{\"filter\":\"flow_duration: [0 TO 1000000000]\",\"label\":\"\",\"color\":\"#68BC00\",\"id\":\"4c7122c0-dded-11e7-885c-8774c9e081e2\"}],\"terms_field\":\"pem_subscriber_id.raw\",\"terms_order_by\":\"_count\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"dpi-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"filter\":\"application_category_name: youtube_video AND record_type: 2\",\"drop_last_bucket\":1},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWA8gPe4rh9PwRoNfbdT",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Destination Ports",
+      "visState": "{\"title\":\"Top Destination Ports\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Destination Port\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"dest_port\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWA_hVWurh9PwRoNgCyh",
+    "_type": "visualization",
+    "_source": {
+      "title": "Traffic per Device",
+      "visState": "{\"title\":\"Traffic per Device\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"dev.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWA_h_hbrh9PwRoNgC0u",
+    "_type": "visualization",
+    "_source": {
+      "title": "Traffic per APN",
+      "visState": "{\"title\":\"Traffic per APN\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"apn.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWA_hzDsrh9PwRoNgCz9",
+    "_type": "visualization",
+    "_source": {
+      "title": "Traffic per Service Area",
+      "visState": "{\"title\":\"Traffic per Service Area\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"SAI.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWA8h2KArh9PwRoNfbwF",
+    "_type": "visualization",
+    "_source": {
+      "title": "TimeLine IP Protocol Traffic",
+      "visState": "{\"title\":\"TimeLine IP Protocol Traffic\",\"type\":\"metrics\",\"params\":{\"id\":\"43752200-dd0e-11e7-885c-8774c9e081e2\",\"type\":\"timeseries\",\"series\":[{\"id\":\"43752201-dd0e-11e7-885c-8774c9e081e2\",\"color\":\"#68BC00\",\"split_mode\":\"filters\",\"metrics\":[{\"id\":\"43752202-dd0e-11e7-885c-8774c9e081e2\",\"type\":\"sum\",\"field\":\"volume_uplink\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"stacked\",\"label\":\"IP Protocol\",\"split_filters\":[{\"filter\":\"ip_protocol: 6\",\"label\":\"TCP\",\"color\":\"rgba(188,5,0,1)\",\"id\":\"50baa7a0-dd0e-11e7-885c-8774c9e081e2\"},{\"filter\":\"ip_protocol: 17\",\"label\":\"UDP\",\"color\":\"rgba(38,0,188,1)\",\"id\":\"559e2e40-dd0e-11e7-885c-8774c9e081e2\"}]}],\"time_field\":\"@timestamp\",\"index_pattern\":\"*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBB5ZParh9PwRoNgRDL",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Total Flows",
+      "visState": "{\"title\":\"Youtube Total Flows\",\"type\":\"goal\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"gauge\",\"gauge\":{\"verticalSplit\":false,\"autoExtend\":false,\"percentageMode\":false,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000000000}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":false,\"labels\":false,\"color\":\"#333\",\"width\":2},\"type\":\"meter\",\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}},\"isDisplayWarning\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Flows\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 10000000000\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"application_category_name\",\"value\":\"youtube_video\"},\"query\":{\"match\":{\"application_category_name\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBB6GWJrh9PwRoNgRL7",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Top Subscribers By Flows",
+      "visState": "{\"title\":\"Youtube Top Subscribers By Flows\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"Subscribers\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Flows\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Flows\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flows\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pem_subscriber_id.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Subscribers\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"application_category_name\",\"value\":\"youtube_video\"},\"query\":{\"match\":{\"application_category_name\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWA_hfChrh9PwRoNgCzB",
+    "_type": "visualization",
+    "_source": {
+      "title": "Traffic per OS",
+      "visState": "{\"title\":\"Traffic per OS\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"os.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWA_inBHrh9PwRoNgC6I",
+    "_type": "visualization",
+    "_source": {
+      "title": "Traffic per Radio",
+      "visState": "{\"title\":\"Traffic per Radio\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"rat_type.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBCGXjYrh9PwRoNgSc8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Video Protocol Traffic",
+      "visState": "{\"title\":\"Youtube Video Protocol Traffic\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"ip_protocol: 6\"}}},\"label\":\"TCP\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ip_protocol: 17\"}}},\"label\":\"UDP\"}],\"json\":\"{ \\\"other_bucket\\\" : true, \\\"other_bucket_key\\\": \\\"others\\\"}\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"application_category_name\",\"value\":\"youtube_video\"},\"query\":{\"match\":{\"application_category_name\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "47a4e5a0-e1c7-11e7-b2c7-fd1590f9899c",
+    "_type": "visualization",
+    "_source": {
+      "title": "Weather Map Destinations",
+      "visState": "{\"title\":\"Weather Map Destinations\",\"type\":\"region_map\",\"params\":{\"legendPosition\":\"bottomright\",\"addTooltip\":true,\"colorSchema\":\"Green to Red\",\"selectedLayer\":{\"attribution\":\"<p><a href=\\\"http://www.naturalearthdata.com/about/terms-of-use\\\">Made with NaturalEarth</a> | <a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"name\":\"World Countries\",\"format\":\"geojson\",\"url\":\"https://layers.geo.elastic.co/blob/5659313586569216?elastic_tile_service_tos=agree&my_app_version=6.1.0\",\"fields\":[{\"name\":\"iso2\",\"description\":\"Two letter abbreviation\"},{\"name\":\"name\",\"description\":\"Country name\"},{\"name\":\"iso3\",\"description\":\"Three letter abbreviation\"}],\"created_at\":\"2017-04-26T17:12:15.978370\",\"id\":5659313586569216,\"layerId\":\"elastic_maps_service.World Countries\"},\"selectedJoinField\":{\"name\":\"iso2\",\"description\":\"Two letter abbreviation\"},\"isDisplayWarning\":true,\"wms\":{\"enabled\":false,\"options\":{\"format\":\"image/png\",\"transparent\":true}},\"mapZoom\":2,\"mapCenter\":[0,0]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.country_code2.keyword\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"End of flows only\",\"disabled\":false,\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"key\":\"record_type\",\"negate\":false,\"params\":{\"query\":2,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"2\"},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBZYB8Ef0uuEIUsfdUv",
+    "_type": "visualization",
+    "_source": {
+      "title": "Whatsapp Top Talkers",
+      "visState": "{\"title\":\"Whatsapp Top Talkers\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"Subscribers\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Flows\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Flows\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flows\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pem_subscriber_id.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Subscribers\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"negate\":false,\"disabled\":false,\"alias\":\"WhatsappChat\",\"type\":\"phrase\",\"key\":\"application_category_name\",\"value\":\"whatsapp_chat\",\"params\":{\"query\":\"whatsapp_chat\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name\":{\"query\":\"whatsapp_chat\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWA8hajprh9PwRoNfbrb",
+    "_type": "visualization",
+    "_source": {
+      "title": "Protocol Traffic",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"field\":\"total_volume\"},\"schema\":\"metric\",\"type\":\"sum\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"ip_protocol: 6\"}}},\"label\":\"TCP\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ip_protocol: 17\"}}},\"label\":\"UDP\"}],\"json\":\"{ \\\"other_bucket\\\" : true, \\\"other_bucket_key\\\": \\\"others\\\"}\"},\"schema\":\"segment\",\"type\":\"filters\"}],\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"labels\":{\"last_level\":true,\"show\":false,\"truncate\":100,\"values\":true},\"legendPosition\":\"right\",\"type\":\"pie\"},\"title\":\"Protocol Traffic\",\"type\":\"pie\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"language\":\"lucene\",\"query\":{\"match_all\":{}}},\"filter\":[{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"negate\":false,\"disabled\":false,\"alias\":\"End of flows only\",\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\",\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWAbfQ7xrh9PwRoNZ75a",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Hits by Destination Country",
+      "visState": "{\"title\":\"Top Hits by Destination Country\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\",\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.country_name.keyword\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Top 10 Hits\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"negate\":false,\"disabled\":false,\"alias\":\"End of flows only\",\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\",\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWAejjy8rh9PwRoNaSto",
+    "_type": "visualization",
+    "_source": {
+      "title": "Traffic during the day",
+      "visState": "{\"title\":\"Traffic during the day\",\"type\":\"metrics\",\"params\":{\"id\":\"6aad0370-d87b-11e7-bda7-f19ed7cff1aa\",\"type\":\"timeseries\",\"series\":[{\"id\":\"6aad0371-d87b-11e7-bda7-f19ed7cff1aa\",\"color\":\"#68BC00\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"6aad0372-d87b-11e7-bda7-f19ed7cff1aa\",\"type\":\"sum\",\"field\":\"volume_uplink\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"stacked\",\"terms_field\":\"application_category_name.raw\",\"terms_size\":\"20\",\"split_color_mode\":\"rainbow\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"dpi-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"filter\":\"record_type: 2\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWAbe680rh9PwRoNZ73H",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Hits by Url Category",
+      "visState": "{\"title\":\"Top Hits by Url Category\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\",\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"url_category_name.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Top 10 Hits\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":\"2\",\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBCHgj-rh9PwRoNgSkm",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Video Flows Duration Traffic",
+      "visState": "{\"title\":\"Youtube Video Flows Duration Traffic\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"rotate\":0,\"show\":true,\"truncate\":200},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Flow Duration\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Traffic\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":50},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\",\"defaultYExtents\":false},\"show\":true,\"style\":{},\"title\":{\"text\":\"Traffic\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"volume_uplink\",\"customLabel\":\"Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"flow_duration\",\"ranges\":[{\"from\":0,\"to\":10000},{\"from\":10000,\"to\":60000},{\"from\":60000,\"to\":300000},{\"from\":300000,\"to\":600000},{\"from\":600000,\"to\":1800000},{\"from\":1800000,\"to\":3600000},{\"from\":3600000,\"to\":null}],\"customLabel\":\"Flow Duration\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Count\":\"#BF1B00\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"application_category_name.raw\",\"negate\":false,\"type\":\"phrase\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name.raw\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"record_type\",\"negate\":false,\"type\":\"phrase\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBB4xA0rh9PwRoNgQ_8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Video Flows Duration Distribution",
+      "visState": "{\"title\":\"Youtube Video Flows Duration Distribution\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"rotate\":0,\"show\":true,\"truncate\":200},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"flow_duration ranges\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Count\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Count\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"flow_duration\",\"ranges\":[{\"from\":0,\"to\":10000},{\"from\":10000,\"to\":60000},{\"from\":60000,\"to\":300000},{\"from\":300000,\"to\":600000},{\"from\":600000,\"to\":1800000},{\"from\":1800000,\"to\":3600000},{\"from\":3600000,\"to\":null}],\"customLabel\":\"Flow Duration Range\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Count\":\"#BF1B00\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"application_category_name.raw\",\"negate\":false,\"type\":\"phrase\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name.raw\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"record_type\",\"negate\":false,\"type\":\"phrase\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBB5DUYrh9PwRoNgRBF",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Video Flows Data Distribution",
+      "visState": "{\"title\":\"Youtube Video Flows Data Distribution\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"rotate\":0,\"show\":true,\"truncate\":200},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"volume_uplink ranges\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Count\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Count\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"volume_uplink\",\"ranges\":[{\"from\":0,\"to\":524288},{\"from\":524288,\"to\":1048576},{\"from\":1048576,\"to\":2097152},{\"from\":2097152,\"to\":4194304},{\"from\":4194304,\"to\":10485760},{\"from\":10485760,\"to\":20971520},{\"from\":20971520,\"to\":null}],\"customLabel\":\"Data\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"application_category_name.raw\",\"negate\":false,\"type\":\"phrase\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name.raw\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"record_type\",\"negate\":false,\"type\":\"phrase\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBCDj3Yrh9PwRoNgR-i",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Total Traffic",
+      "visState": "{\"title\":\"Youtube Total Traffic\",\"type\":\"goal\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"gauge\":{\"autoExtend\":false,\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000000000}],\"gaugeColorMode\":\"None\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Arc\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":false,\"width\":2},\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":60,\"labelColor\":false,\"subText\":\"\"},\"type\":\"meter\",\"useRanges\":false,\"verticalSplit\":false},\"isDisplayWarning\":false,\"type\":\"gauge\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"volume_uplink\",\"customLabel\":\"YouTube Data\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 10000000000\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"key\":\"record_type\",\"negate\":false,\"type\":\"phrase\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"application_category_name\",\"negate\":false,\"type\":\"phrase\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBZXm_Ef0uuEIUsfdPY",
+    "_type": "visualization",
+    "_source": {
+      "title": "Whatsapp Timeline",
+      "visState": "{\"title\":\"Whatsapp Timeline\",\"type\":\"metrics\",\"params\":{\"id\":\"7638a850-e174-11e7-a814-77ce6f5c7e39\",\"type\":\"timeseries\",\"series\":[{\"id\":\"7638a851-e174-11e7-a814-77ce6f5c7e39\",\"color\":\"#68BC00\",\"split_mode\":\"filters\",\"metrics\":[{\"id\":\"7638a852-e174-11e7-a814-77ce6f5c7e39\",\"type\":\"count\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"stacked\",\"label\":\"Whatsapp Timeline\",\"split_filters\":[{\"filter\":\"application_category_name: whatsapp_chat\",\"label\":\"Whatsapp Chat\",\"color\":\"rgba(211,49,21,1)\",\"id\":\"824fe720-e174-11e7-a814-77ce6f5c7e39\"},{\"filter\":\"application_category_name: whatsapp_file_transfer\",\"label\":\"Whatsapp File Transfer\",\"color\":\"rgba(0,156,224,1)\",\"id\":\"9e39bf10-e174-11e7-a814-77ce6f5c7e39\"},{\"filter\":\"application_category_name: whatsapp_voice\",\"label\":\"Whatsapp Calls\",\"color\":\"rgba(104,188,0,1)\",\"id\":\"b07234a0-e174-11e7-a814-77ce6f5c7e39\"},{\"filter\":\"application_category_name: whatsapp\",\"label\":\"Whatsapp\",\"color\":\"rgba(252,196,0,1)\",\"id\":\"c86b4a60-e174-11e7-a814-77ce6f5c7e39\"}],\"filter\":\"record_type: 2\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"dpi-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4a1ca060-e40c-11e7-b2c7-fd1590f9899c",
+    "_type": "visualization",
+    "_source": {
+      "title": "YouTube Traffic per OS",
+      "visState": "{\"title\":\"YouTube Traffic per OS\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\",\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"os.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"application_category_name.raw\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name.raw\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBB4g8-rh9PwRoNgQ-n",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Video Bandwidth Distribution",
+      "visState": "{\"title\":\"Youtube Video Bandwidth Distribution\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"rotate\":0,\"show\":true,\"truncate\":200},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Bandwidth ranges\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Flows\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Flows\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flows\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"Bandwidth\",\"ranges\":[{\"from\":0,\"to\":262144},{\"from\":262144,\"to\":524288},{\"from\":524288,\"to\":1048576},{\"from\":1048576,\"to\":2097152},{\"from\":2097152,\"to\":4194303},{\"from\":4194303,\"to\":null}]}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"record_type\",\"negate\":false,\"type\":\"phrase\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"application_category_name\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "86f2ded0-0501-11e8-b9a4-3fb6bfd4582c",
+    "_type": "visualization",
+    "_source": {
+      "title": "WhatsappCalls",
+      "visState": "{\"title\":\"WhatsappCalls\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Total Seconds\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Total Seconds\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"flow_duration\",\"customLabel\":\"Total Seconds\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "1cb91d40-0501-11e8-b9a4-3fb6bfd4582c",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b70424c0-01c4-11e8-b9a4-3fb6bfd4582c",
+    "_type": "visualization",
+    "_source": {
+      "title": "YouTube Traffic per Device",
+      "visState": "{\"title\":\"YouTube Traffic per Device\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\",\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"dev.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"application_category_name.raw\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name.raw\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4ad3a990-0725-11e8-b9a4-3fb6bfd4582c",
+    "_type": "visualization",
+    "_source": {
+      "title": "Call Destinations",
+      "visState": "{\"title\":\"Call Destinations\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.country_name.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "1cb91d40-0501-11e8-b9a4-3fb6bfd4582c",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWBCCwnMrh9PwRoNgR5v",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Traffic Video Bandwidth Distribution",
+      "visState": "{\"title\":\"Youtube Traffic Video Bandwidth Distribution\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"rotate\":0,\"show\":true,\"truncate\":200},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Bandwidth ranges\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Data\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Data\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"volume_uplink\",\"customLabel\":\"Data\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"Bandwidth\",\"ranges\":[{\"from\":0,\"to\":262144},{\"from\":262144,\"to\":524288},{\"from\":524288,\"to\":1048576},{\"from\":1048576,\"to\":2097152},{\"from\":2097152,\"to\":4194304},{\"from\":4194304,\"to\":null}]}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Sum of volume_uplink\":\"#58140C\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"application_category_name.raw\",\"negate\":false,\"type\":\"phrase\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name.raw\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"key\":\"record_type\",\"negate\":false,\"type\":\"phrase\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "bb35c7a0-0c24-11e8-b9a4-3fb6bfd4582c",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Top Subscribers By Duration",
+      "visState": "{\"title\":\"Youtube Top Subscribers By Duration\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"Subscribers\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Video Total Duration\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Video Total Duration\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"flow_duration\",\"customLabel\":\"Video Total Duration\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pem_subscriber_id.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Subscribers\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"application_category_name.raw\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name.raw\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "10315510-0c22-11e8-b9a4-3fb6bfd4582c",
+    "_type": "visualization",
+    "_source": {
+      "title": "YoutubeData per Subscriber",
+      "visState": "{\"title\":\"YoutubeData per Subscriber\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"Subscribers\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Total Traffic\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Total Traffic\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"total_volume\",\"customLabel\":\"Total Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pem_subscriber_id.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Subscribers\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"123ddae0-e1c5-11e7-b2c7-fd1590f9899c\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"AWATt2n9rh9PwRoNZG0H\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"record_type\",\"value\":2,\"params\":{\"query\":2,\"type\":\"phrase\"}},\"query\":{\"match\":{\"record_type\":{\"query\":2,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"AWA_eAq6rh9PwRoNgCeh\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"application_category_name\",\"value\":\"youtube_video\",\"params\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"application_category_name\":{\"query\":\"youtube_video\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d840e020-0e6b-11e8-a6f1-9ddfae5839df",
+    "_type": "visualization",
+    "_source": {
+      "title": "Youtube Average Bandwidth per Subscriber",
+      "visState": "{\"title\":\"Youtube Average Bandwidth per Subscriber\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Average Bandwidth\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Average Bandwidth\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Bandwidth\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pem_subscriber_id.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Subscribers\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "5e10d0d0-0e6b-11e8-a6f1-9ddfae5839df",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]
