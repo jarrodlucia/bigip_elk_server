@@ -2,10 +2,6 @@
    "template" : "pem-*",
     "mappings" : {
       "logs" : {
-        "_all" : {
-          "enabled" : true,
-          "norms" : false
-        },
         "dynamic_templates" : [
           {
             "message_field" : {
