@@ -1,12 +1,6 @@
 {
    "template" : "pem-*",
     "mappings" : {
-      "_default_" : {
-        "_all" : {
-          "enabled" : true,
-          "norms" : false
-        }
-      },
       "logs" : {
         "_all" : {
           "enabled" : true,
