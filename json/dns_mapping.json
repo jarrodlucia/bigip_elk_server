@@ -129,17 +129,8 @@
           "Subscriber" : {
             "type" : "ip"
           },
-          "host" : {
-            "type" : "text"
-          },
-          "message" : {
-            "type" : "text"
-          },
           "path" : {
             "type" : "text"
-          },
-          "port" : {
-            "type" : "integer"
           },
           "type" : {
             "type" : "text",
