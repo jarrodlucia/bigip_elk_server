@@ -117,25 +117,6 @@
               }
             }
           },
-          "type" : {
-            "type" : "text",
-            "fields" : {
-              "keyword" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-              }
-            }
-          }
-        }
-      },
-      "logs" : {
-        "properties" : {
-          "@timestamp" : {
-            "type" : "date"
-          },
-          "@version" : {
-            "type" : "text"
-          },
           "DNS_response" : {
             "type" : "text",
             "fields" : {
@@ -145,14 +126,8 @@
             },
             "analyzer" : "english"
           },
-          "Query" : {
-            "type" : "text",
-            "fields" : {
-              "raw" : {
-                "type" : "keyword"
-              }
-            },
-            "analyzer" : "english"
+          "@version" : {
+            "type" : "text"
           },
           "QueryType" : {
             "type" : "text",
@@ -178,19 +153,17 @@
           "port" : {
             "type" : "integer"
           },
-          "syslog_hostname" : {
+          "type" : {
             "type" : "text",
             "fields" : {
-              "raw" : {
-                "type" : "keyword"
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
               }
-            },
-            "analyzer" : "english"
-          },
-          "timestamp" : {
-            "type" : "text"
+            }
           }
         }
+      }
       }
     }
 }
