@@ -403,7 +403,7 @@
             }
           },
           "SelfIp" : {
-            "type" : "string",
+            "type" : "ip",
             "fields" : {
               "keyword" : {
                 "type" : "keyword",
@@ -448,7 +448,7 @@
             }
           },
           "ServerIp" : {
-            "type" : "string",
+            "type" : "ip",
             "fields" : {
               "keyword" : {
                 "type" : "keyword",
@@ -619,7 +619,7 @@
             }
           },
           "VLAN" : {
-            "type" : "string",
+            "type" : "text",
             "fields" : {
               "keyword" : {
                 "type" : "keyword",
