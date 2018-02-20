@@ -619,7 +619,7 @@
             }
           },
           "VLAN" : {
-            "type" : "string",
+            "type" : "text",
             "fields" : {
               "keyword" : {
                 "type" : "keyword",
