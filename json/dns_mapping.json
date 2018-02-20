@@ -126,9 +126,6 @@
             },
             "analyzer" : "english"
           },
-          "@version" : {
-            "type" : "text"
-          },
           "QueryType" : {
             "type" : "text",
             "fields" : {
