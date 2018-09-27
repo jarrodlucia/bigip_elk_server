@@ -1,7 +1,7 @@
 {
    "template" : "dns-*",
     "mappings" : {
-      "doc" : {
+      "dns" : {
         "properties" : {
           "@timestamp" : {
             "type" : "date"

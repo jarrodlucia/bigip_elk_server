@@ -1,7 +1,7 @@
 {
    "template" : "afm-*",
     "mappings" : {
-      "doc" : {
+      "afm" : {
         "properties" : {
           "@timestamp" : {
             "type" : "date"
